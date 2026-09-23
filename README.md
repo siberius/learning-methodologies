@@ -9,7 +9,7 @@ Not tied to any national curriculum. Works across Big Pickle / OpenCode, Claude,
 Astra, Muse, Spark, Gemini, Copilot — no build, no packages, single portable
 Markdown file.
 
-![Overview](learning-metodologies.jpeg)
+![Overview](learning-methodologies.jpeg)
 
 ## What it does
 
