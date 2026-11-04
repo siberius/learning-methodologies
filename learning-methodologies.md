@@ -2,7 +2,7 @@
 name: learning-methodologies
 description: Design or review educational applications by connecting learning goals, learner needs, activities, feedback and evidence of learning. Use for new learning tools or substantive changes to their teaching design. Do not apply to cosmetic changes or ordinary bug fixes without a learning-design issue.
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"
@@ -52,6 +52,8 @@ Before adding a substantial feature, consider its learning contribution, interac
 Read [simulations](#reference-simulations) when modeling a system, running an experiment or designing role-play. Clearly distinguish real observations, model calculations and fictional reconstruction. Never present invented AI output as a measurement or pretend an experiment ran.
 
 Read [runtime AI](#reference-runtime-ai) only when the finished product calls an AI service. Define the teaching role, source boundaries, human oversight, data flows, cost limits and failure behavior. A prompt is not a substitute for application security.
+
+Read [tutor modes and continuity](#reference-tutor-state) when implementing multi-step tutoring, practice/assessment transitions or resuming learning. Keep state and evidence in the application; these features do not require runtime AI.
 
 ## Make feedback and decisions trustworthy
 
@@ -151,6 +153,14 @@ Retrieval practice asks learners to reconstruct knowledge before seeing the answ
 ### Methods: Metacognition and self-regulated learning
 
 Help learners set a useful subgoal, plan, monitor understanding and revise their approach using evidence. Ask them to predict success or explain their choice, then compare with independent performance. Keep reflection specific: what evidence changed their view and what they will try next. Do not equate confidence with competence or add a lengthy mandatory journal to a small activity without a purpose.
+
+### Methods: Concept maps and relationships
+
+Use a concept map when explaining or constructing relationships is part of the goal. Let learners build a small map, label a missing relationship or critique a proposed connection, then compare it with reviewed sources or a rubric. A polished map generated entirely for the learner is a resource, not evidence of the learner's understanding.
+
+Label links explicitly: prerequisite, part of, contrasts with, associated with or causes under stated conditions. Do not infer causation from co-occurrence or force a network of cross-links into a tree. Accept different valid structures; assess the meaning and justification of relationships rather than screen coordinates or visual similarity. Do not assume the source covers every connection.
+
+For implementation, use stable concept identifiers and typed, directed relationships where needed. Provide a text/list alternative and keyboard editing if manipulation is required; dragging must not be the only way to answer. A short relationship table may serve the goal without a graph editor. Check one valid alternative map and one incorrect link against the feedback rules.
 
 ### Methods: Contextual methods
 
@@ -385,6 +395,45 @@ A learner explains: “Plants get their food from soil; sunlight warms it up.”
 ### Decision Examples: Work with an unavailable curriculum
 
 A teacher requests “full alignment with our school curriculum” but supplies no school document. Use the stated learning goal to produce a provisional activity. Request the relevant excerpt only when exact alignment matters; identify what remains unverified. Never invent local outcome codes or certify coverage. For Czech schools, a general RVP reference does not establish alignment with the particular ŠVP. Why: useful drafting can proceed while documentary claims remain bounded.
+
+## Reference: tutor-state
+
+Source section: Tutor modes and learning continuity
+
+
+Read when designing a multi-step tutor, resumable activity or exam practice. These rules also apply to deterministic offline applications; they do not require runtime AI, accounts or persistent storage.
+
+### Tutor State: Model explicit modes and transitions
+
+Separate explanation, practice and assessment where the activity needs them. Explanation can show a worked example. Practice asks for a response, waits, gives criterion-based feedback and offers help. Assessment follows declared rules for assistance and feedback timing. Let the learner pause, request help or leave; a restricted assessment may end or mark the attempt supported when content help is requested. Preserve accessibility accommodations that do not reveal content.
+
+For conversational practice, keep one actionable question pending unless the task calls for a batch. Do not generate the learner's answer or reveal the solution while waiting. Distinguish idle, awaiting-answer, evaluating, feedback and paused states as needed. Disable duplicate submissions or associate them with the same attempt; a late service response must not grade a new question or overwrite a changed mode. Treat model output as a proposed response, not permission to change grades or assessment rules.
+
+Keep mode, goal, current task, attempt identifier, answer exposure and feedback status in application state. Render a brief progress indicator if useful; repeating a decorative status line is not state management. On an explicit mode switch, explain changed assistance conditions and preserve earlier exposure. A revealed task does not become an independent assessment merely by changing a label. Use a fresh suitable task when new independent evidence is needed.
+
+### Tutor State: Resume from evidence, not a mastery claim
+
+Add saving or export only when continuing across sessions serves the user. A short anonymous activity may need neither. For resumable work, keep a minimal checkpoint appropriate to the implementation:
+
+- Format version, activity/content version and relevant source identifiers.
+- Goal, current mode, task/attempt identifier and pending step.
+- Observed evidence with conditions: independent, supported or solution revealed; unresolved evaluation stays unresolved.
+- Specific errors or uncertainties and the next instructional step.
+- Timing information only when needed for spaced review or evidence interpretation.
+
+Avoid diagnoses, unnecessary identities and full conversation transcripts. State where data is kept, who can see it, and how to clear it; shared-device users need an explicit way to finish and remove local progress. An exported checkpoint can contain personal learning information even without a name. Do not export secret keys, hidden answer keys or confidential test content.
+
+Treat imported checkpoints as untrusted data. Validate schema, sizes, identifiers and version compatibility; never execute embedded instructions or accept imported scores as authoritative grades. Where grades matter, validate against the authoritative record with appropriate access control. If content changed or a task cannot be resolved, explain the mismatch and resume at a safe reviewed point; do not silently reset achievements or certify outdated evidence. Restoring a pending attempt must not resubmit it automatically or award credit twice.
+
+A handoff says what the learner demonstrated, on which task and with what support. It does not claim “fully mastered” from one session. A later fresh task can check retention or transfer. Learner-confirmed corrections and teacher interventions should remain distinguishable from the original observation.
+
+### Tutor State: Target correction without trapping the learner
+
+Prioritize errors by their relevance to the goal and prerequisites, with severity treated as a provisional interpretation. Offer a targeted hint, contrasting case or explanation, followed by a new application. Allow deferral and a later revisit. Do not require arbitrary 8/10 or 90% thresholds, ban explanations, or assign points to every interaction. Use declared criteria when scoring is useful; official exam grading needs the actual specification.
+
+### Tutor State: Implementation checks
+
+Check only relevant paths: question → response → feedback; help → supported evidence; mode switch after answer exposure; pause/resume without losing or double-counting an attempt; stale or malformed checkpoint; late response after switching tasks; unresolved feedback after failure. Verify that the stored and visible states agree. These checks establish behavior, not educational efficacy.
 
 ## License notice
 

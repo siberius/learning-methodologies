@@ -2,9 +2,9 @@
 name: vzdelavaci-metodiky
 description: Navrhuje a posuzuje vzdělávací aplikace propojením cílů, činnosti žáka, podpory a dokladů učení. Použij při tvorbě, podstatné změně výuky nebo pedagogickém auditu kvízu, hry, simulace či trenažéru. Podle kontextu řeší české RVP/ŠVP. Nepoužívej pro kosmetickou změnu nebo běžnou technickou opravu bez didaktického dopadu.
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
   language: "cs"
-  based_on: "learning-methodologies@2.2.0"
+  based_on: "learning-methodologies@2.3.0"
   license: "MIT"
   author: "Luděk Sušický"
   repo: "https://github.com/siberius/learning-methodologies"
@@ -57,6 +57,8 @@ Pro modelování, experiment a hraní rolí čti [simulace](#reference-simulace)
 
 Pouze pokud hotová aplikace volá AI službu, čti [provoz AI](#reference-ai-provoz). Vymez úkol modelu, zdroje, dohled, data, náklady a chování při selhání. Bezpečnost aplikace nemůže zajišťovat pouze prompt.
 
+Při implementaci vícekrokového tutora, přechodů mezi procvičováním a ověřováním nebo pokračování učení čti [režimy a stav tutora](#reference-stav-tutora). Stav a doklady udržuj v aplikaci; tyto funkce nevyžadují živou AI.
+
 ## Navrhni důvěryhodnou podporu a hodnocení
 
 Po chybě nabídni využitelný další krok. V procvičování zpřístupni pomoc a cestu k přímému vysvětlení či komentovanému řešení. Nenech žáka uvíznout v nekonečném dotazování. Podporu omezuj podle samostatného výkonu, ale zachovej možnost znovu o pomoc požádat. Ověřovací režim může mít předem vysvětlená jiná pravidla.
@@ -93,7 +95,7 @@ Při předání shrň cíl, zvolený postup, důležité provozní a případné
 
 Při volbě modelu, uvažování, rychlosti nebo způsobu načtení čti [modely a prostředí](#reference-modely-a-prostredi). Reference obsahuje podklady pro OpenAI, Claude a Gemini. Zachovej společné didaktické zásady a odlišuj zamýšlenou kompatibilitu od skutečně provedených testů. Při běžném didaktickém úkolu bez této potřeby ji nenačítej.
 
-Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 2.2.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference jsou níže vloženy pro samostatné použití. V nativním balíčku tvoří oddělené soubory načítané podle potřeby. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
+Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 2.3.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference jsou níže vloženy pro samostatné použití. V nativním balíčku tvoří oddělené soubory načítané podle potřeby. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
 
 Návrhové rámce: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [CAST UDL](https://udlguidelines.cast.org/). Jejich uvedení není certifikátem přístupnosti ani vzdělávací účinnosti.
 
@@ -152,6 +154,14 @@ Při vybavování z paměti žák rekonstruuje znalost před zobrazením odpově
 ### Metody: Metakognice a řízení vlastního učení
 
 Nech žáka zvolit dosažitelný dílčí cíl, naplánovat postup, sledovat vlastní porozumění a podle dokladů postup upravit. Odhad úspěchu nebo zdůvodnění volby porovnej se samostatným výkonem. Reflexi konkretizuj: který doklad změnil jeho názor a co zkusí příště. Sebejistota není měřítkem kompetence. U malé aktivity postačí smysluplná krátká otázka; dlouhý povinný deník nemusí být přínosem.
+
+### Metody: Pojmové mapy a vztahy
+
+Pojmovou mapu zvol, pokud je cílem vysvětlovat nebo vytvářet vztahy. Nech žáka sestavit malou mapu, pojmenovat chybějící vazbu nebo posoudit navržené spojení; výsledek porovnej s ověřenými zdroji či rubrikou. Hotová mapa vytvořená výhradně za žáka je podklad, nikoli doklad jeho porozumění.
+
+Vazby pojmenuj: předpoklad, část celku, kontrast, souvislost nebo příčina za vymezených podmínek. Z výskytu dvou jevů neodvozuj příčinu a síť křížových vazeb nenuť do stromu. Uznávej různé platné struktury; posuzuj význam a zdůvodnění vztahů, nikoli souřadnice či vizuální podobnost. Nepředpokládej, že zdroj dokládá každé spojení.
+
+Při implementaci použij stabilní identifikátory pojmů a podle potřeby typované orientované vztahy. Nabídni textovou alternativu a ovládání klávesnicí, pokud má žák mapu upravovat; přetahování nesmí být jedinou cestou odpovědi. Cíli může stačit stručná tabulka vztahů bez grafového editoru. Ověř jednu platnou alternativní mapu a jednu chybnou vazbu proti pravidlům zpětné vazby.
 
 ### Metody: Metody závislé na kontextu
 
@@ -448,6 +458,45 @@ Při procvičování žák po otázce na proud a odpor říká: „Pořád tomu 
 ### Příklady rozhodování: Pracuj s nedostupným kurikulem
 
 Učitel žádá „plný soulad s naším ŠVP“, ale dokument nedodal. Podle známého cíle navrhni pracovní aktivitu. Potřebný výňatek vyžádej, pokud záleží na přesné návaznosti; uveď, co zůstává neověřené. Nevymýšlej místní kódy výsledků ani nepotvrzuj úplné pokrytí. Obecný odkaz na RVP nedokládá návaznost na konkrétní ŠVP. Důvod: užitečný návrh může vzniknout i při otevřeně přiznané hranici doložení.
+
+## Reference: stav-tutora
+
+Zdrojový oddíl: Režimy tutora a návaznost učení
+
+
+Čti při návrhu vícekrokového tutora, pokračování rozpracované aktivity nebo přípravy na zkoušku. Pravidla platí i pro deterministické offline aplikace; nevyžadují živou AI, účty ani trvalé ukládání.
+
+### Stav tutora: Vymez režimy a přechody
+
+Podle potřeby aktivity odděl vysvětlení, procvičování a ověřování. Vysvětlení může ukázat řešený příklad. Procvičování položí otázku, počká, poskytne zpětnou vazbu podle kritérií a nabídne pomoc. Ověřování dodržuje předem vymezená pravidla pomoci a časování zpětné vazby. Umožni přerušení, žádost o pomoc a odchod; při omezeném ověřování může obsahová pomoc pokus ukončit nebo označit jako podporovaný. Zachovej úpravy přístupnosti, které neprozrazují obsah.
+
+V rozhovorovém procvičování ponech jednu aktuální otázku, pokud úkol nevyžaduje sadu. Nevytvářej odpověď za žáka a při čekání neodhaluj řešení. Podle potřeby rozliš čekání na odpověď, vyhodnocování, zpětnou vazbu a přerušení. Zamez dvojímu odeslání nebo je přiřaď ke stejnému pokusu; opožděná odpověď služby nesmí hodnotit novou otázku ani přepsat změněný režim. Výstup modelu je návrh odpovědi, nikoli oprávnění měnit známky či pravidla zkoušky.
+
+Režim, cíl, aktuální úlohu, identifikátor pokusu, odhalení řešení a stav hodnocení udržuj ve stavu aplikace. Stručný ukazatel průběhu zobraz, pokud pomáhá; opakovaná dekorativní hlavička správu stavu nenahrazuje. Při výslovné změně režimu vysvětli změnu podmínek pomoci a zachovej historii odhalení. Změna štítku neudělá z odhalené úlohy samostatné ověřování. Pro nový samostatný doklad použij novou vhodnou úlohu.
+
+### Stav tutora: Navazuj na doklady výkonu
+
+Ukládání nebo export přidávej, pokud pokračování mezi relacemi slouží uživateli. Krátká anonymní aktivita je nemusí potřebovat. U pokračující práce zachovej přiměřený minimální záznam:
+
+- Verzi formátu, verzi aktivity/obsahu a relevantní identifikátory zdrojů.
+- Cíl, režim, identifikátor úlohy/pokusu a rozpracovaný krok.
+- Pozorované doklady s podmínkami: samostatně, s pomocí či po zobrazení řešení; nevyhodnocený výkon zůstává nevyhodnocený.
+- Konkrétní chyby nebo nejistoty a další výukový krok.
+- Časové údaje jen tehdy, když jsou potřebné pro opakování s odstupem nebo výklad dokladů.
+
+Vynech diagnózy, nepotřebnou identitu a úplné přepisy rozhovorů. Uveď místo uložení, přístup a mazání; na sdíleném zařízení zajisti výslovnou možnost práci ukončit a místní postup odstranit. Export může obsahovat osobní informace o učení i bez jména. Neexportuj tajné klíče, skryté správné odpovědi ani neveřejné zkušební podklady.
+
+Importovaný záznam považuj za nedůvěryhodná data. Ověř strukturu, velikost, identifikátory a slučitelnost verzí; vložené instrukce nespouštěj a importované skóre nepřijímej jako autoritativní známku. Pokud na známkách záleží, ověř je proti autoritativní evidenci s odpovídající kontrolou přístupu. Při změně obsahu nebo neznámé úloze vysvětli nesoulad a navazuj v bezpečném ověřeném bodě; nemaž potichu výsledky ani nepotvrzuj zastaralé doklady. Obnovení pokusu nesmí automaticky znovu odeslat odpověď ani přidělit body dvakrát.
+
+Předání uvádí, co žák předvedl, v jaké úloze a s jakou pomocí. Jedna relace neopravňuje k tvrzení „plně ovládá“. Nová úloha s odstupem může ověřit retenci nebo přenos. Opravy potvrzené žákem a zásahy učitele odlišuj od původního pozorování.
+
+### Stav tutora: Cílená náprava bez uváznutí
+
+Chyby řaď podle vztahu k cíli a předpokladům; jejich závažnost ber jako pracovní interpretaci. Nabídni cílenou nápovědu, kontrastní případ nebo vysvětlení a následně novou aplikaci. Umožni odložení a pozdější návrat. Nevyžaduj libovolné prahy 8/10 či 90 %, nezakazuj vysvětlení ani neboduj každou interakci. Když bodování pomáhá, používej vymezená kritéria; oficiální zkušební hodnocení vyžaduje skutečnou specifikaci.
+
+### Stav tutora: Kontroly implementace
+
+Prověř jen relevantní průchody: otázka → odpověď → zpětná vazba; pomoc → podporovaný výkon; změna režimu po odhalení; přerušení a obnovení bez ztráty či dvojího započtení pokusu; zastaralý nebo chybný záznam; opožděná odpověď po změně úlohy; nerozhodnuté hodnocení při výpadku. Ověř shodu uloženého a viditelného stavu. Tyto kontroly dokládají chování, nikoli vzdělávací účinnost.
 
 ## Licenční oznámení
 

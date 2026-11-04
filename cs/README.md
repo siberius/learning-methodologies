@@ -1,12 +1,12 @@
 # Vzdělávací metodiky
 
-Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází z anglické verze 2.2.0 a doplňuje české školní prostředí.
+Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází z anglické verze 2.3.0 a doplňuje české školní prostředí.
 
 Autor: Luděk Sušický
 
 biolog, středoškolský a vysokoškolský učitel informatických předmětů
 
-Verze **2.2.0** přidává stručný pracovní postup, příklady rozhodování a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
+Verze **2.3.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
 
 ## Zvol podobu
 

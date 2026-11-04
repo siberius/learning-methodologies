@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.3.0 (2026-11-04)
+
+- Add conditional tutor modes, explicit application state, minimal checkpoints and safe resume behavior in both languages.
+- Preserve assistance history, unresolved evaluations and learner control across mode changes.
+- Add concept maps with typed relationships, alternative valid structures and accessible interaction.
+- Update both usage guides and standalone exports; no new provider benchmark or educational efficacy claim.
+
+
 ## 2.2.0 (2026-11-04)
 
 - Add a short working route and conditional decision examples in both languages.

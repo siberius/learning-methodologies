@@ -2,7 +2,7 @@
 name: learning-methodologies
 description: Design or review educational applications by connecting learning goals, learner needs, activities, feedback and evidence of learning. Use for new learning tools or substantive changes to their teaching design. Do not apply to cosmetic changes or ordinary bug fixes without a learning-design issue.
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"
@@ -48,6 +48,8 @@ Before adding a substantial feature, consider its learning contribution, interac
 Read [simulations](references/simulations.md) when modeling a system, running an experiment or designing role-play. Clearly distinguish real observations, model calculations and fictional reconstruction. Never present invented AI output as a measurement or pretend an experiment ran.
 
 Read [runtime AI](references/runtime-ai.md) only when the finished product calls an AI service. Define the teaching role, source boundaries, human oversight, data flows, cost limits and failure behavior. A prompt is not a substitute for application security.
+
+Read [tutor modes and continuity](references/tutor-state.md) when implementing multi-step tutoring, practice/assessment transitions or resuming learning. Keep state and evidence in the application; these features do not require runtime AI.
 
 ## Make feedback and decisions trustworthy
 

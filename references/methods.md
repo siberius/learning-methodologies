@@ -49,6 +49,14 @@ Retrieval practice asks learners to reconstruct knowledge before seeing the answ
 
 Help learners set a useful subgoal, plan, monitor understanding and revise their approach using evidence. Ask them to predict success or explain their choice, then compare with independent performance. Keep reflection specific: what evidence changed their view and what they will try next. Do not equate confidence with competence or add a lengthy mandatory journal to a small activity without a purpose.
 
+## Concept maps and relationships
+
+Use a concept map when explaining or constructing relationships is part of the goal. Let learners build a small map, label a missing relationship or critique a proposed connection, then compare it with reviewed sources or a rubric. A polished map generated entirely for the learner is a resource, not evidence of the learner's understanding.
+
+Label links explicitly: prerequisite, part of, contrasts with, associated with or causes under stated conditions. Do not infer causation from co-occurrence or force a network of cross-links into a tree. Accept different valid structures; assess the meaning and justification of relationships rather than screen coordinates or visual similarity. Do not assume the source covers every connection.
+
+For implementation, use stable concept identifiers and typed, directed relationships where needed. Provide a text/list alternative and keyboard editing if manipulation is required; dragging must not be the only way to answer. A short relationship table may serve the goal without a graph editor. Check one valid alternative map and one incorrect link against the feedback rules.
+
 ## Contextual methods
 
 - Inquiry: scaffold question, prediction, test, observation and explanation. Claims about real-world behavior need appropriate real data or an adequately validated model; illustrative outputs must be labeled and bounded. Language-model narration cannot stand in for experimental evidence.

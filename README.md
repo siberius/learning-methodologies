@@ -4,7 +4,7 @@ A portable AI skill for designing and reviewing educational applications. It con
 
 Author: Luděk Sušický. MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 
-Current version: **2.2.0**. Both language editions include a short working route, decision examples and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
+Current version: **2.3.0**. Both language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
 
 ## What it helps you do
 

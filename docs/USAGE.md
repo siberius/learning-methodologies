@@ -31,6 +31,7 @@ Model names are not installation mechanisms. Compatibility depends on the host a
 
 | Need | Relevant guidance |
 |---|---|
+| Tutor modes, resumable learning and checkpoints | `references/tutor-state.md` |
 | Overall design, review or scope | Core in `SKILL.md` |
 | Ambiguous help, alternative answers or curriculum claims | `references/decision-examples.md` |
 | Method selection, help or progression | `references/methods.md` |

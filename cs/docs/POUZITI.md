@@ -28,6 +28,7 @@ Předej agentovi `vzdelavaci-metodiky.md` a výslovně požádej o jeho použit�
 | Úkol | Reference |
 |---|---|
 | Nejasná pomoc, alternativní odpověď či kurikulární tvrzení | `references/priklady-rozhodovani.md` |
+| Režimy tutora, pokračování učení a předání stavu | `references/stav-tutora.md` |
 | Volba nebo provedení metody, nápovědy a postup | `references/metody.md` |
 | Rubrika, bodování, adaptivita a doklady učení | `references/hodnoceni.md` |
 | Experiment, model nebo hraní rolí | `references/simulace.md` |

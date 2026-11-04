@@ -51,6 +51,14 @@ Při vybavování z paměti žák rekonstruuje znalost před zobrazením odpově
 
 Nech žáka zvolit dosažitelný dílčí cíl, naplánovat postup, sledovat vlastní porozumění a podle dokladů postup upravit. Odhad úspěchu nebo zdůvodnění volby porovnej se samostatným výkonem. Reflexi konkretizuj: který doklad změnil jeho názor a co zkusí příště. Sebejistota není měřítkem kompetence. U malé aktivity postačí smysluplná krátká otázka; dlouhý povinný deník nemusí být přínosem.
 
+## Pojmové mapy a vztahy
+
+Pojmovou mapu zvol, pokud je cílem vysvětlovat nebo vytvářet vztahy. Nech žáka sestavit malou mapu, pojmenovat chybějící vazbu nebo posoudit navržené spojení; výsledek porovnej s ověřenými zdroji či rubrikou. Hotová mapa vytvořená výhradně za žáka je podklad, nikoli doklad jeho porozumění.
+
+Vazby pojmenuj: předpoklad, část celku, kontrast, souvislost nebo příčina za vymezených podmínek. Z výskytu dvou jevů neodvozuj příčinu a síť křížových vazeb nenuť do stromu. Uznávej různé platné struktury; posuzuj význam a zdůvodnění vztahů, nikoli souřadnice či vizuální podobnost. Nepředpokládej, že zdroj dokládá každé spojení.
+
+Při implementaci použij stabilní identifikátory pojmů a podle potřeby typované orientované vztahy. Nabídni textovou alternativu a ovládání klávesnicí, pokud má žák mapu upravovat; přetahování nesmí být jedinou cestou odpovědi. Cíli může stačit stručná tabulka vztahů bez grafového editoru. Ověř jednu platnou alternativní mapu a jednu chybnou vazbu proti pravidlům zpětné vazby.
+
 ## Metody závislé na kontextu
 
 - Bádání: podpoř otázku, předpověď, zkoušku, pozorování a vysvětlení. Tvrzení o reálném světě potřebují vhodná data nebo přiměřeně ověřený model. Ilustrační výsledky označ a vymez jejich platnost. Vyprávění jazykového modelu nenahrazuje experimentální doklad.
