@@ -1,62 +1,52 @@
 # learning-methodologies
 
-Portable AI skill for **vibe-coders**: educational methodologies that turn
-AI-built learning apps into tools that teach properly — Socratic tutoring,
-Feynman technique, Zone of Proximal Development, Bloom's taxonomy, inquiry-based
-learning, role-play, spaced repetition, formative assessment, and more.
+A portable AI skill for designing and reviewing educational applications. It connects learning goals, learner activity, feedback and evidence, then helps turn those decisions into application behavior.
 
-Not tied to any national curriculum. Works across Big Pickle / OpenCode, Claude,
-Astra, Muse, Spark, Gemini, Copilot — no build, no packages, single portable
-Markdown file.
+Author: Luděk Sušický. MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 
-![Overview](learning-methodologies.jpeg)
+Current version: **2.2.0**. Both language editions include a short working route, decision examples and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
 
-## What it does
+## What it helps you do
 
-When you are **creating or substantially extending a learning project** (quiz,
-interactive lesson, simulation, trainer, exam-prep app), this skill guides the
-AI to:
+- Choose methods from a concrete learning need and classroom context.
+- Design useful help, error feedback and independent practice.
+- Separate goals, task difficulty, prerequisites and evidence of achievement.
+- Build trustworthy simulations and bounded AI tutoring when appropriate.
+- Consider accessibility, teacher control, learner data and operating constraints.
+- Distinguish a working app, a defensible teaching design and observed learning outcomes.
+- Choose a task-appropriate model, effort and serving speed using dated OpenAI, Claude and Gemini guidance, with verification status kept explicit.
 
-1. **Ask about the audience** — who the learners are, target generation (Z, Alpha),
-   communication tone — instead of building a generic "for everyone" app.
-2. **Pick the right teaching modes** by product type (see the matrix in
-   [`docs/USAGE.md`](docs/USAGE.md)).
-3. **Implement verified pedagogic methods** that make an app *teach*, not just
-   test:
+Methods include Socratic learning, the Feynman technique, the Zone of Proximal Development and scaffolding, worked examples, retrieval and spaced practice, metacognition, inquiry, role-play, peer and cooperative learning, projects and flipped teaching. They are options selected for the task; installing the skill does not make them mandatory features.
 
-| Method | What it teaches |
-|---|---|
-| Socratic tutoring | Guided questions → learner discovers the error themselves |
-| Feynman technique | Learner explains to AI as a layperson → depth check |
-| ZPD + fading scaffolds | Task slightly above level, hints that grow and fade |
-| Bloom's taxonomy | Gradation: remember → understand → apply → analyze → evaluate → create |
-| Inquiry-based learning | Safe simulations, hypothesis testing |
-| Role-play / simulations | Negotiation, argumentation in a safe AI-scenario |
-| Spaced repetition | Wrong answers return to the queue until mastered |
-| Error-based learning | Explain *why* the answer is wrong, not just print the right one |
-| Metacognitive reflection | "Why did I pick this?" self-assessment |
-| Gamification, flipped classroom, peer teaching… | Motivation & cooperation |
+## Choose an edition
 
-## Quick start
+- [SKILL.md](SKILL.md) and `references/`: native bundle with conditional detail. Keep the files together.
+- [learning-methodologies.md](learning-methodologies.md): generated standalone file for agents accepting Markdown instructions directly. It contains the core and all references.
 
-1. Grab the skill file: [`learning-methodologies.md`](learning-methodologies.md).
-2. Tell your coding agent where it is (or copy it into your skills folder —
-   see [Installation](docs/USAGE.md#installation)).
-3. Write a normal prompt, e.g.: `Build a quiz app for 16-year-olds
-   that actually teaches. Load the learning-methodologies skill.`
-4. Answer the 2–3 audience/tone questions the agent asks — done.
+Both editions come from the same maintained sources. Edit `SKILL.md` and the relevant reference, then regenerate the standalone edition. Do not edit the generated copy separately.
 
-Teacher vibe-coder? See [Teacher guide](docs/TEACHERS.md) for ready-made prompts
-and how AI-assisted modes look from the student's side.
+## Example request
 
-## Docs
+> Use learning-methodologies to build an offline circuit activity for 16-year-olds. Learners should predict how resistance changes current and explain their reasoning. It will support a teacher-led discussion and must work by keyboard. Use no accounts or external AI calls.
 
-- **[USAGE.md](docs/USAGE.md)** — how the skill works, decision matrix, installation
-  per agent (OpenCode, Claude, etc.)
-- **[TEACHERS.md](docs/TEACHERS.md)** — for teachers/facilitators: what each method
-  is and ready-to-use prompts
-- **[CHANGELOG.md](CHANGELOG.md)** — version history
+The agent should reuse this context, choose proportionate support and identify how the activity can reveal understanding. It should ask only about missing information that changes the design.
+
+## Documentation
+
+- [Usage and installation](docs/USAGE.md)
+- [Teacher guide and example briefs](docs/TEACHERS.md)
+- [Version history](CHANGELOG.md)
+
+## Czech edition
+
+[Vzdělávací metodiky](cs/README.md) adapts the same methodological foundation for Czech-language work and, where relevant, Czech schools, RVP/ŠVP, classroom conditions and answer formats. It has its own native [SKILL.md](cs/SKILL.md) and generated [standalone Markdown](cs/vzdelavaci-metodiky.md). Use one suitable language edition; loading both is not normally necessary. Shared principles are maintained together, while Czech curriculum guidance stays conditional.
+
+The workflow is a design aid. It does not certify accessibility, subject accuracy or educational effectiveness. Use checks appropriate to the subject, learners and consequences.
 
 ## License
 
-MIT © [Luděk Sušický](https://github.com/siberius), 2026. See [LICENSE](LICENSE).
+MIT, copyright 2026 Luděk Sušický. See [LICENSE](LICENSE). Preserve the copyright and license notice when redistributing either edition. Linked publications retain their own rights.
+
+## Model evaluation
+
+Use the [eight-task evaluation protocol](docs/MODEL-EVALUATION.md) to compare configurations. The protocol is prepared, not an executed benchmark.

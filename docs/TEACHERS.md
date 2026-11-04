@@ -1,97 +1,59 @@
-# TEACHERS — guide for educators who vibe-code
+# Teacher guide
 
-You want to build apps for your students that **actually teach** — not just
-quiz them. This skill encodes the methods below. For each one: what it is,
-what it looks like in an app, and a ready-to-copy prompt.
+Start with what learners should be able to do, the teaching situation and what you want to observe. Add known constraints such as devices, available time, language and connectivity. You do not have to name a teaching theory before requesting an activity.
 
-## 1. Socratic tutoring (active discovery)
+## Prepare a useful brief
 
-**What it is.** The AI leads the student with guiding questions until they find
-the error in their own reasoning — it never just states the answer (maieutics).
+> Build a 15-minute offline activity for 16-year-olds who know voltage and current but confuse their relationship with resistance. Learners should predict and explain what happens when resistance changes at fixed voltage. I will use it for pair discussion. Include useful help and an independent new case. No accounts or external services.
 
-**In the app.** A "tutor" mode where the student answers and AI pushes back
-with the next question.
+The skill should turn this into a small coherent learning design. It should reuse the information given and avoid adding unrelated methods or infrastructure.
 
-**Prompt.** `Make a "tutor" mode for the math topic. Use Socratic tutoring:
-when a student answers wrong, ask a guiding question instead of giving the
-answer; only after 3 failed attempts give a hint.`
+## Guided questions and explanations
 
-## 2. Feynman technique (explain to a layperson)
+> In practice mode, use a targeted question when it helps reveal the learner's reasoning. Let learners request a clearer hint, a partial step or a worked explanation. After supported work, offer a new comparable task without the answer shown.
 
-**What it is.** The student explains the topic to AI playing a layperson. AI
-protests wherever the explanation is shallow — verifying *depth* of
-understanding, not recitation.
+A question is useful when it helps the learner move forward. Do not require repeated failure before help or keep a learner in an endless dialogue. An assessment can have different assistance rules, explained before the attempt.
 
-**In the app.** A "teach me" mode: the student is the teacher, AI the beginner.
+## Explaining to a beginner
 
-**Prompt.** `Add a "teach me" mode. The student teaches the topic to the AI,
-which plays a curious beginner and asks "why / I don't get it / how does that
-work?" whenever the student glosses over something. Give feedback on which
-parts were explained well vs. vaguely.`
+> Add an explain-to-a-beginner activity about [topic]. Check factual correctness, relationships and examples using a short rubric. Ask a clarifying question where needed and finish with an unfamiliar application case. Accept correct alternative wording.
 
-## 3. Zone of Proximal Development (Vygotsky)
+The learner's fluent explanation is evidence to inspect. It does not automatically establish deep understanding, and the AI's judgment remains open to correction.
 
-**What it is.** Tasks sit slightly above the student's level; hints are given
-and **faded** as confidence grows.
+## Worked examples and independent practice
 
-**In the app.** Adaptive hints: minimal lead first, broaden when stuck, fade
-again with success.
+> Provide one worked example with reasoning, then a partially completed problem and independent practice. Keep help available. Distinguish a supported answer from independent success before adjusting support.
 
-**Prompt.** `Make hints adaptive in ZPD style: start with a tiny lead; if the
-student is stuck, give a broader hint; once they succeed twice in a row, stop
-showing hints.`
+Choose the amount of support for the learners and content. Avoid universal rules such as removing hints after exactly two correct answers.
 
-## 4. Bloom's taxonomy gradation
+## Bloom and practical outcomes
 
-**What it is.** Tasks progress remember → understand → apply → analyze →
-evaluate → create. Higher levels come only after lower ones are mastered.
+> Review whether these activities match their goals and knowledge types. Keep difficulty and prerequisites separate from Bloom categories. Do not force a six-level unlocking system.
 
-**In the app.** Quiz difficulty levels map to the Bloom scale.
+For practical or interpersonal skills, ask for evidence appropriate to the performance. An on-screen safety quiz can prepare for laboratory work; passing it alone does not demonstrate safe handling of real equipment.
 
-**Prompt.** `Grade the quiz by Bloom's taxonomy: level 1 recall, 2
-understanding, 3 application, 4 analysis, 5 evaluation, 6 creation. Unlock
-higher levels only after passing the previous one.`
+## Inquiry and trustworthy simulations
 
-## 5. Inquiry-based learning
+> Build a simulation of [system] using an explicit model with units, assumptions and a known control case. Learners predict, run the model, compare the result and revise their explanation. Label outputs as model calculations. Discuss where the model stops representing reality.
 
-**What it is.** Students test hypotheses in a safe simulation; AI does not spoil
-the answer but guides the scientific process.
+An AI-generated story about an experiment is not an experimental result. Historical dialogue should be labeled as reconstruction and distinguished from documented quotations.
 
-**In the app.** A sandbox where the student changes inputs and AI simulates
-consequences.
+## Role-play and classroom discussion
 
-**Prompt.** `Build an inquiry sandbox on [topic]. The student states a
-hypothesis, AI lets them run the experiment by changing inputs, and guides the
-scientific process — question → hypothesis → test → evaluate — without giving
-the result away.`
+> Create a role-play for [communication goal]. Define the situation and a short assessment rubric. Offer an exit and a suitable alternative if the scenario is uncomfortable. Debrief which strategies worked and which claims need checking.
 
-## 6. Role-play and simulations
+For group work, include opportunities to compare explanations and check individual understanding. For teacher-led demonstrations, specify discussion pauses and follow-up work; a student dashboard may be unnecessary.
 
-**What it is.** AI plays a historical/professional character; the student
-negotiates, argues, tries strategies in a safe environment.
+## Retrieval and review
 
-**In the app.** A chat with a predefined character that stays in role and
-evaluates argumentation.
+> Let learners retrieve an answer before revealing it, then use the feedback. Revisit selected material in later sessions, including some previously correct items. Distinguish an immediate corrective retry from a review after a delay.
 
-**Prompt.** `Create a role-play scenario: the AI plays [character/role]. The
-student negotiates with it; score the quality of argumentation, not the
-outcome.`
+Choose a review schedule that fits the teaching sequence. Do not present an arbitrary interval as a universal optimum.
 
-## Combining modes: a worked mini-brief
+## Before classroom use
 
-> Build a physics training app for 17-year-olds.
-> Load the learning-methodologies skill.
-> Audience: Czech high school, students feel confident on math but hate theory.
-> Use an energetic, informal tone (Gen Z, but clear).
-> Features: quiz (Bloom-graded), "teach me" mode (Feynman), adaptive hints (ZPD),
-> and one role-play scenario where AI plays an engineer reviewing their design.
+Check representative content and acceptable alternatives. Try the learning path, a wrong answer and a help request. Check keyboard access and relevant accessibility needs. For numerical models, verify a known case and useful boundaries. For runtime AI, check uncertain feedback, unavailable service and what learner data leaves the device.
 
-This one prompt gives the AI everything it needs to build an app that teaches
-rather than tests.
+Make the level of review proportionate to the consequences. Keep a way to correct content and disputed judgments. A simple editable content file may be enough; accounts and management systems are optional design decisions.
 
-## Assessment & feedback
-
-The skill also encodes assessment forms — summative, formative, portfolio,
-self-assessment/reflection, adaptive difficulty, time bonuses, leaderboards.
-Offer the ones that fit your class; formative + self-assessment are usually
-the most effective for learning, summative for grades.
+After use, distinguish engagement and completion from independent learning. A short pilot can reveal confusion or access problems. Stronger claims about lasting improvement need appropriate evidence, potentially including delayed and transfer tasks. This skill provides a design process and does not guarantee educational effectiveness.
