@@ -2,7 +2,7 @@
 name: learning-methodologies
 description: Design or review educational applications by connecting learning goals, learner needs, activities, feedback and evidence of learning. Use for new learning tools or substantive changes to their teaching design. Do not apply to cosmetic changes or ordinary bug fixes without a learning-design issue.
 metadata:
-  version: "2.3.0"
+  version: "2.4.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"
@@ -12,6 +12,12 @@ metadata:
 # Learning methodologies
 
 Help design, implement or review educational applications whose learning activities, support and assessment serve the intended learners. Adapt the depth of work to the request, consequences and uncertainty. A small classroom activity does not need a full evaluation study or a new planning document.
+
+## Didactic methods for applications built with AI
+
+Use the methods to turn educational goals into learner actions, feedback rules and evidence in the generated application. For example, retrieval requires an attempt before revealing the answer, while scaffolding requires controllable help and a distinction between assisted and independent performance. AI can help implement these decisions; its output still needs subject and teaching review. This applies to offline applications as well as justified runtime AI.
+
+Read [didactic rationale](references/didactic-rationale.md) when explaining why a method fits or tracing it into implementation. It connects methods to product decisions and the evidence needed to assess them.
 
 ## Working route
 

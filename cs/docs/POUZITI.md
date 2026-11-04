@@ -29,6 +29,7 @@ Předej agentovi `vzdelavaci-metodiky.md` a výslovně požádej o jeho použit�
 |---|---|
 | Nejasná pomoc, alternativní odpověď či kurikulární tvrzení | `references/priklady-rozhodovani.md` |
 | Režimy tutora, pokračování učení a předání stavu | `references/stav-tutora.md` |
+| Proč metoda odpovídá cíli a jak mění aplikaci | `references/didakticke-zduvodneni.md` |
 | Volba nebo provedení metody, nápovědy a postup | `references/metody.md` |
 | Rubrika, bodování, adaptivita a doklady učení | `references/hodnoceni.md` |
 | Experiment, model nebo hraní rolí | `references/simulace.md` |
@@ -40,7 +41,7 @@ U nativní verze nenačítej vše předem. Sdílená demonstrace nemusí získat
 
 ## Udržuj obě jazykové varianty
 
-České jádro a reference jsou v `cs/`, anglické v kořeni projektu. Česká verze je metodickou adaptací anglického základu; kurikulární reference a české formáty odpovědí jsou její doplnění. Při společné metodické opravě zkontroluj dopad v obou variantách, ale nepřenášej automaticky české RVP do mezinárodní verze. Nelze ověřit shodu pouhou shodou počtu oddílů.
+České jádro a reference jsou v `cs/`, anglické v kořeni projektu. Česká verze je metodickou adaptací anglického základu; kurikulární reference a české formáty odpovědí jsou její doplnění. Při společné metodické opravě zkontroluj dopad ve všech čtyřech variantách, ale nepřenášej automaticky české RVP do mezinárodní verze. Nelze ověřit shodu pouhou shodou počtu oddílů.
 
 V místním autorském checkoutu spusť z kořene projektu:
 
@@ -61,3 +62,5 @@ Kontrola metadat, odkazů a exportu prověřuje balíček. Zkušební průchod p
 Pro porovnání konfigurací použij zveřejněný [protokol osmi úloh](OVERENI-MODELU.md). Hodnoticí kritéria nepředávej testovanému modelu. Sada je připravená, dosud neprovedená; dřívější průzkumné průchody nedokládají spolehlivost napříč poskytovateli. První výstupy a opravy vykazuj odděleně.
 
 Nejprve vybírej podle náročnosti úkolu. Pokud podstatné kritérium selhává i po cílené opravě, postupuj podle pravidel zvýšení uvažování a ukončení pokusů v referenci modelů. Chybějící zdroje nebo nástroje vyšší uvažování nenahradí. Výchozí je standardní rychlost služby; placené zrychlení je samostatná autorizovaná volba.
+
+Ruská verze je v `ru/` (ID `metodiki-obucheniya`), španělská v `es/` (ID `metodologias-de-aprendizaje`). Pro samostatný export použij `--edition ru` nebo `--edition es`. Překlad sám neznamená ověřený soulad s kurikulem konkrétní země. Podle úkolu zvol jednu jazykovou verzi.

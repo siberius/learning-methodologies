@@ -32,6 +32,7 @@ Model names are not installation mechanisms. Compatibility depends on the host a
 | Need | Relevant guidance |
 |---|---|
 | Tutor modes, resumable learning and checkpoints | `references/tutor-state.md` |
+| Why a method fits and how it changes app behavior | `references/didactic-rationale.md` |
 | Overall design, review or scope | Core in `SKILL.md` |
 | Ambiguous help, alternative answers or curriculum claims | `references/decision-examples.md` |
 | Method selection, help or progression | `references/methods.md` |
@@ -54,7 +55,7 @@ python3 testing/build_portable.py --edition all --check
 
 The builder lives in local, ignored development tooling. Distributed users can use either finished edition without running it. It embeds references with unique anchors so repeated headings remain unambiguous.
 
-Keep README and teacher examples consistent with the core. Preserve author, version, provenance and MIT licensing. For another agent, register the maintained bundle instead of creating a separate editable copy. The [Czech edition](../cs/README.md) preserves the shared principles and adds conditional local guidance. Build it with `--edition cs`, or build both with `--edition all`. Check the implications for both editions when changing a shared principle; do not automatically impose Czech curriculum requirements on international projects.
+Keep README and teacher examples consistent with the core. Preserve author, version, provenance and MIT licensing. For another agent, register the maintained bundle instead of creating a separate editable copy. The [Czech edition](../cs/README.md) preserves the shared principles and adds conditional local guidance. Build it with `--edition cs`, or build all four editions with `--edition all`. Check the implications for all four editions when changing a shared principle; do not automatically impose Czech curriculum requirements on international projects.
 
 ## Review a result
 
@@ -63,3 +64,5 @@ Check the intended learner action and evidence, subject correctness, feedback, h
 The published [eight-task model evaluation protocol](MODEL-EVALUATION.md) provides comparable tasks and evaluator criteria. Keep those criteria out of the tested model's input. The suite is prepared, not executed; earlier exploratory runs do not establish cross-provider reliability. Report only evaluations actually run, separating initial outputs from repairs.
 
 Choose by task complexity before a model name. If a meaningful criterion still fails after a focused repair, follow the escalation and stopping rules in the model reference. Missing sources or tools are not repaired by raising effort. Standard serving speed is the starting point; paid acceleration is a separate authorized choice.
+
+The Russian package is `ru/` (ID `metodiki-obucheniya`); the Spanish package is `es/` (ID `metodologias-de-aprendizaje`). Use `--edition ru` or `--edition es` for a single export. Choose the relevant language rather than loading parallel translations together. Translation is not country-specific curriculum adaptation.

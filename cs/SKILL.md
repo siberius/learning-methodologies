@@ -2,9 +2,9 @@
 name: vzdelavaci-metodiky
 description: Navrhuje a posuzuje vzdělávací aplikace propojením cílů, činnosti žáka, podpory a dokladů učení. Použij při tvorbě, podstatné změně výuky nebo pedagogickém auditu kvízu, hry, simulace či trenažéru. Podle kontextu řeší české RVP/ŠVP. Nepoužívej pro kosmetickou změnu nebo běžnou technickou opravu bez didaktického dopadu.
 metadata:
-  version: "2.3.0"
+  version: "2.4.0"
   language: "cs"
-  based_on: "learning-methodologies@2.3.0"
+  based_on: "learning-methodologies@2.4.0"
   license: "MIT"
   author: "Luděk Sušický"
   repo: "https://github.com/siberius/learning-methodologies"
@@ -14,6 +14,12 @@ metadata:
 # Vzdělávací metodiky
 
 Navrhuj, vytvářej a posuzuj aplikace podle vzdělávacího záměru a potřeb jejich uživatelů. Hloubku práce přizpůsob rozsahu, důsledkům a nejistotě. Drobná pomůcka nepotřebuje rozsáhlý metodický dokument ani výzkumnou studii. Samotné zadání revize neopravňuje k úpravám aplikace.
+
+## Didaktické metody pro aplikace tvořené pomocí AI
+
+Metody převádějí vzdělávací cíl do činnosti žáka, pravidel zpětné vazby a dokladů výkonu v generované aplikaci. Vybavování například vyžaduje pokus před odhalením odpovědi, scaffolding dostupnou pomoc a rozlišení podporovaného a samostatného výkonu. AI pomáhá tato rozhodnutí realizovat; výsledek potřebuje oborovou a didaktickou kontrolu. Platí to pro offline aplikace i odůvodněné použití živé AI.
+
+Při vysvětlování vhodnosti metody a jejího provedení čti [didaktické zdůvodnění](references/didakticke-zduvodneni.md). Propojuje metody s rozhodnutími v aplikaci a potřebnými doklady.
 
 ## Stručný pracovní postup
 
@@ -89,8 +95,8 @@ Při předání shrň cíl, zvolený postup, důležité provozní a případné
 
 ## Integrace
 
-Při volbě modelu, uvažování, rychlosti nebo způsobu načtení čti [modely a prostředí](references/modely-a-prostredi.md). Reference obsahuje podklady pro OpenAI, Claude a Gemini. Zachovej společné didaktické zásady a odlišuj zamýšlenou kompatibilitu od skutečně provedených testů. Při běžném didaktickém úkolu bez této potřeby ji nenačítej.
+Při volbě modelu, uvažování, rychlosti nebo způsobu načtení čti [modely a prostředí](references/modely-a-prostredi.md). Reference obsahuje podklady pro OpenAI, Claude a Gemini. Zachovej společné didaktické zásady a odlišuj zamýšlenou kompatibilitu od provedených testů. Při běžném didaktickém úkolu bez této potřeby ji nenačítej.
 
-Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 2.3.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference se načítají podle potřeby. Nativní balíček tvoří tento soubor a jeho reference; `vzdelavaci-metodiky.md` je generovaná samostatná verze. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
+Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 2.4.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference se načítají podle potřeby. Nativní balíček tvoří tento soubor a jeho reference; `vzdelavaci-metodiky.md` je generovaná samostatná verze. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
 
 Návrhové rámce: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [CAST UDL](https://udlguidelines.cast.org/). Jejich uvedení není certifikátem přístupnosti ani vzdělávací účinnosti.

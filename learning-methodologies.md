@@ -2,7 +2,7 @@
 name: learning-methodologies
 description: Design or review educational applications by connecting learning goals, learner needs, activities, feedback and evidence of learning. Use for new learning tools or substantive changes to their teaching design. Do not apply to cosmetic changes or ordinary bug fixes without a learning-design issue.
 metadata:
-  version: "2.3.0"
+  version: "2.4.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"
@@ -16,6 +16,12 @@ metadata:
 # Learning methodologies
 
 Help design, implement or review educational applications whose learning activities, support and assessment serve the intended learners. Adapt the depth of work to the request, consequences and uncertainty. A small classroom activity does not need a full evaluation study or a new planning document.
+
+## Didactic methods for applications built with AI
+
+Use the methods to turn educational goals into learner actions, feedback rules and evidence in the generated application. For example, retrieval requires an attempt before revealing the answer, while scaffolding requires controllable help and a distinction between assisted and independent performance. AI can help implement these decisions; its output still needs subject and teaching review. This applies to offline applications as well as justified runtime AI.
+
+Read [didactic rationale](#reference-didactic-rationale) when explaining why a method fits or tracing it into implementation. It connects methods to product decisions and the evidence needed to assess them.
 
 ## Working route
 
@@ -434,6 +440,38 @@ Prioritize errors by their relevance to the goal and prerequisites, with severit
 ### Tutor State: Implementation checks
 
 Check only relevant paths: question → response → feedback; help → supported evidence; mode switch after answer exposure; pause/resume without losing or double-counting an attempt; stale or malformed checkpoint; late response after switching tasks; unresolved feedback after failure. Verify that the stored and visible states agree. These checks establish behavior, not educational efficacy.
+
+## Reference: didactic-rationale
+
+Source section: Why didactic methods belong in AI-assisted application development
+
+
+Read when explaining the skill's purpose or deciding how a teaching method should change an application. The skill supports developers and educators using AI to design and build educational applications. It also guides applications that use AI during learning, when that is warranted. The method must be reflected in learner actions, feedback and evidence, not merely mentioned in a prompt or feature label.
+
+### Didactic Rationale: Turn a teaching decision into observable behavior
+
+| Method or lens | Teaching purpose | Application decision | Evidence to inspect |
+|---|---|---|---|
+| Socratic questioning | Examine a learner's assumptions and reasoning | Ask a targeted question, wait, respond to the actual answer; provide an explanation when needed | Learner can justify or revise a claim, including a correct alternative |
+| Feynman technique and self-explanation | Make a learner's explanation available for inspection | Let the learner explain, compare with reviewed criteria, address a specific gap, then offer a new case | Accurate relationships and application; fluency alone is insufficient |
+| Worked examples and scaffolding | Help a novice begin and move toward independence | Provide a worked step, a completion task and a suitable new problem; keep requested help available | Distinguish supported performance from a later independent attempt |
+| Retrieval and spaced review | Practice reconstructing knowledge and revisit it after a delay | Ask before revealing; provide corrective feedback and schedule appropriate revisits, including previously correct material | Performance before exposure, later retention and transfer when checked |
+| Concept maps | Make relationships and prerequisites explicit | Use labeled relations, accept equivalent valid structures and provide an accessible editing alternative | Meaning and justification of links, not visual similarity |
+| Inquiry and simulations | Compare predictions with evidence under explicit assumptions | Expose relevant variables, units, constraints and model boundaries; include debrief | Learner revises an explanation using observations or clearly labeled model results |
+| Formative assessment and metacognition | Decide a useful next step from evidence | Show specific feedback and let learners compare a prediction with performance | An actionable correction and new evidence; scores and confidence are insufficient by themselves |
+| Cooperative and peer learning | Support comparison and explanation with accountability | Assign a shared task with individual contributions and a way to resolve disagreement | Each learner's reasoning; one shared click does not establish group understanding |
+
+Bloom's taxonomy helps describe cognitive goals and knowledge types; it does not prescribe difficulty or a six-stage unlocking system. A method is appropriate only if it addresses the target learners, content and observed obstacle. No catalog is a requirement to implement all methods.
+
+### Didactic Rationale: Why this matters when AI helps write the application
+
+AI can produce an interface, answer checker and feedback quickly. Those artifacts still need a teaching contract: what learners should do, what counts as evidence, what assistance was available, and how the next decision follows. Use that contract to constrain generated code and reviewed content. For example, retrieval practice changes answer-reveal timing, while scaffolding changes help controls and evidence labels. Naming the method without implementing those behaviors does not meet the design goal.
+
+Separate AI at authoring time from AI at runtime. Reviewed static content and deterministic checks can implement many of these behaviors offline. If runtime AI is useful for open responses or dialogue, bound its sources, criteria and tools, validate output and provide a failure path. More generated conversation, stricter scoring or a larger model does not by itself establish better learning.
+
+### Didactic Rationale: State the limits of the rationale
+
+This is an explanation of design choices, not evidence that this skill or every implementation improves outcomes. Subject correctness, accessibility and classroom feasibility require appropriate checks. A technical pass does not demonstrate learning; suitable learner evidence and, for causal claims, an appropriate evaluation are needed. Research guidance linked in the methods reference informs particular choices and does not certify the whole package. Retain teacher review for consequential judgments and adapt curriculum to the actual setting.
 
 ## License notice
 

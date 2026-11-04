@@ -1,12 +1,12 @@
 # Vzdělávací metodiky
 
-Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází z anglické verze 2.3.0 a doplňuje české školní prostředí.
+Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází z anglické verze 2.4.0 a doplňuje české školní prostředí.
 
 Autor: Luděk Sušický
 
 biolog, středoškolský a vysokoškolský učitel informatických předmětů
 
-Verze **2.3.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
+Verze **2.4.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
 
 ## Zvol podobu
 
@@ -14,6 +14,10 @@ Verze **2.3.0** zahrnuje stručný pracovní postup, příklady rozhodování, r
 - [vzdelavaci-metodiky.md](vzdelavaci-metodiky.md): generovaný samostatný Markdown obsahující jádro i reference.
 
 Obě podoby vznikají ze stejných zdrojů. Upravuj jádro a příslušnou referenci; samostatnou podobu generuj. Neudržuj dvě ručně upravované kopie.
+
+## Proč metody patří do vývoje pomocí AI
+
+Skill obsahuje didaktické metody vhodné pro návrh a tvorbu vzdělávacích aplikací s pomocí AI. Určují činnost žáka a reakci aplikace: vybavování mění okamžik odhalení, scaffolding nabídku pomoci a hodnocení meze závěrů o výkonu. Generovaný kód tak dostává ověřitelné vzdělávací požadavky. AI při tvorbě neznamená povinnou AI službu v hotové aplikaci. Podrobnosti a hranice vysvětluje [didaktické zdůvodnění](references/didakticke-zduvodneni.md).
 
 ## Metodický základ
 
@@ -38,6 +42,10 @@ Bloomova taxonomie pomáhá vymezit cíle. Hodnocení řeší kritéria, rubriky
 > Použij vzdělávací metodiky. Navrhni patnáctiminutovou offline aktivitu pro dvojice v 8. ročníku. Žáci mají předpovědět, jak změna odporu ovlivní proud při stejném napětí, ověřit předpověď a vysvětlit výsledek. Máme sdílená zařízení. ŠVP zatím nedodávám; návaznost nevydávej za ověřenou.
 
 Další postupy najdeš v [použití a instalaci](docs/POUZITI.md) a v [průvodci pro učitele](docs/PRO-UCITELE.md).
+
+## Další jazykové verze
+
+[English](../README.md) · [Русский](../ru/README.md) · [Español](../es/README.md). Ruština a španělština překládají mezinárodní základ; neprohlašují soulad s kurikulem konkrétní země. Podle úkolu načti jednu verzi.
 
 ## Licence a meze
 

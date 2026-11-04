@@ -1,5 +1,10 @@
 # Průvodce pro učitele
 
+## Od metody k chování aplikace
+
+Požaduj vysvětlení, jak zvolená metoda mění průchod žáka a co bude dokladem výkonu. U vybavování vyžaduj odpověď před odhalením, u scaffoldingu dostupnou pomoc a nový samostatný případ. Tyto vlastnosti pak ověř v aplikaci. Pojmenování teorie samo postup nerealizuje. [Didaktické zdůvodnění](../references/didakticke-zduvodneni.md) propojuje metody s návrhem a jeho mezemi.
+
+
 Začni cílem, třídní situací a tím, co chceš ve výkonu žáka pozorovat. Přidej známé předpoklady, dostupný čas a zařízení. Pojmenování teorie není podmínkou dobrého zadání.
 
 ## Sokratické učení

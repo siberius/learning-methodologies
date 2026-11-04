@@ -1,5 +1,10 @@
 # Teacher guide
 
+## From a method to application behavior
+
+Ask the agent to explain how each selected method changes the learner path and what evidence will be inspected. For retrieval, require a response before reveal; for scaffolding, define available help and a fresh independent task. Check these behaviors in the application. Naming a theory alone does not implement it. The [didactic rationale](../references/didactic-rationale.md) connects methods to design decisions and their limits.
+
+
 Start with what learners should be able to do, the teaching situation and what you want to observe. Add known constraints such as devices, available time, language and connectivity. You do not have to name a teaching theory before requesting an activity.
 
 ## Prepare a useful brief

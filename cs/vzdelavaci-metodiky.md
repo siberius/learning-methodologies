@@ -2,9 +2,9 @@
 name: vzdelavaci-metodiky
 description: Navrhuje a posuzuje vzdělávací aplikace propojením cílů, činnosti žáka, podpory a dokladů učení. Použij při tvorbě, podstatné změně výuky nebo pedagogickém auditu kvízu, hry, simulace či trenažéru. Podle kontextu řeší české RVP/ŠVP. Nepoužívej pro kosmetickou změnu nebo běžnou technickou opravu bez didaktického dopadu.
 metadata:
-  version: "2.3.0"
+  version: "2.4.0"
   language: "cs"
-  based_on: "learning-methodologies@2.3.0"
+  based_on: "learning-methodologies@2.4.0"
   license: "MIT"
   author: "Luděk Sušický"
   repo: "https://github.com/siberius/learning-methodologies"
@@ -18,6 +18,12 @@ metadata:
 # Vzdělávací metodiky
 
 Navrhuj, vytvářej a posuzuj aplikace podle vzdělávacího záměru a potřeb jejich uživatelů. Hloubku práce přizpůsob rozsahu, důsledkům a nejistotě. Drobná pomůcka nepotřebuje rozsáhlý metodický dokument ani výzkumnou studii. Samotné zadání revize neopravňuje k úpravám aplikace.
+
+## Didaktické metody pro aplikace tvořené pomocí AI
+
+Metody převádějí vzdělávací cíl do činnosti žáka, pravidel zpětné vazby a dokladů výkonu v generované aplikaci. Vybavování například vyžaduje pokus před odhalením odpovědi, scaffolding dostupnou pomoc a rozlišení podporovaného a samostatného výkonu. AI pomáhá tato rozhodnutí realizovat; výsledek potřebuje oborovou a didaktickou kontrolu. Platí to pro offline aplikace i odůvodněné použití živé AI.
+
+Při vysvětlování vhodnosti metody a jejího provedení čti [didaktické zdůvodnění](#reference-didakticke-zduvodneni). Propojuje metody s rozhodnutími v aplikaci a potřebnými doklady.
 
 ## Stručný pracovní postup
 
@@ -93,9 +99,9 @@ Při předání shrň cíl, zvolený postup, důležité provozní a případné
 
 ## Integrace
 
-Při volbě modelu, uvažování, rychlosti nebo způsobu načtení čti [modely a prostředí](#reference-modely-a-prostredi). Reference obsahuje podklady pro OpenAI, Claude a Gemini. Zachovej společné didaktické zásady a odlišuj zamýšlenou kompatibilitu od skutečně provedených testů. Při běžném didaktickém úkolu bez této potřeby ji nenačítej.
+Při volbě modelu, uvažování, rychlosti nebo způsobu načtení čti [modely a prostředí](#reference-modely-a-prostredi). Reference obsahuje podklady pro OpenAI, Claude a Gemini. Zachovej společné didaktické zásady a odlišuj zamýšlenou kompatibilitu od provedených testů. Při běžném didaktickém úkolu bez této potřeby ji nenačítej.
 
-Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 2.3.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference jsou níže vloženy pro samostatné použití. V nativním balíčku tvoří oddělené soubory načítané podle potřeby. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
+Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 2.4.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference jsou níže vloženy pro samostatné použití. V nativním balíčku tvoří oddělené soubory načítané podle potřeby. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
 
 Návrhové rámce: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [CAST UDL](https://udlguidelines.cast.org/). Jejich uvedení není certifikátem přístupnosti ani vzdělávací účinnosti.
 
@@ -497,6 +503,38 @@ Chyby řaď podle vztahu k cíli a předpokladům; jejich závažnost ber jako p
 ### Stav tutora: Kontroly implementace
 
 Prověř jen relevantní průchody: otázka → odpověď → zpětná vazba; pomoc → podporovaný výkon; změna režimu po odhalení; přerušení a obnovení bez ztráty či dvojího započtení pokusu; zastaralý nebo chybný záznam; opožděná odpověď po změně úlohy; nerozhodnuté hodnocení při výpadku. Ověř shodu uloženého a viditelného stavu. Tyto kontroly dokládají chování, nikoli vzdělávací účinnost.
+
+## Reference: didakticke-zduvodneni
+
+Zdrojový oddíl: Proč didaktické metody patří do vývoje aplikací pomocí AI
+
+
+Čti při vysvětlování účelu skillu nebo rozhodování, jak se má metoda promítnout do aplikace. Skill pomáhá vývojářům a pedagogům využít AI k návrhu a tvorbě vzdělávacích aplikací. Podle potřeby řeší i aplikace používající AI při samotném učení. Metoda se musí projevit v činnosti žáka, zpětné vazbě a dokladech výkonu; samotný název funkce či zmínka v promptu nestačí.
+
+### Didaktické zdůvodnění: Od didaktického rozhodnutí k pozorovatelnému chování
+
+| Metoda nebo hledisko | Výukový záměr | Rozhodnutí v aplikaci | Co posuzovat |
+|---|---|---|---|
+| Sokratické otázky | Zkoumat předpoklady a uvažování žáka | Položit cílenou otázku, počkat a reagovat na skutečnou odpověď; podle potřeby vysvětlit | Zdůvodnění či revize tvrzení, včetně správné alternativy |
+| Feynmanova technika a vlastní vysvětlení | Zpřístupnit žákovo vysvětlení k posouzení | Nechat vysvětlit, porovnat s ověřenými kritérii, řešit konkrétní mezeru a nabídnout nový případ | Správné vztahy a použití; plynulost sama nestačí |
+| Řešené příklady a scaffolding | Pomoci začátečníkovi začít a postupovat k samostatnosti | Ukázat postup, nabídnout doplnění a novou úlohu; zachovat vyžádanou pomoc | Odlišit výkon s podporou od pozdějšího samostatného pokusu |
+| Vybavování a opakování s odstupem | Procvičit rekonstrukci znalosti a později se k ní vrátit | Ptát se před odhalením, poskytnout opravu a vhodně plánovat návraty i ke správně řešenému učivu | Výkon před odhalením, pozdější retenci a přenos, pokud byly ověřeny |
+| Pojmové mapy | Vyjádřit vztahy a předpoklady | Pojmenovat vazby, přijmout platné alternativní struktury a nabídnout přístupnou editaci | Význam a zdůvodnění vazeb, nikoli vizuální podobnost |
+| Bádání a simulace | Porovnat předpovědi s doklady za vymezených předpokladů | Zpřístupnit proměnné, jednotky, omezení a hranice modelu; zařadit reflexi | Revizi vysvětlení podle pozorování nebo označených výsledků modelu |
+| Formativní hodnocení a metakognice | Podle dokladů zvolit další krok | Poskytnout konkrétní zpětnou vazbu a porovnat předpověď úspěchu s výkonem | Využitelnou opravu a nové doklady; skóre a sebedůvěra samy nestačí |
+| Kooperativní a vrstevnické učení | Podpořit porovnávání a vysvětlování s odpovědností | Sdílená úloha, individuální příspěvky a řešení neshod | Uvažování každého žáka; společný klik nedokládá porozumění skupiny |
+
+Bloomova taxonomie pomáhá popsat kognitivní cíl a typ znalosti. Neurčuje obtížnost ani šest zamčených stupňů. Vhodnost metody závisí na žácích, obsahu a pozorované překážce; katalog neukládá použít všechny metody.
+
+### Didaktické zdůvodnění: Proč na tom záleží při generování aplikace
+
+AI může rychle vytvořit rozhraní, kontrolu odpovědí i zpětnou vazbu. Tyto části potřebují didaktické zadání: co žák udělá, co je dokladem výkonu, jakou měl pomoc a jak navazuje další rozhodnutí. Podle zadání omezuj generovaný kód i kontrolovaný obsah. Vybavování například mění okamžik odhalení odpovědi, scaffolding ovládání pomoci a označení dokladů. Pouhé pojmenování metody bez tohoto chování cíl neplní.
+
+Rozliš AI při tvorbě a za běhu. Mnohé postupy lze realizovat offline pomocí ověřeného obsahu a deterministických kontrol. Pokud živá AI pomáhá s otevřenými odpověďmi nebo rozhovorem, vymez zdroje, kritéria a nástroje, ověř výstup a zajisti náhradní průchod. Delší rozhovor, přísnější body ani větší model samy nedokládají lepší učení.
+
+### Didaktické zdůvodnění: Meze zdůvodnění
+
+Jde o vysvětlení návrhových rozhodnutí, nikoli důkaz účinku tohoto skillu či každé aplikace. Obsah, přístupnost a proveditelnost ve třídě potřebují odpovídající kontroly. Technický průchod nedokládá učení; potřebné jsou vhodné doklady výkonu a pro příčinné tvrzení odpovídající vyhodnocení. Výzkumné podklady uvedené u metod podporují konkrétní rozhodnutí, necertifikují celý balíček. U významných posouzení zachovej odpovědnou kontrolu učitele a kurikulum přizpůsob skutečnému prostředí.
 
 ## Licenční oznámení
 

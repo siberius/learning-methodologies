@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.4.0 (2026-11-05)
+
+- Explain the didactic rationale for building educational applications with AI, with method-to-behavior examples and evidence limits.
+- Add complete Russian and Spanish native editions, conditional references, localized documentation and generated standalone files.
+- Preserve Czech curriculum extensions separately from the international foundation.
+- Extend export and package validation to four editions; preserve the original MIT license in each package.
+- Translation and structural review do not establish live provider compatibility or educational effectiveness.
+
+
 ## 2.3.0 (2026-11-04)
 
 - Add conditional tutor modes, explicit application state, minimal checkpoints and safe resume behavior in both languages.
