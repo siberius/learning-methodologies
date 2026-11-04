@@ -1,6 +1,8 @@
 # Changelog
 
-## 2.4.0 (2026-11-05)
+## 1.2.0 (2026-11-05)
+
+- Renumber the current release from 2.4.0 to 1.2.0 at the author’s request; content and MIT licensing are unchanged. Earlier 2.x entries below retain their historical development labels.
 
 - Explain the didactic rationale for building educational applications with AI, with method-to-behavior examples and evidence limits.
 - Add complete Russian and Spanish native editions, conditional references, localized documentation and generated standalone files.

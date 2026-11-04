@@ -8,7 +8,7 @@ biolog, středoškolský a vysokoškolský učitel informatických předmětů
 
 MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 
-Current version: **2.4.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
+Current version: **1.2.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
 
 ## Why these methods guide development with AI
 

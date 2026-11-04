@@ -6,7 +6,7 @@ Autor: Luděk Sušický. Licencia MIT. Esta edición española comparte la base 
 
 biolog, středoškolský a vysokoškolský učitel informatických předmětů
 
-Versión actual: **2.4.0**. Las ediciones lingüísticas incluyen una ruta de trabajo breve, ejemplos de decisión, modos del tutor y aprendizaje reanudable, mapas conceptuales y reglas explícitas para elegir modelos y escalar. Las configuraciones con nombres de modelos son recomendaciones iniciales, no resultados de pruebas entre proveedores.
+Versión actual: **1.2.0**. Las ediciones lingüísticas incluyen una ruta de trabajo breve, ejemplos de decisión, modos del tutor y aprendizaje reanudable, mapas conceptuales y reglas explícitas para elegir modelos y escalar. Las configuraciones con nombres de modelos son recomendaciones iniciales, no resultados de pruebas entre proveedores.
 
 ## Para qué sirve
 
