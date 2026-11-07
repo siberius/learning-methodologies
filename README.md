@@ -4,7 +4,7 @@ A portable AI skill for designing and reviewing educational applications. It con
 
 Author: Luděk Sušický
 
-biolog, středoškolský a vysokoškolský učitel informatických předmětů
+biologist, secondary school and university teacher of informatics subjects
 
 MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 
