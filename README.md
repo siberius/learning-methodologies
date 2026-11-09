@@ -6,9 +6,14 @@
 
 A portable AI skill for designing and reviewing educational applications. It connects learning goals, learner activity, feedback and evidence, then helps turn those decisions into application behavior.
 
-Author: Luděk Sušický
+## Author
 
-biologist, secondary-school and university teacher of computing subjects · [@siberius on GitHub](https://github.com/siberius)
+**Luděk Sušický** — biologist, secondary-school and university teacher of computing subjects
+
+- E-mail: [ludek.susicky@gmail.com](mailto:ludek.susicky@gmail.com)
+- X: [@ludeksusicky](https://x.com/ludeksusicky)
+- LinkedIn: [Luděk Sušický](https://www.linkedin.com/in/ludek-susicky/)
+- GitHub: [@siberius](https://github.com/siberius) — more educational projects and open-source applications
 
 MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 

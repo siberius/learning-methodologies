@@ -6,9 +6,14 @@
 
 Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází z anglické verze 1.2.0 a doplňuje české školní prostředí.
 
-Autor: Luděk Sušický
+## Autor
 
-biolog, středoškolský a vysokoškolský učitel informatických předmětů · [@siberius na GitHubu](https://github.com/siberius)
+**Luděk Sušický** — biolog, středoškolský a vysokoškolský učitel informatických předmětů
+
+- E-mail: [ludek.susicky@gmail.com](mailto:ludek.susicky@gmail.com)
+- X: [@ludeksusicky](https://x.com/ludeksusicky)
+- LinkedIn: [Luděk Sušický](https://www.linkedin.com/in/ludek-susicky/)
+- GitHub: [@siberius](https://github.com/siberius) — další vzdělávací projekty a otevřené aplikace
 
 Verze **1.2.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
 
