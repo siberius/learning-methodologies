@@ -17,6 +17,27 @@
 
 Verze **1.3.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
 
+## Instalace a rychlé spuštění
+
+Nainstaluj skill do svého AI asistenta (Claude Code, Cursor, Codex, Antigravity, OpenCode a dalších) přes CLI standard [skills.sh](https://skills.sh):
+
+```bash
+# Instalace české varianty s podporou RVP/ŠVP
+npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth
+
+# Nebo instalace globálně pro všechny své projekty
+npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth -g
+
+# Instalace mezinárodní anglické verze
+npx skills add siberius/learning-methodologies
+```
+
+Vyzkoušet skill bez trvalé instalace lze jednorázovým příkazem:
+
+```bash
+npx skills use siberius/learning-methodologies@vzdelavaci-metodiky
+```
+
 ## Zvol podobu
 
 - [SKILL.md](SKILL.md) a složka `references/`: nativní balíček s podrobnostmi načítanými podle úkolu.

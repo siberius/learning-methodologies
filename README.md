@@ -36,6 +36,27 @@ The skill contains didactic methods suitable for designing educational applicati
 
 Methods include Socratic learning, the Feynman technique, the Zone of Proximal Development and scaffolding, worked examples, retrieval and spaced practice, metacognition, inquiry, role-play, peer and cooperative learning, projects and flipped teaching. They are options selected for the task; installing the skill does not make them mandatory features.
 
+## Installation and Quick Start
+
+Install the skill into your coding agent (Claude Code, Cursor, Codex, Antigravity, OpenCode and others) using the `skills` CLI from [skills.sh](https://skills.sh):
+
+```bash
+# Install the international English edition
+npx skills add siberius/learning-methodologies
+
+# Or install globally across all your projects
+npx skills add siberius/learning-methodologies -g
+
+# Install the Czech edition (includes Czech RVP/ŠVP curriculum guidance)
+npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth
+```
+
+You can also test the skill on-the-fly without permanently installing it:
+
+```bash
+npx skills use siberius/learning-methodologies
+```
+
 ## Choose an edition
 
 - [SKILL.md](SKILL.md) and `references/`: native bundle with conditional detail. Keep the files together.

@@ -6,6 +6,21 @@ Use the skill for a new educational application, a substantive change to its lea
 
 Provide the learners, goal, context and practical constraints you know. The agent should use existing information and ask only for material gaps. It should not repeat a fixed audience-and-tone interview or request approval for routine design choices already covered by your brief.
 
+## Installation via skills.sh CLI
+
+The recommended way to install and manage the skill across 20+ coding agents (including Claude Code, Cursor, Codex, Antigravity, OpenCode, Cline, Windsurf) is using the `skills` CLI:
+
+```bash
+# Install to current project
+npx skills add siberius/learning-methodologies
+
+# Install globally across all projects
+npx skills add siberius/learning-methodologies -g
+
+# Target a specific assistant (e.g. Claude Code or Cursor)
+npx skills add siberius/learning-methodologies -a claude-code
+```
+
 ## Native skill bundle
 
 Keep `SKILL.md`, `LICENSE` and `references/` in the same skill directory, normally named `learning-methodologies`. Use your client's supported skill installation mechanism. The presence of a Markdown file somewhere on disk does not itself guarantee automatic discovery.

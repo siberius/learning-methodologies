@@ -4,6 +4,21 @@
 
 Při tvorbě vzdělávací aplikace, podstatné změně její výuky nebo pedagogické revizi. Pro změnu barvy tlačítka či běžnou technickou opravu bez dopadu na výuku jej nenačítej. Agent převezme dostupné informace a zeptá se jen na významné neznámé.
 
+## Instalace přes skills.sh CLI
+
+Doporučený a nejrychlejší způsob instalace pro více než 20 AI prostředí (Claude Code, Cursor, Codex, Antigravity, OpenCode, Cline aj.) je pomocí nástroje `skills`:
+
+```bash
+# Instalace české varianty do aktuálního projektu
+npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth
+
+# Globální instalace pro všechny projekty
+npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth -g
+
+# Cílení na konkrétního agenta (např. Claude Code)
+npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth -a claude-code
+```
+
 ## Nativní balíček
 
 Udržuj `SKILL.md` a celou složku `references/` pohromadě v balíčku `vzdelavaci-metodiky`. Instaluj podle podporovaného mechanismu klienta a ověř jeho nabídku skillů. Samotné uložení Markdownu na disk nezaručuje objevení nebo použití.
