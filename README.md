@@ -8,7 +8,7 @@ A portable AI skill for designing and reviewing educational applications. It con
 
 Author: Luděk Sušický
 
-biologist, secondary school and university teacher of informatics subjects
+biologist, secondary-school and university teacher of computing subjects · [@siberius on GitHub](https://github.com/siberius)
 
 MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 

@@ -8,7 +8,7 @@
 
 Autor: Luděk Sušický
 
-biolog, středoškolský a vysokoškolský učitel informatických předmětů
+biolog, středoškolský a vysokoškolský učitel informatických předmětů · [@siberius na GitHubu](https://github.com/siberius)
 
 Verze **1.2.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
 
