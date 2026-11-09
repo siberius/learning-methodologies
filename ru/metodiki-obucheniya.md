@@ -2,9 +2,9 @@
 name: metodiki-obucheniya
 description: Проектирование и анализ образовательных приложений через связь учебных целей, потребностей обучающихся, заданий, обратной связи и свидетельств обучения. Используй для новых учебных инструментов или существенного изменения их дидактического устройства. Не используй для косметических изменений и обычных исправлений ошибок без дидактической проблемы.
 metadata:
-  version: "1.2.0"
+  version: "1.3.0"
   language: "ru"
-  based_on: "learning-methodologies@1.2.0"
+  based_on: "learning-methodologies@1.3.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"

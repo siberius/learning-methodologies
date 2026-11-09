@@ -4,7 +4,7 @@
 
 [![Vzdělávací metodiky](../docs/learning-methodologies.gif)](https://vibemaker.cz/clanek/vzdelavaci-metodiky-pro-vibekoding/)
 
-Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází z anglické verze 1.2.0 a doplňuje české školní prostředí.
+Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází z anglické verze 1.3.0 a doplňuje české školní prostředí.
 
 ## Autor
 
@@ -15,7 +15,7 @@
 - LinkedIn: [Luděk Sušický](https://www.linkedin.com/in/ludek-susicky/)
 - GitHub: [@siberius](https://github.com/siberius) — další vzdělávací projekty a otevřené aplikace
 
-Verze **1.2.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
+Verze **1.3.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
 
 ## Zvol podobu
 
@@ -26,11 +26,11 @@ Obě podoby vznikají ze stejných zdrojů. Upravuj jádro a příslušnou refer
 
 ## Proč metody patří do vývoje pomocí AI
 
-Skill obsahuje didaktické metody vhodné pro návrh a tvorbu vzdělávacích aplikací s pomocí AI. Určují činnost žáka a reakci aplikace: vybavování mění okamžik odhalení, scaffolding nabídku pomoci a hodnocení meze závěrů o výkonu. Generovaný kód tak dostává ověřitelné vzdělávací požadavky. AI při tvorbě neznamená povinnou AI službu v hotové aplikaci. Podrobnosti a hranice vysvětluje [didaktické zdůvodnění](references/didakticke-zduvodneni.md).
+Skill obsahuje didaktické metody vhodné pro návrh a tvorbu vzdělávacích aplikací s pomocí AI. Určují činnost žáka a reakci aplikace: vybavování mění okamžik odhalení, scaffolding nabídku pomoci, hodnocení meze závěrů o výkonu a rámce sebeřízení žáka (např. FALR) aktivní interakci s AI k zamezení kognitivního offloadingu. Generovaný kód tak dostává ověřitelné vzdělávací požadavky. AI při tvorbě neznamená povinnou AI službu v hotové aplikaci. Podrobnosti a hranice vysvětluje [didaktické zdůvodnění](references/didakticke-zduvodneni.md).
 
 ## Metodický základ
 
-Skill výslovně zahrnuje sokratické učení, Feynmanovu techniku, zónu nejbližšího vývoje a scaffolding, řešené příklady, vybavování a opakování s odstupem, metakognici, práci s chybou, badatelskou výuku, hraní rolí, vrstevnické a kooperativní učení, projektovou výuku, převrácenou třídu a volitelnou gamifikaci.
+Skill výslovně zahrnuje sokratické učení, Feynmanovu techniku, zónu nejbližšího vývoje a scaffolding, řešené příklady, vybavování a opakování s odstupem, metakognici a sebeřízení žáka ve sdíleném kognitivním prostoru s AI (rámec FALR), práci s chybou, badatelskou výuku, hraní rolí, vrstevnické a kooperativní učení, projektovou výuku, převrácenou třídu a volitelnou gamifikaci.
 
 Bloomova taxonomie pomáhá vymezit cíle. Hodnocení řeší kritéria, rubriky, podmínky pomoci a meze závěrů o učení. Metody jsou nabídka; jejich výběr vychází z cíle a situace.
 

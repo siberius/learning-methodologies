@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0 (2026-11-09)
+
+- Integrate the FALR framework (Four-Action Learner Regulation Framework – David Zinger) for learner self-regulation in a shared cognitive space with AI across metacognition, runtime AI and didactic rationale sections.
+- Add a concrete decision example for inserting a cognitive pause before adopting AI suggestions to counter passive cognitive offloading (`references/decision-examples.md`, `cs/references/priklady-rozhodovani.md`).
+- Bump package version to 1.3.0 across all language editions (en, cs, ru, es).
+- Regenerate standalone files and verify package integrity for all four language editions.
+
 ## 1.2.0 (2026-11-05)
 
 - Renumber the current release from 2.4.0 to 1.2.0 at the author’s request; content and MIT licensing are unchanged. Earlier 2.x entries below retain their historical development labels.

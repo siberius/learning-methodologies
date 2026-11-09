@@ -51,6 +51,8 @@ Při vybavování z paměti žák rekonstruuje znalost před zobrazením odpově
 
 Nech žáka zvolit dosažitelný dílčí cíl, naplánovat postup, sledovat vlastní porozumění a podle dokladů postup upravit. Odhad úspěchu nebo zdůvodnění volby porovnej se samostatným výkonem. Reflexi konkretizuj: který doklad změnil jeho názor a co zkusí příště. Sebejistota není měřítkem kompetence. U malé aktivity postačí smysluplná krátká otázka; dlouhý povinný deník nemusí být přínosem.
 
+Při práci s generovanou nápovědou, řešeným příkladem nebo živou AI chraň aktivní roli žáka ve sdíleném kognitivním prostoru (rámec FALR: volba, kognitivní pauza, hodnocení, sebeřízení). Zabraň automatickému přechodu od výstupu systému k akci žáka: před převzetím nebo zkopírováním výstupu zařaď kognitivní pauzu. Vyzvi žáka k posouzení, zda je výstup platný, co v něm chybí, čemu skutečně porozuměl sám oproti tomu, co za něj udělal systém, a zda výstup použije, upraví, nebo odmítne.
+
 ## Pojmové mapy a vztahy
 
 Pojmovou mapu zvol, pokud je cílem vysvětlovat nebo vytvářet vztahy. Nech žáka sestavit malou mapu, pojmenovat chybějící vazbu nebo posoudit navržené spojení; výsledek porovnej s ověřenými zdroji či rubrikou. Hotová mapa vytvořená výhradně za žáka je podklad, nikoli doklad jeho porozumění.
@@ -74,3 +76,4 @@ Při implementaci použij stabilní identifikátory pojmů a podle potřeby typo
 - [Krathwohl, 2002: A Revision of Bloom's Taxonomy](https://people.ucsc.edu/~ktellez/blooms_taxonomy.pdf): dvě dimenze a překrývající se kategorie.
 - [IES: Organizing Instruction and Study to Improve Student Learning](https://ies.ed.gov/ncee/wwc/PracticeGuide/1): doporučení pro opakování, vybavování, řešené příklady a vysvětlující otázky. Síla důkazů se mezi doporučeními liší.
 - [UNESCO: Guidance for Generative AI in Education and Research](https://www.iicba.unesco.org/en/africa-education-knowledge-platform/guidance-generative-ai-education-and-research): lidská odpovědnost a ověřování vzdělávacího využití AI.
+- Zinger, D. (CFM / FALR – Four-Action Learner Regulation Framework): regulace učení ve sdíleném kognitivním prostoru s AI (volba, kognitivní pauza, hodnocení, sebeřízení).

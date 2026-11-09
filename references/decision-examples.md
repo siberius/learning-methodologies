@@ -17,3 +17,7 @@ A learner explains: “Plants get their food from soil; sunlight warms it up.”
 ## Work with an unavailable curriculum
 
 A teacher requests “full alignment with our school curriculum” but supplies no school document. Use the stated learning goal to produce a provisional activity. Request the relevant excerpt only when exact alignment matters; identify what remains unverified. Never invent local outcome codes or certify coverage. For Czech schools, a general RVP reference does not establish alignment with the particular ŠVP. Why: useful drafting can proceed while documentary claims remain bounded.
+
+## Insert a Cognitive Pause Before Adopting AI Output
+
+In an app with an embedded AI assistant, a learner asks for a solution outline or error explanation. Instead of an "Apply to my solution" button, insert a cognitive pause: prevent direct copying and ask a brief verification question ("Which step is central here? What is missing from the AI suggestion for your specific case?"). Allow the learner to revise the suggestion, verify it on another example, or decide not to use it. Record the model's generated text as supported assistance, not as evidence of the learner's understanding. Reason: a cognitive pause prevents an automatic transition from algorithmic output to learner action without active cognitive processing.

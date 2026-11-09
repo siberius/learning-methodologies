@@ -14,6 +14,7 @@
 | Bádání a simulace | Porovnat předpovědi s doklady za vymezených předpokladů | Zpřístupnit proměnné, jednotky, omezení a hranice modelu; zařadit reflexi | Revizi vysvětlení podle pozorování nebo označených výsledků modelu |
 | Formativní hodnocení a metakognice | Podle dokladů zvolit další krok | Poskytnout konkrétní zpětnou vazbu a porovnat předpověď úspěchu s výkonem | Využitelnou opravu a nové doklady; skóre a sebedůvěra samy nestačí |
 | Kooperativní a vrstevnické učení | Podpořit porovnávání a vysvětlování s odpovědností | Sdílená úloha, individuální příspěvky a řešení neshod | Uvažování každého žáka; společný klik nedokládá porozumění skupiny |
+| Regulace ve sdíleném kognitivním prostoru (FALR) | Udržet žáka aktivního a kritického při práci s AI či nápovědou | Vložit kognitivní pauzu před převzetím výstupu; nechat žáka posoudit, co chybí a čemu rozumí sám oproti výkonu systému; umožnit výstup odmítnout | Odlišení vlastního porozumění od výstupu systému a následný samostatný krok žáka |
 
 Bloomova taxonomie pomáhá popsat kognitivní cíl a typ znalosti. Neurčuje obtížnost ani šest zamčených stupňů. Vhodnost metody závisí na žácích, obsahu a pozorované překážce; katalog neukládá použít všechny metody.
 

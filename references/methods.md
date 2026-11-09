@@ -49,6 +49,8 @@ Retrieval practice asks learners to reconstruct knowledge before seeing the answ
 
 Help learners set a useful subgoal, plan, monitor understanding and revise their approach using evidence. Ask them to predict success or explain their choice, then compare with independent performance. Keep reflection specific: what evidence changed their view and what they will try next. Do not equate confidence with competence or add a lengthy mandatory journal to a small activity without a purpose.
 
+When working with generated hints, worked examples, or live AI, protect the learner's active role within the Shared Cognitive Space (FALR framework: Choice, Delay / Cognitive Pause, Evaluation, Self-Direction). Prevent an automatic transition from algorithmic output to learner action by inserting a cognitive pause before adopting or copying output. Prompt the learner to evaluate whether the output is valid, what is missing, what they actually understood themselves compared with what the system did for them, and whether to use, revise, verify, or reject the output.
+
 ## Concept maps and relationships
 
 Use a concept map when explaining or constructing relationships is part of the goal. Let learners build a small map, label a missing relationship or critique a proposed connection, then compare it with reviewed sources or a rubric. A polished map generated entirely for the learner is a resource, not evidence of the learner's understanding.
@@ -72,3 +74,4 @@ For implementation, use stable concept identifiers and typed, directed relations
 - [Krathwohl, 2002, A Revision of Bloom's Taxonomy](https://people.ucsc.edu/~ktellez/blooms_taxonomy.pdf): two dimensions and a relaxed hierarchy with overlapping categories.
 - [IES, Organizing Instruction and Study to Improve Student Learning](https://ies.ed.gov/ncee/wwc/PracticeGuide/1): evidence-informed recommendations for spacing, retrieval, worked examples and explanatory questions. Evidence strength varies by recommendation.
 - [UNESCO, Guidance for Generative AI in Education and Research](https://www.iicba.unesco.org/en/africa-education-knowledge-platform/guidance-generative-ai-education-and-research): human agency and validation of educational uses.
+- Zinger, D. (CFM / FALR – Four-Action Learner Regulation Framework): learner regulation within a Shared Cognitive Space with AI (Choice, Delay / Cognitive Pause, Evaluation, Self-Direction).

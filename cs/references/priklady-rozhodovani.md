@@ -17,3 +17,7 @@ Při procvičování žák po otázce na proud a odpor říká: „Pořád tomu 
 ## Pracuj s nedostupným kurikulem
 
 Učitel žádá „plný soulad s naším ŠVP“, ale dokument nedodal. Podle známého cíle navrhni pracovní aktivitu. Potřebný výňatek vyžádej, pokud záleží na přesné návaznosti; uveď, co zůstává neověřené. Nevymýšlej místní kódy výsledků ani nepotvrzuj úplné pokrytí. Obecný odkaz na RVP nedokládá návaznost na konkrétní ŠVP. Důvod: užitečný návrh může vzniknout i při otevřeně přiznané hranici doložení.
+
+## Zařaď kognitivní pauzu před převzetím výstupu AI
+
+V aplikaci s vestavěným AI pomocníkem žák požádá o návrh postupu řešení či vysvětlení chyby. Místo tlačítka „Použít v mém řešení“ zařaď kognitivní pauzu: skryj přímé kopírování a polož krátkou ověřovací otázku („Který krok postupu je klíčový? Co v návrhu AI chybí pro tvůj případ?“). Umožni žákovi návrh upravit, ověřit na jiném příkladu nebo zcela odmítnout. Samotné vygenerování textu modelem eviduj jako poskytnutou oporu, nikoli jako doklad žákova porozumění. Důvod: kognitivní pauza brání automatickému přechodu od algoritmického výstupu k akci žáka bez vlastního zpracování.

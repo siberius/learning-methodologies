@@ -2,9 +2,9 @@
 name: vzdelavaci-metodiky
 description: Navrhuje a posuzuje vzdělávací aplikace propojením cílů, činnosti žáka, podpory a dokladů učení. Použij při tvorbě, podstatné změně výuky nebo pedagogickém auditu kvízu, hry, simulace či trenažéru. Podle kontextu řeší české RVP/ŠVP. Nepoužívej pro kosmetickou změnu nebo běžnou technickou opravu bez didaktického dopadu.
 metadata:
-  version: "1.2.0"
+  version: "1.3.0"
   language: "cs"
-  based_on: "learning-methodologies@1.2.0"
+  based_on: "learning-methodologies@1.3.0"
   license: "MIT"
   author: "Luděk Sušický"
   repo: "https://github.com/siberius/learning-methodologies"
@@ -101,7 +101,7 @@ Při předání shrň cíl, zvolený postup, důležité provozní a případné
 
 Při volbě modelu, uvažování, rychlosti nebo způsobu načtení čti [modely a prostředí](#reference-modely-a-prostredi). Reference obsahuje podklady pro OpenAI, Claude a Gemini. Zachovej společné didaktické zásady a odlišuj zamýšlenou kompatibilitu od provedených testů. Při běžném didaktickém úkolu bez této potřeby ji nenačítej.
 
-Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 1.2.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference jsou níže vloženy pro samostatné použití. V nativním balíčku tvoří oddělené soubory načítané podle potřeby. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
+Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 1.3.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference jsou níže vloženy pro samostatné použití. V nativním balíčku tvoří oddělené soubory načítané podle potřeby. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
 
 Návrhové rámce: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [CAST UDL](https://udlguidelines.cast.org/). Jejich uvedení není certifikátem přístupnosti ani vzdělávací účinnosti.
 
@@ -161,6 +161,8 @@ Při vybavování z paměti žák rekonstruuje znalost před zobrazením odpově
 
 Nech žáka zvolit dosažitelný dílčí cíl, naplánovat postup, sledovat vlastní porozumění a podle dokladů postup upravit. Odhad úspěchu nebo zdůvodnění volby porovnej se samostatným výkonem. Reflexi konkretizuj: který doklad změnil jeho názor a co zkusí příště. Sebejistota není měřítkem kompetence. U malé aktivity postačí smysluplná krátká otázka; dlouhý povinný deník nemusí být přínosem.
 
+Při práci s generovanou nápovědou, řešeným příkladem nebo živou AI chraň aktivní roli žáka ve sdíleném kognitivním prostoru (rámec FALR: volba, kognitivní pauza, hodnocení, sebeřízení). Zabraň automatickému přechodu od výstupu systému k akci žáka: před převzetím nebo zkopírováním výstupu zařaď kognitivní pauzu. Vyzvi žáka k posouzení, zda je výstup platný, co v něm chybí, čemu skutečně porozuměl sám oproti tomu, co za něj udělal systém, a zda výstup použije, upraví, nebo odmítne.
+
 ### Metody: Pojmové mapy a vztahy
 
 Pojmovou mapu zvol, pokud je cílem vysvětlovat nebo vytvářet vztahy. Nech žáka sestavit malou mapu, pojmenovat chybějící vazbu nebo posoudit navržené spojení; výsledek porovnej s ověřenými zdroji či rubrikou. Hotová mapa vytvořená výhradně za žáka je podklad, nikoli doklad jeho porozumění.
@@ -184,6 +186,7 @@ Při implementaci použij stabilní identifikátory pojmů a podle potřeby typo
 - [Krathwohl, 2002: A Revision of Bloom's Taxonomy](https://people.ucsc.edu/~ktellez/blooms_taxonomy.pdf): dvě dimenze a překrývající se kategorie.
 - [IES: Organizing Instruction and Study to Improve Student Learning](https://ies.ed.gov/ncee/wwc/PracticeGuide/1): doporučení pro opakování, vybavování, řešené příklady a vysvětlující otázky. Síla důkazů se mezi doporučeními liší.
 - [UNESCO: Guidance for Generative AI in Education and Research](https://www.iicba.unesco.org/en/africa-education-knowledge-platform/guidance-generative-ai-education-and-research): lidská odpovědnost a ověřování vzdělávacího využití AI.
+- Zinger, D. (CFM / FALR – Four-Action Learner Regulation Framework): regulace učení ve sdíleném kognitivním prostoru s AI (volba, kognitivní pauza, hodnocení, sebeřízení).
 
 ## Reference: hodnoceni
 
@@ -290,6 +293,8 @@ Tuto referenci použij pouze tehdy, když hotová aplikace během používání 
 Urči povolené činnosti modelu, zkontrolované podklady či zdroje a postup při chybějících důkazech. Kde záleží na věcné správnosti, vymez schválené materiály a zachovej jejich původ. Nevytvářej zdánlivě věrohodné citace. Připusť nejistotu a opravu. Z krátkého rozhovoru nevyvozuj diagnózy ani sebejisté soudy o schopnostech žáka.
 
 Pomoc přizpůsob aktivitě. Procvičování může využívat naváděcí otázky, odstupňované nápovědy, řešené příklady i přímé vysvětlení na požádání nebo tehdy, když další otázky nepomáhají. Při zkoušení se pomoc řídí pravidly učitele. Nezaváděj nekonečné sokratovské dotazování ani všeobecný zákaz sdělit řešení. Žák musí mít možnost požádat o pomoc, skončit nebo zapojit učitele.
+
+Rozhraní s živou AI navrhuj tak, aby bránilo bezmyšlenkovitému kopírování výstupů (kognitivnímu offloadingu). Před převzetím vygenerovaného postupu nebo odpovědi vyžaduj krátkou regulační akci žáka: vymezení vlastního záměru před dotazem, zastavení nad výstupem (kognitivní pauzu), zhodnocení úplnosti či správnosti a vědomou volbu dalšího kroku (pokračovat, ověřit, přeformulovat dotaz, nebo výstup nepoužít).
 
 Pro zpětnou vazbu a otevřené odpovědi používej výslovná hodnoticí kritéria. Před použitím porovnej hodnocení modelu s příklady posouzenými učitelem. Závažná rozhodnutí o klasifikaci, zařazení žáka nebo kázeňských opatřeních vyžadují odpovědnou lidskou kontrolu; jediná odpověď modelu nesmí rozhodovat sama. Zaznamenej nejistotu a umožni učiteli hodnocení opravit.
 
@@ -465,6 +470,10 @@ Při procvičování žák po otázce na proud a odpor říká: „Pořád tomu 
 
 Učitel žádá „plný soulad s naším ŠVP“, ale dokument nedodal. Podle známého cíle navrhni pracovní aktivitu. Potřebný výňatek vyžádej, pokud záleží na přesné návaznosti; uveď, co zůstává neověřené. Nevymýšlej místní kódy výsledků ani nepotvrzuj úplné pokrytí. Obecný odkaz na RVP nedokládá návaznost na konkrétní ŠVP. Důvod: užitečný návrh může vzniknout i při otevřeně přiznané hranici doložení.
 
+### Příklady rozhodování: Zařaď kognitivní pauzu před převzetím výstupu AI
+
+V aplikaci s vestavěným AI pomocníkem žák požádá o návrh postupu řešení či vysvětlení chyby. Místo tlačítka „Použít v mém řešení“ zařaď kognitivní pauzu: skryj přímé kopírování a polož krátkou ověřovací otázku („Který krok postupu je klíčový? Co v návrhu AI chybí pro tvůj případ?“). Umožni žákovi návrh upravit, ověřit na jiném příkladu nebo zcela odmítnout. Samotné vygenerování textu modelem eviduj jako poskytnutou oporu, nikoli jako doklad žákova porozumění. Důvod: kognitivní pauza brání automatickému přechodu od algoritmického výstupu k akci žáka bez vlastního zpracování.
+
 ## Reference: stav-tutora
 
 Zdrojový oddíl: Režimy tutora a návaznost učení
@@ -523,6 +532,7 @@ Zdrojový oddíl: Proč didaktické metody patří do vývoje aplikací pomocí 
 | Bádání a simulace | Porovnat předpovědi s doklady za vymezených předpokladů | Zpřístupnit proměnné, jednotky, omezení a hranice modelu; zařadit reflexi | Revizi vysvětlení podle pozorování nebo označených výsledků modelu |
 | Formativní hodnocení a metakognice | Podle dokladů zvolit další krok | Poskytnout konkrétní zpětnou vazbu a porovnat předpověď úspěchu s výkonem | Využitelnou opravu a nové doklady; skóre a sebedůvěra samy nestačí |
 | Kooperativní a vrstevnické učení | Podpořit porovnávání a vysvětlování s odpovědností | Sdílená úloha, individuální příspěvky a řešení neshod | Uvažování každého žáka; společný klik nedokládá porozumění skupiny |
+| Regulace ve sdíleném kognitivním prostoru (FALR) | Udržet žáka aktivního a kritického při práci s AI či nápovědou | Vložit kognitivní pauzu před převzetím výstupu; nechat žáka posoudit, co chybí a čemu rozumí sám oproti výkonu systému; umožnit výstup odmítnout | Odlišení vlastního porozumění od výstupu systému a následný samostatný krok žáka |
 
 Bloomova taxonomie pomáhá popsat kognitivní cíl a typ znalosti. Neurčuje obtížnost ani šest zamčených stupňů. Vhodnost metody závisí na žácích, obsahu a pozorované překážce; katalog neukládá použít všechny metody.
 

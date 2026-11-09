@@ -8,6 +8,8 @@ Urči povolené činnosti modelu, zkontrolované podklady či zdroje a postup p�
 
 Pomoc přizpůsob aktivitě. Procvičování může využívat naváděcí otázky, odstupňované nápovědy, řešené příklady i přímé vysvětlení na požádání nebo tehdy, když další otázky nepomáhají. Při zkoušení se pomoc řídí pravidly učitele. Nezaváděj nekonečné sokratovské dotazování ani všeobecný zákaz sdělit řešení. Žák musí mít možnost požádat o pomoc, skončit nebo zapojit učitele.
 
+Rozhraní s živou AI navrhuj tak, aby bránilo bezmyšlenkovitému kopírování výstupů (kognitivnímu offloadingu). Před převzetím vygenerovaného postupu nebo odpovědi vyžaduj krátkou regulační akci žáka: vymezení vlastního záměru před dotazem, zastavení nad výstupem (kognitivní pauzu), zhodnocení úplnosti či správnosti a vědomou volbu dalšího kroku (pokračovat, ověřit, přeformulovat dotaz, nebo výstup nepoužít).
+
 Pro zpětnou vazbu a otevřené odpovědi používej výslovná hodnoticí kritéria. Před použitím porovnej hodnocení modelu s příklady posouzenými učitelem. Závažná rozhodnutí o klasifikaci, zařazení žáka nebo kázeňských opatřeních vyžadují odpovědnou lidskou kontrolu; jediná odpověď modelu nesmí rozhodovat sama. Zaznamenej nejistotu a umožni učiteli hodnocení opravit.
 
 ## Minimum žákovských dat

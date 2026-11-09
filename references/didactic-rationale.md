@@ -14,6 +14,7 @@ Read when explaining the skill's purpose or deciding how a teaching method shoul
 | Inquiry and simulations | Compare predictions with evidence under explicit assumptions | Expose relevant variables, units, constraints and model boundaries; include debrief | Learner revises an explanation using observations or clearly labeled model results |
 | Formative assessment and metacognition | Decide a useful next step from evidence | Show specific feedback and let learners compare a prediction with performance | An actionable correction and new evidence; scores and confidence are insufficient by themselves |
 | Cooperative and peer learning | Support comparison and explanation with accountability | Assign a shared task with individual contributions and a way to resolve disagreement | Each learner's reasoning; one shared click does not establish group understanding |
+| Regulation in Shared Cognitive Space (FALR) | Keep the learner active and critical when using AI or hints | Insert a cognitive pause before adopting output; ask what is missing and what the learner understood vs. what the system did; allow rejecting the output | Distinction between self-understanding and system output, followed by an independent learner step |
 
 Bloom's taxonomy helps describe cognitive goals and knowledge types; it does not prescribe difficulty or a six-stage unlocking system. A method is appropriate only if it addresses the target learners, content and observed obstacle. No catalog is a requirement to implement all methods.
 

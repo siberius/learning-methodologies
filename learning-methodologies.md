@@ -2,7 +2,7 @@
 name: learning-methodologies
 description: Design or review educational applications by connecting learning goals, learner needs, activities, feedback and evidence of learning. Use for new learning tools or substantive changes to their teaching design. Do not apply to cosmetic changes or ordinary bug fixes without a learning-design issue.
 metadata:
-  version: "1.2.0"
+  version: "1.3.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"
@@ -160,6 +160,8 @@ Retrieval practice asks learners to reconstruct knowledge before seeing the answ
 
 Help learners set a useful subgoal, plan, monitor understanding and revise their approach using evidence. Ask them to predict success or explain their choice, then compare with independent performance. Keep reflection specific: what evidence changed their view and what they will try next. Do not equate confidence with competence or add a lengthy mandatory journal to a small activity without a purpose.
 
+When working with generated hints, worked examples, or live AI, protect the learner's active role within the Shared Cognitive Space (FALR framework: Choice, Delay / Cognitive Pause, Evaluation, Self-Direction). Prevent an automatic transition from algorithmic output to learner action by inserting a cognitive pause before adopting or copying output. Prompt the learner to evaluate whether the output is valid, what is missing, what they actually understood themselves compared with what the system did for them, and whether to use, revise, verify, or reject the output.
+
 ### Methods: Concept maps and relationships
 
 Use a concept map when explaining or constructing relationships is part of the goal. Let learners build a small map, label a missing relationship or critique a proposed connection, then compare it with reviewed sources or a rubric. A polished map generated entirely for the learner is a resource, not evidence of the learner's understanding.
@@ -183,6 +185,7 @@ For implementation, use stable concept identifiers and typed, directed relations
 - [Krathwohl, 2002, A Revision of Bloom's Taxonomy](https://people.ucsc.edu/~ktellez/blooms_taxonomy.pdf): two dimensions and a relaxed hierarchy with overlapping categories.
 - [IES, Organizing Instruction and Study to Improve Student Learning](https://ies.ed.gov/ncee/wwc/PracticeGuide/1): evidence-informed recommendations for spacing, retrieval, worked examples and explanatory questions. Evidence strength varies by recommendation.
 - [UNESCO, Guidance for Generative AI in Education and Research](https://www.iicba.unesco.org/en/africa-education-knowledge-platform/guidance-generative-ai-education-and-research): human agency and validation of educational uses.
+- Zinger, D. (CFM / FALR – Four-Action Learner Regulation Framework): learner regulation within a Shared Cognitive Space with AI (Choice, Delay / Cognitive Pause, Evaluation, Self-Direction).
 
 ## Reference: assessment
 
@@ -275,6 +278,8 @@ Read this reference only when the finished application calls an AI service durin
 Specify what the model may do, which reviewed content or sources it can use, and how it should handle missing evidence. Where factual grounding matters, identify approved materials and preserve source provenance. Do not generate plausible-looking citations. Allow uncertainty and correction; avoid diagnoses or confident claims about a learner's abilities from a short interaction.
 
 Choose assistance by activity. Practice can use guiding questions, progressive hints, worked examples, and direct explanation when requested or when questioning stops helping. An assessment may restrict assistance according to the teacher's stated rules. Do not impose an endless Socratic loop or a universal ban on answers. Give the learner a way to ask for help, stop, or involve the teacher.
+
+Design live AI interfaces to prevent passive copying (cognitive offloading). Before adopting a generated procedure or response, require a brief regulatory action from the learner: clarifying intent before querying, pausing over the output (cognitive pause), evaluating completeness and validity, and consciously choosing the next step (continue, verify, reformulate, or decide not to use the output).
 
 Use explicit rubrics for feedback and open responses. Compare model judgments with teacher-reviewed examples before relying on them. Significant grading, placement, or disciplinary decisions require accountable human review; a single model response must not be the sole decision-maker. Record uncertainty and let the teacher correct a judgment.
 
@@ -402,6 +407,10 @@ A learner explains: “Plants get their food from soil; sunlight warms it up.”
 
 A teacher requests “full alignment with our school curriculum” but supplies no school document. Use the stated learning goal to produce a provisional activity. Request the relevant excerpt only when exact alignment matters; identify what remains unverified. Never invent local outcome codes or certify coverage. For Czech schools, a general RVP reference does not establish alignment with the particular ŠVP. Why: useful drafting can proceed while documentary claims remain bounded.
 
+### Decision Examples: Insert a Cognitive Pause Before Adopting AI Output
+
+In an app with an embedded AI assistant, a learner asks for a solution outline or error explanation. Instead of an "Apply to my solution" button, insert a cognitive pause: prevent direct copying and ask a brief verification question ("Which step is central here? What is missing from the AI suggestion for your specific case?"). Allow the learner to revise the suggestion, verify it on another example, or decide not to use it. Record the model's generated text as supported assistance, not as evidence of the learner's understanding. Reason: a cognitive pause prevents an automatic transition from algorithmic output to learner action without active cognitive processing.
+
 ## Reference: tutor-state
 
 Source section: Tutor modes and learning continuity
@@ -460,6 +469,7 @@ Read when explaining the skill's purpose or deciding how a teaching method shoul
 | Inquiry and simulations | Compare predictions with evidence under explicit assumptions | Expose relevant variables, units, constraints and model boundaries; include debrief | Learner revises an explanation using observations or clearly labeled model results |
 | Formative assessment and metacognition | Decide a useful next step from evidence | Show specific feedback and let learners compare a prediction with performance | An actionable correction and new evidence; scores and confidence are insufficient by themselves |
 | Cooperative and peer learning | Support comparison and explanation with accountability | Assign a shared task with individual contributions and a way to resolve disagreement | Each learner's reasoning; one shared click does not establish group understanding |
+| Regulation in Shared Cognitive Space (FALR) | Keep the learner active and critical when using AI or hints | Insert a cognitive pause before adopting output; ask what is missing and what the learner understood vs. what the system did; allow rejecting the output | Distinction between self-understanding and system output, followed by an independent learner step |
 
 Bloom's taxonomy helps describe cognitive goals and knowledge types; it does not prescribe difficulty or a six-stage unlocking system. A method is appropriate only if it addresses the target learners, content and observed obstacle. No catalog is a requirement to implement all methods.
 
