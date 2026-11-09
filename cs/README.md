@@ -1,5 +1,9 @@
 # Vzdělávací metodiky
 
+> 📖 **Článek a metodika na Vibemaker:** [Ať vaše výuková aplikace opravdu učí](https://vibemaker.cz/clanek/vzdelavaci-metodiky-pro-vibekoding/)
+
+[![Vzdělávací metodiky](../docs/learning-methodologies.gif)](https://vibemaker.cz/clanek/vzdelavaci-metodiky-pro-vibekoding/)
+
 Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází z anglické verze 1.2.0 a doplňuje české školní prostředí.
 
 Autor: Luděk Sušický
