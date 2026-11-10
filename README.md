@@ -1,5 +1,7 @@
 # learning-methodologies
 
+[![Skills.sh](https://img.shields.io/badge/skills.sh-Install-blue)](https://skills.sh/siberius/learning-methodologies)
+
 > 📖 **Článek a kontext na Vibemaker:** [Ať vaše výuková aplikace opravdu učí](https://vibemaker.cz/clanek/vzdelavaci-metodiky-pro-vibekoding/)
 
 [![Learning Methodologies](docs/learning-methodologies.gif)](https://vibemaker.cz/clanek/vzdelavaci-metodiky-pro-vibekoding/)
