@@ -6,6 +6,7 @@
 - Replace negative contrasts and academic jargon ("documentary claims remain bounded", "algorithmic output", "cognitive offloading", "regulatory action") with plain statements.
 - Consolidate repeated model-profile disclaimers into one "What this reference does not claim" section.
 - Add a "Write learner-facing text without AI slop" section to the English and Czech `SKILL.md`.
+- Align the English and Czech README feature lists and wording with the edited core.
 - Regenerate the English and Czech standalone editions; links, anchors, export consistency and license notices pass.
 - Spanish and Russian editions keep the 1.3.0 text and were not retranslated.
 

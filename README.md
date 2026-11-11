@@ -19,16 +19,16 @@ A portable AI skill for designing and reviewing educational applications. It con
 
 MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 
-Current version: **1.3.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
+Current version: **1.3.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, learner-facing text guidance, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
 
 ## Why these methods guide development with AI
 
-The skill contains didactic methods suitable for designing educational applications with AI assistance. They shape what a learner does and how the application responds: retrieval governs when to reveal an answer, scaffolding governs help, assessment governs what can be inferred from a result, and learner self-regulation frameworks (e.g. FALR) govern active interaction with AI to prevent cognitive offloading. These choices give generated code reviewable learning requirements. Using AI at authoring time does not require an AI service in the finished application. See the [didactic rationale](references/didactic-rationale.md) for method-to-behavior examples and limits.
+The skill contains didactic methods suitable for designing educational applications with AI assistance. They shape what a learner does and how the application responds: retrieval governs when to reveal an answer, scaffolding governs help, assessment governs what can be inferred from a result, and learner self-regulation frameworks (e.g. FALR) govern active interaction with AI so learners do not copy answers without thinking. These choices give generated code reviewable learning requirements. Using AI at authoring time does not require an AI service in the finished application. See the [didactic rationale](references/didactic-rationale.md) for method-to-behavior examples and limits.
 
 ## What it helps you do
 
 - Choose methods from a concrete learning need and classroom context.
-- Support learner self-regulation in a shared cognitive space with AI (FALR framework: choice, cognitive pause, evaluation and self-direction) to prevent cognitive offloading.
+- Support learner self-regulation in a shared cognitive space with AI (FALR framework: choice, cognitive pause, evaluation and self-direction) so learners do not copy answers without thinking.
 - Design useful help, error feedback and independent practice.
 - Separate goals, task difficulty, prerequisites and evidence of achievement.
 - Build trustworthy simulations and bounded AI tutoring when appropriate.
@@ -70,7 +70,7 @@ The native and standalone formats come from the same maintained sources. Edit `S
 
 > Use learning-methodologies to build an offline circuit activity for 16-year-olds. Learners should predict how resistance changes current and explain their reasoning. It will support a teacher-led discussion and must work by keyboard. Use no accounts or external AI calls.
 
-The agent should reuse this context, choose proportionate support and identify how the activity can reveal understanding. It should ask only about missing information that changes the design.
+The agent should reuse this context, choose support that fits the task and identify how the activity can reveal understanding. It should ask only about missing information that changes the design.
 
 ## Documentation
 
