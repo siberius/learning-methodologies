@@ -49,7 +49,7 @@ Retrieval practice asks learners to reconstruct knowledge before seeing the answ
 
 Help learners set a useful subgoal, plan, monitor understanding and revise their approach using evidence. Ask them to predict success or explain their choice, then compare with independent performance. Keep reflection specific: what evidence changed their view and what they will try next. Do not equate confidence with competence or add a lengthy mandatory journal to a small activity without a purpose.
 
-When working with generated hints, worked examples, or live AI, protect the learner's active role within the Shared Cognitive Space (FALR framework: Choice, Delay / Cognitive Pause, Evaluation, Self-Direction). Prevent an automatic transition from algorithmic output to learner action by inserting a cognitive pause before adopting or copying output. Prompt the learner to evaluate whether the output is valid, what is missing, what they actually understood themselves compared with what the system did for them, and whether to use, revise, verify, or reject the output.
+When working with generated hints, worked examples, or live AI, protect the learner's active role within the Shared Cognitive Space (FALR framework: Choice, Delay / Cognitive Pause, Evaluation, Self-Direction). Prevent passive acceptance: insert a short pause before the learner adopts or copies the model's answer, so the step does not become automatic. Prompt the learner to evaluate whether the output is valid, what is missing, what they actually understood themselves compared with what the system did for them, and whether to use, revise, verify, or reject the output.
 
 ## Concept maps and relationships
 
@@ -61,7 +61,7 @@ For implementation, use stable concept identifiers and typed, directed relations
 
 ## Contextual methods
 
-- Inquiry: scaffold question, prediction, test, observation and explanation. Claims about real-world behavior need appropriate real data or an adequately validated model; illustrative outputs must be labeled and bounded. Language-model narration cannot stand in for experimental evidence.
+- Inquiry: scaffold question, prediction, test, observation and explanation. Claims about real-world behavior need appropriate real data or an adequately validated model; illustrative outputs must be labeled, with a note on what they do not show. Language-model narration cannot stand in for experimental evidence.
 - Role-play: define the role, scenario boundaries and success criteria, then debrief. Mark historical dialogue as a reconstruction and distinguish sourced facts from invented speech. Fictional interaction can still have emotional or social consequences.
 - Peer learning: provide a shared task, accountable individual contribution and criteria for useful explanation. Include a way to resolve disagreements and check each learner's understanding.
 - Peer teaching: let learners explain and give feedback against understandable criteria, with access to a reviewed explanation or teacher when needed. Do not make an inexperienced peer the final authority on subject accuracy.

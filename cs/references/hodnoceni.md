@@ -18,7 +18,7 @@ Nezaváděj univerzální procentní hranice pro známky ani jednotnou stupnici 
 
 ## Navrhuj důvěryhodné úlohy
 
-Ověř klíč odpovědí, vysvětlení a přijatelné alternativy. U výběrových úloh používej smysluplné chybné možnosti odvozené od typických omylů a odstraň nechtěné nápovědy. U otevřených odpovědí přijímej rovnocenné formulace, jiné správné postupy a přiměřené předpoklady. Jediná vzorová věta nesmí představovat celý prostor správných řešení.
+Ověř klíč odpovědí, vysvětlení a přijatelné alternativy. U výběrových úloh používej smysluplné chybné možnosti odvozené od typických omylů a odstraň nechtěné nápovědy. U otevřených odpovědí přijímej rovnocenné formulace, jiné správné postupy a uvedené předpoklady. Jediná vzorová věta nesmí představovat celý prostor správných řešení.
 
 Použij stručnou hodnoticí rubriku: pozorovatelná kritéria, popis výkonu a příklady včetně hraničních a alternativních řešení. Podle cíle odděl věcnou správnost, uvažování, postup, komunikaci a spolupráci. Jazykovou formu hodnotíš tehdy, je-li součástí cíle. V českém jazyce může být diakritika či pravopis předmětem ověřování; v jiné úloze překlep nesmí automaticky zastínit oborové porozumění. Předem určuj, jaké varianty jsou přijatelné. Obtíž s formulací v češtině sama nedokládá neznalost oboru.
 
@@ -34,7 +34,7 @@ V bance úloh zpřístupni důležitá rozhodnutí v existujícím datovém form
 
 Skóre AI i její výklad chyby považuj za předběžný úsudek. Ověřuj je na příkladech posouzených učitelem a dostupnými oborovými kontrolami. Při nejasných dokladech požádej o upřesnění nebo označ výsledek k revizi. Nevyráběj jistotu a nepoužívej nekalibrované číslo sebedůvěry jako důkaz správnosti.
 
-Žák musí mít cestu ke zpochybnění zpětné vazby. Učitel může výsledek opravit a vidí původní odpověď i odůvodnění. Rozhodnutí s podstatnými důsledky potřebují odpovědnou lidskou kontrolu přiměřenou situaci. Automatické posuzování sociálních vlastností či diagnóz z běžných odpovědí nezaváděj.
+Žák musí mít cestu ke zpochybnění zpětné vazby. Učitel může výsledek opravit a vidí původní odpověď i odůvodnění. Rozhodnutí s podstatnými důsledky potřebují odpovědnou lidskou kontrolu, která situaci odpovídá. Automatické posuzování sociálních vlastností či diagnóz z běžných odpovědí nezaváděj.
 
 ## Ověřuj tvrzení o učení
 

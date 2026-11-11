@@ -21,13 +21,13 @@ Navrhuj, vytvářej a posuzuj aplikace podle vzdělávacího záměru a potřeb 
 
 ## Didaktické metody pro aplikace tvořené pomocí AI
 
-Metody převádějí vzdělávací cíl do činnosti žáka, pravidel zpětné vazby a dokladů výkonu v generované aplikaci. Vybavování například vyžaduje pokus před odhalením odpovědi, scaffolding dostupnou pomoc a rozlišení podporovaného a samostatného výkonu. AI pomáhá tato rozhodnutí realizovat; výsledek potřebuje oborovou a didaktickou kontrolu. Platí to pro offline aplikace i odůvodněné použití živé AI.
+Metody převádějí vzdělávací cíl do činnosti žáka, pravidel zpětné vazby a dokladů výkonu v generované aplikaci. Vybavování například vyžaduje pokus před odhalením odpovědi, scaffolding dostupnou pomoc a rozlišení podporovaného a samostatného výkonu. AI pomáhá tato rozhodnutí realizovat; výsledek potřebuje oborovou a didaktickou kontrolu. Platí to pro offline aplikace i pro živou AI, když ji cíl učení potřebuje.
 
 Při vysvětlování vhodnosti metody a jejího provedení čti [didaktické zdůvodnění](#reference-didakticke-zduvodneni). Propojuje metody s rozhodnutími v aplikaci a potřebnými doklady.
 
 ## Stručný pracovní postup
 
-Postup přizpůsob úkolu: zjisti cíl a podmínky → vyber metodu podle překážky v učení → propoj činnost žáka s dokladem učení → implementuj v zadaném rozsahu → ověř výsledek. Při revizi místo implementace posuď existující návrh. Využij známý kontext; jednotlivé kroky nevyžadují samostatné plánovací dokumenty.
+Postup přizpůsob úkolu: zjisti cíl a podmínky, vyber metodu podle překážky v učení, propoj činnost žáka s dokladem učení, implementuj v zadaném rozsahu a ověř výsledek. Při revizi místo implementace posuď existující návrh. Využij známý kontext; jednotlivé kroky nevyžadují samostatné plánovací dokumenty.
 
 [Příklady rozhodování](#reference-priklady-rozhodovani) čti při nejasnosti kolem pomoci, alternativních odpovědí nebo kurikulární návaznosti. Ukazují rozhodnutí, nejsou scénářem pro každou lekci.
 
@@ -51,9 +51,9 @@ Metodu vybírej podle cíle a konkrétní překážky v učení. Vysvětlení ch
 
 Při výběru a provádění postupů čti [metody učení](#reference-metody). Katalog výslovně zahrnuje sokratické učení, Feynmanovu techniku, zónu nejbližšího vývoje a scaffolding, řešené příklady, vybavování a opakování s odstupem, práci s chybou, metakognici, badatelskou výuku, hraní rolí, vrstevnické a kooperativní učení, projektovou výuku, převrácenou třídu a volitelnou gamifikaci.
 
-Bloomovu taxonomii používej k popisu kognitivního cíle a typu znalosti. Obtížnost a návaznost učiva řeš samostatně; nevynucuj šest zamčených úrovní. U praktických, sociálních či postojových cílů zvol odpovídající důkazy a přiznej hranice obrazovkové aktivity. Nesouhlas s postavou nebo názorem sám není chyba argumentace.
+Bloomovu taxonomii používej k popisu kognitivního cíle a typu znalosti. Obtížnost a návaznost učiva řeš samostatně; nevynucuj šest zamčených úrovní. U praktických, sociálních či postojových cílů zvol důkazy, které odpovídají cíli, a přiznej hranice obrazovkové aktivity. Nesouhlas s postavou nebo názorem sám není chyba argumentace.
 
-## Zvol přiměřené provedení
+## Zvol realistické provedení
 
 Rozlišuj AI při tvorbě aplikace a AI v hotovém produktu. Podle cíle a podmínek vol mezi zkontrolovaným obsahem, deterministickou interakcí či simulací a službou AI za běhu. Nápovědy, zpětná vazba i opakování mohou fungovat bez AI služby.
 
@@ -75,13 +75,13 @@ Při bodování, rubrikách, adaptivitě a vyhodnocování učení čti [hodnoce
 
 ## Zachovej dostupnost a odpovědnost učitele
 
-Navrhuj podle relevantních kritérií WCAG 2.2 AA a konkrétních potřeb uživatelů. Ověř ovládání klávesnicí, viditelný fokus, popisky, srozumitelné oznámení výsledku, alternativy k samotné barvě či zvuku a odůvodněné nebo upravitelné časování. Podle cíle umožni různé vhodné formy odpovědi. Nepřiřazuj žákům pevné učební styly.
+Navrhuj podle kritérií WCAG 2.2 AA, která se týkají činnosti, a konkrétních potřeb uživatelů. Ověř ovládání klávesnicí, viditelný fokus, popisky, srozumitelné oznámení výsledku, alternativy k samotné barvě či zvuku a odůvodněné nebo upravitelné časování. Podle cíle umožni formy odpovědi, které žákovi vyhovují. Nepřiřazuj žákům pevné učební styly.
 
 Potřeby podpory zjišťuj funkčně, například možnost zvětšit text nebo prodloužit čas. Nepožaduj bez důvodu diagnózu či poradenskou zprávu. Potřebnou úpravu podmínek dohodni s odpovědným učitelem; neměň skrytě vzdělávací cíl nebo pravidla zkoušky. Pro rozsáhlejší přístupnost využij příslušnou specializaci, je-li dostupná.
 
 Shromažďuj jen data potřebná pro činnost. Uveď, kdo je uvidí, kam odcházejí a jak se uchovávají. Pro konkrétní nasazení ověř pravidla školy, poskytovatele a příslušné požadavky. Lokální anonymní pomůcka nemusí získat účty ani sledování žáků.
 
-Zajisti přiměřenou možnost opravit obsah, sporné posouzení a nevhodné adaptační rozhodnutí. U malé pomůcky může stačit editovatelný soubor. Významná klasifikační nebo zařazovací rozhodnutí potřebují odpovědný lidský přezkum. Návrh známky neoznačuj za automaticky platné školní hodnocení.
+Zajisti možnost opravit obsah, sporné posouzení a nevhodné adaptační rozhodnutí. U malé pomůcky může stačit editovatelný soubor. Významná klasifikační nebo zařazovací rozhodnutí potřebují odpovědný lidský přezkum. Návrh známky neoznačuj za automaticky platné školní hodnocení.
 
 ## Propoj odborné pohledy
 
@@ -91,11 +91,25 @@ Podstatný rozpor řeš kontrolou zdroje, cíleným ověřením nebo otevřeným
 
 ## Ověř přiměřeně a přesně předej výsledek
 
-Při implementaci prověř dotčený průchod, smysluplné chyby, pomoc a relevantní selhání. Simulace potřebuje kontrolu modelu, živá AI chování při nedostupné službě; statické aktivitě tyto závislosti nepřidávej. Při požadavku na posouzení předej nálezy a návrhy bez nevyžádané realizace.
+Při implementaci prověř dotčený průchod, chyby, které žáci skutečně dělají, cestu k pomoci a selhání, která mají význam. Simulace potřebuje kontrolu modelu, živá AI chování při nedostupné službě; statické aktivitě tyto závislosti nepřidávej. Při požadavku na posouzení předej nálezy a návrhy bez nevyžádané realizace.
 
 Odděluj funkční správnost, didaktickou vhodnost a pozorované výsledky učení. Technické testy neprokazují vzdělávací účinnost. Malý pilot může odhalit problém, aniž doloží příčinný účinek. Nevymýšlej pozorování žáků ani výsledky studie.
 
 Při předání shrň cíl, zvolený postup, důležité provozní a případné kurikulární předpoklady, provedené kontroly a omezení. Tabulku vazeb přidej, pokud pomůže přehlednosti. Formu přizpůsob žádosti a velikosti změny.
+
+## Piš text pro žáky bez AI slopu
+
+Text aplikace nese výuku. Stejný standard platí pro zadání, pokyny, zpětnou vazbu i vysvětlení:
+
+- Škrtni prázdné přívlastky („moderní“, „poutavé“, „interaktivní“), pokud další věta neukáže, čím jsou pravdivé.
+- Tvrzení řekni přímo; vyhni se „nejde jen o X, ale o Y“ a „to není X, to je Y“.
+- Vynech oznámení typu „v této aktivitě se naučíš“; napiš, co žák dělá.
+- Zpětná vazba pojmenuje, co je správně, co chybí a jaký je další konkrétní krok.
+- Čísla, jednotky a podmínky uváděj konkrétně; žádné „výrazně zlepšuje“ bez měřítka.
+- Žádná emoji v tlačítkách, nadpisech ani popiscích. Používej text a jednotnou sadu ikon.
+- Slovník přizpůsob žákům a jeden pojem označuj stále stejně.
+
+Přečti text očima žáka. Pokud by věta mohla zůstat beze změny v jiném produktu, škrtni ji nebo ji udělej konkrétní.
 
 ## Integrace
 
@@ -161,7 +175,7 @@ Při vybavování z paměti žák rekonstruuje znalost před zobrazením odpově
 
 Nech žáka zvolit dosažitelný dílčí cíl, naplánovat postup, sledovat vlastní porozumění a podle dokladů postup upravit. Odhad úspěchu nebo zdůvodnění volby porovnej se samostatným výkonem. Reflexi konkretizuj: který doklad změnil jeho názor a co zkusí příště. Sebejistota není měřítkem kompetence. U malé aktivity postačí smysluplná krátká otázka; dlouhý povinný deník nemusí být přínosem.
 
-Při práci s generovanou nápovědou, řešeným příkladem nebo živou AI chraň aktivní roli žáka ve sdíleném kognitivním prostoru (rámec FALR: volba, kognitivní pauza, hodnocení, sebeřízení). Zabraň automatickému přechodu od výstupu systému k akci žáka: před převzetím nebo zkopírováním výstupu zařaď kognitivní pauzu. Vyzvi žáka k posouzení, zda je výstup platný, co v něm chybí, čemu skutečně porozuměl sám oproti tomu, co za něj udělal systém, a zda výstup použije, upraví, nebo odmítne.
+Při práci s generovanou nápovědou, řešeným příkladem nebo živou AI chraň aktivní roli žáka ve sdíleném kognitivním prostoru (rámec FALR: volba, kognitivní pauza, hodnocení, sebeřízení). Zabraň automatickému přechodu od výstupu modelu k akci žáka: před převzetím nebo zkopírováním výstupu zařaď kognitivní pauzu. Vyzvi žáka k posouzení, zda je výstup platný, co v něm chybí, čemu skutečně porozuměl sám oproti tomu, co za něj udělal systém, a zda výstup použije, upraví, nebo odmítne.
 
 ### Metody: Pojmové mapy a vztahy
 
@@ -211,7 +225,7 @@ Nezaváděj univerzální procentní hranice pro známky ani jednotnou stupnici 
 
 ### Hodnocení: Navrhuj důvěryhodné úlohy
 
-Ověř klíč odpovědí, vysvětlení a přijatelné alternativy. U výběrových úloh používej smysluplné chybné možnosti odvozené od typických omylů a odstraň nechtěné nápovědy. U otevřených odpovědí přijímej rovnocenné formulace, jiné správné postupy a přiměřené předpoklady. Jediná vzorová věta nesmí představovat celý prostor správných řešení.
+Ověř klíč odpovědí, vysvětlení a přijatelné alternativy. U výběrových úloh používej smysluplné chybné možnosti odvozené od typických omylů a odstraň nechtěné nápovědy. U otevřených odpovědí přijímej rovnocenné formulace, jiné správné postupy a uvedené předpoklady. Jediná vzorová věta nesmí představovat celý prostor správných řešení.
 
 Použij stručnou hodnoticí rubriku: pozorovatelná kritéria, popis výkonu a příklady včetně hraničních a alternativních řešení. Podle cíle odděl věcnou správnost, uvažování, postup, komunikaci a spolupráci. Jazykovou formu hodnotíš tehdy, je-li součástí cíle. V českém jazyce může být diakritika či pravopis předmětem ověřování; v jiné úloze překlep nesmí automaticky zastínit oborové porozumění. Předem určuj, jaké varianty jsou přijatelné. Obtíž s formulací v češtině sama nedokládá neznalost oboru.
 
@@ -227,7 +241,7 @@ V bance úloh zpřístupni důležitá rozhodnutí v existujícím datovém form
 
 Skóre AI i její výklad chyby považuj za předběžný úsudek. Ověřuj je na příkladech posouzených učitelem a dostupnými oborovými kontrolami. Při nejasných dokladech požádej o upřesnění nebo označ výsledek k revizi. Nevyráběj jistotu a nepoužívej nekalibrované číslo sebedůvěry jako důkaz správnosti.
 
-Žák musí mít cestu ke zpochybnění zpětné vazby. Učitel může výsledek opravit a vidí původní odpověď i odůvodnění. Rozhodnutí s podstatnými důsledky potřebují odpovědnou lidskou kontrolu přiměřenou situaci. Automatické posuzování sociálních vlastností či diagnóz z běžných odpovědí nezaváděj.
+Žák musí mít cestu ke zpochybnění zpětné vazby. Učitel může výsledek opravit a vidí původní odpověď i odůvodnění. Rozhodnutí s podstatnými důsledky potřebují odpovědnou lidskou kontrolu, která situaci odpovídá. Automatické posuzování sociálních vlastností či diagnóz z běžných odpovědí nezaváděj.
 
 ### Hodnocení: Ověřuj tvrzení o učení
 
@@ -265,7 +279,7 @@ Zaznamenej vzdělávací cíl, stavové proměnné, vstupy, jednotky, povolené 
 
 Číselné výsledky počítej ověřeným výpočetním jádrem nebo výslovně definovanými pravidly. Výpočet odděl od komentáře jazykového modelu. AI může vysvětlovat získané výsledky, nesmí si domýšlet chybějící výpočet ani předstírat provedení experimentu.
 
-Přiměřeně ověř známý příklad, mezní případ, správnost jednotek a příslušný invariant nebo očekávaný trend. U náhodných modelů popiš zdroj náhodnosti a podle potřeby umožni opakování se stejným inicializačním číslem. Uveď omezení modelu.
+Ověř několik kontrol, které modelu odpovídají: známý příklad, mezní případ, správnost jednotek a jeden očekávaný trend. U náhodných modelů popiš zdroj náhodnosti a podle potřeby umožni opakování se stejným inicializačním číslem. Uveď omezení modelu.
 
 ### Simulace: Průběh učení
 
@@ -294,7 +308,7 @@ Urči povolené činnosti modelu, zkontrolované podklady či zdroje a postup p�
 
 Pomoc přizpůsob aktivitě. Procvičování může využívat naváděcí otázky, odstupňované nápovědy, řešené příklady i přímé vysvětlení na požádání nebo tehdy, když další otázky nepomáhají. Při zkoušení se pomoc řídí pravidly učitele. Nezaváděj nekonečné sokratovské dotazování ani všeobecný zákaz sdělit řešení. Žák musí mít možnost požádat o pomoc, skončit nebo zapojit učitele.
 
-Rozhraní s živou AI navrhuj tak, aby bránilo bezmyšlenkovitému kopírování výstupů (kognitivnímu offloadingu). Před převzetím vygenerovaného postupu nebo odpovědi vyžaduj krátkou regulační akci žáka: vymezení vlastního záměru před dotazem, zastavení nad výstupem (kognitivní pauzu), zhodnocení úplnosti či správnosti a vědomou volbu dalšího kroku (pokračovat, ověřit, přeformulovat dotaz, nebo výstup nepoužít).
+Rozhraní s živou AI navrhuj tak, aby bránilo bezmyšlenkovitému kopírování výstupů, kdy nástroj myslí za žáka. Před převzetím vygenerovaného postupu nebo odpovědi vyžaduj krátkou kontrolu žáka: vymezení vlastního záměru před dotazem, zastavení nad výstupem (kognitivní pauzu), zhodnocení úplnosti či správnosti a vědomou volbu dalšího kroku (pokračovat, ověřit, přeformulovat dotaz, nebo výstup nepoužít).
 
 Pro zpětnou vazbu a otevřené odpovědi používej výslovná hodnoticí kritéria. Před použitím porovnej hodnocení modelu s příklady posouzenými učitelem. Závažná rozhodnutí o klasifikaci, zařazení žáka nebo kázeňských opatřeních vyžadují odpovědnou lidskou kontrolu; jediná odpověď modelu nesmí rozhodovat sama. Zaznamenej nejistotu a umožni učiteli hodnocení opravit.
 
@@ -472,7 +486,7 @@ Učitel žádá „plný soulad s naším ŠVP“, ale dokument nedodal. Podle z
 
 ### Příklady rozhodování: Zařaď kognitivní pauzu před převzetím výstupu AI
 
-V aplikaci s vestavěným AI pomocníkem žák požádá o návrh postupu řešení či vysvětlení chyby. Místo tlačítka „Použít v mém řešení“ zařaď kognitivní pauzu: skryj přímé kopírování a polož krátkou ověřovací otázku („Který krok postupu je klíčový? Co v návrhu AI chybí pro tvůj případ?“). Umožni žákovi návrh upravit, ověřit na jiném příkladu nebo zcela odmítnout. Samotné vygenerování textu modelem eviduj jako poskytnutou oporu, nikoli jako doklad žákova porozumění. Důvod: kognitivní pauza brání automatickému přechodu od algoritmického výstupu k akci žáka bez vlastního zpracování.
+V aplikaci s vestavěným AI pomocníkem žák požádá o návrh postupu řešení či vysvětlení chyby. Místo tlačítka „Použít v mém řešení“ zařaď kognitivní pauzu: skryj přímé kopírování a polož krátkou ověřovací otázku („Který krok postupu je klíčový? Co v návrhu AI chybí pro tvůj případ?“). Umožni žákovi návrh upravit, ověřit na jiném příkladu nebo zcela odmítnout. Samotné vygenerování textu modelem eviduj jako poskytnutou oporu, nikoli jako doklad žákova porozumění. Důvod: kognitivní pauza brání automatickému přechodu od výstupu modelu k akci žáka bez vlastního zpracování.
 
 ## Reference: stav-tutora
 
@@ -511,7 +525,7 @@ Chyby řaď podle vztahu k cíli a předpokladům; jejich závažnost ber jako p
 
 ### Stav tutora: Kontroly implementace
 
-Prověř jen relevantní průchody: otázka → odpověď → zpětná vazba; pomoc → podporovaný výkon; změna režimu po odhalení; přerušení a obnovení bez ztráty či dvojího započtení pokusu; zastaralý nebo chybný záznam; opožděná odpověď po změně úlohy; nerozhodnuté hodnocení při výpadku. Ověř shodu uloženého a viditelného stavu. Tyto kontroly dokládají chování, nikoli vzdělávací účinnost.
+Prověř jen relevantní průchody: otázka, odpověď, zpětná vazba; pomoc, podporovaný výkon; změna režimu po odhalení; přerušení a obnovení bez ztráty či dvojího započtení pokusu; zastaralý nebo chybný záznam; opožděná odpověď po změně úlohy; nerozhodnuté hodnocení při výpadku. Ověř shodu uloženého a viditelného stavu. Tyto kontroly dokládají chování, nikoli vzdělávací účinnost.
 
 ## Reference: didakticke-zduvodneni
 
@@ -544,7 +558,7 @@ Rozliš AI při tvorbě a za běhu. Mnohé postupy lze realizovat offline pomoc�
 
 ### Didaktické zdůvodnění: Meze zdůvodnění
 
-Jde o vysvětlení návrhových rozhodnutí, nikoli důkaz účinku tohoto skillu či každé aplikace. Obsah, přístupnost a proveditelnost ve třídě potřebují odpovídající kontroly. Technický průchod nedokládá učení; potřebné jsou vhodné doklady výkonu a pro příčinné tvrzení odpovídající vyhodnocení. Výzkumné podklady uvedené u metod podporují konkrétní rozhodnutí, necertifikují celý balíček. U významných posouzení zachovej odpovědnou kontrolu učitele a kurikulum přizpůsob skutečnému prostředí.
+Jde o vysvětlení návrhových rozhodnutí, nikoli důkaz účinku tohoto skillu či každé aplikace. Obsah, přístupnost a proveditelnost ve třídě potřebují konkrétní kontroly. Technický průchod nedokládá učení; potřebné jsou vhodné doklady výkonu a pro příčinné tvrzení odpovídající vyhodnocení. Výzkumné podklady uvedené u metod podporují konkrétní rozhodnutí, necertifikují celý balíček. U významných posouzení zachovej odpovědnou kontrolu učitele a kurikulum přizpůsob skutečnému prostředí.
 
 ## Licenční oznámení
 

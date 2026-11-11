@@ -8,7 +8,7 @@ Specify what the model may do, which reviewed content or sources it can use, and
 
 Choose assistance by activity. Practice can use guiding questions, progressive hints, worked examples, and direct explanation when requested or when questioning stops helping. An assessment may restrict assistance according to the teacher's stated rules. Do not impose an endless Socratic loop or a universal ban on answers. Give the learner a way to ask for help, stop, or involve the teacher.
 
-Design live AI interfaces to prevent passive copying (cognitive offloading). Before adopting a generated procedure or response, require a brief regulatory action from the learner: clarifying intent before querying, pausing over the output (cognitive pause), evaluating completeness and validity, and consciously choosing the next step (continue, verify, reformulate, or decide not to use the output).
+Design live AI interfaces to prevent passive copying, where the tool thinks instead of the learner. Before adopting a generated procedure or response, require a brief check from the learner: clarify intent before querying, pause over the output, evaluate completeness and validity, and choose the next step (continue, verify, reformulate, or decide not to use the output).
 
 Use explicit rubrics for feedback and open responses. Compare model judgments with teacher-reviewed examples before relying on them. Significant grading, placement, or disciplinary decisions require accountable human review; a single model response must not be the sole decision-maker. Record uncertainty and let the teacher correct a judgment.
 

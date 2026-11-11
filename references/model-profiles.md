@@ -1,14 +1,18 @@
 # Models, effort, speed and host adaptation
 
-Use this reference when recommending a model, choosing a speed/effort setting, or adapting how the host loads this skill. Keep the educational instructions identical across providers. The recommendations below are starting configurations for this workflow, not results of a cross-provider benchmark.
+Use this reference when recommending a model, choosing a speed/effort setting, or adapting how the host loads this skill. Keep the educational instructions identical across providers.
 
-Documentation checked: 2026-11-04. Model names, available settings, plans and prices change. Before using a named model, check the user's actual model list and the current official documentation. Do not claim to switch models or settings unless a supported control actually changed them.
+## What this reference does not claim
+
+The recommendations are starting configurations for this workflow, not a benchmark or a measured ranking. They do not prove that one model family teaches better and do not predict latency. Model names, available settings, plans and prices change. Before using a named model, check the user's actual model list and the current official documentation. A UI label is not necessarily an API model ID. Confirm a configuration with representative tasks before calling it validated.
+
+Documentation checked: 2026-11-04.
 
 ## Choose by task before choosing a name
 
 Use a smaller model for bounded edits with explicit criteria, a midrange model for ordinary design and implementation, and a stronger model for conflicting evidence, complex simulations or consequential review. These are task categories, not guaranteed capabilities. Keep the user's existing choice when it meets the criteria.
 
-The named table below is an **untested starting recommendation for this skill**, derived from documentation, not a measured ranking. No cross-provider comparison is established. Confirm a configuration with representative tasks before calling it validated.
+The named table below is an **untested starting recommendation for this skill**, derived from documentation.
 
 ## Escalation and stopping rules
 
@@ -30,7 +34,7 @@ Recheck named guidance when the model or host version changes, a setting is abse
 | Design and implementation of a bounded learning activity | GPT-6.1 Sol, default effort or Medium | Sonnet 5.5, Medium for well-specified agentic work | Gemini 3.8 Flash, Medium |
 | Difficult didactic audit, conflicting sources, complex simulation or architecture | GPT-6 Astra, Light/Low or Medium; increase if needed | Opus 5.5, Medium, then High if needed | Gemini 4 Argon, Medium, then High if needed |
 
-These pairings are the skill author's recommendations inferred from vendor guidance. They do not establish equivalence between models or prove that one family teaches better. If a selected model is unavailable, recommend an available alternative and disclose the change; do not change a user selection without authorization. For example, an existing Gemini 3.1 Pro workflow can retain that model and its supported thinking levels. The table does not predict numerical latency; measure a representative task in the actual environment.
+These pairings are the skill author's recommendations inferred from vendor guidance. If a selected model is unavailable, recommend an available alternative and disclose the change; do not change a user selection without authorization. For example, an existing Gemini 3.1 Pro workflow can retain that model and its supported thinking levels. Measure a representative task in the actual environment for latency.
 
 Distinguish three choices: the model, the amount of reasoning, and any premium serving-speed tier. Lower effort can reduce reasoning work; a vendor's Fast service tier is a different control and may cost more. A model named Flash is a model family, not a universal fast-mode switch. Equal words such as Low, Medium and High do not promise equal reasoning or latency across products.
 

@@ -14,15 +14,15 @@ In an assessment mode, define permitted assistance and scoring before the attemp
 
 ## Design trustworthy tasks
 
-Check the answer key, explanation and plausible alternatives. For multiple-choice tasks, prefer meaningful distractors linked to known errors and avoid accidental clues. For open responses, accept equivalent wording, valid alternative methods and appropriate assumptions. Do not make one model answer the only correct formulation.
+Check the answer key, explanation and plausible alternatives. For multiple-choice tasks, prefer meaningful distractors linked to known errors and avoid accidental clues. For open responses, accept equivalent wording, valid alternative methods and stated assumptions. Do not make one model answer the only correct formulation.
 
 Use a short rubric with observable criteria, performance descriptions and examples, including borderline and alternative correct responses. Keep dimensions separate when useful: factual accuracy, reasoning, procedure, communication or collaboration. Penalize language mechanics only when they belong to the goal. Speed and public rank need an explicit educational purpose; participation points, badges and completion certificates do not demonstrate mastery.
 
-When implementing a task bank, make the relevant decisions explicit in its existing data format. Useful fields may include a stable task ID, goal ID, prompt, accepted answers or rubric, explanation, hints, source and review state. Add numeric units and tolerances where needed. Keep response records separate: answer, assistance used, attempt and evaluation state. This is an example contract, not a required schema or reason to add tracking to a shared demonstration.
+When implementing a task bank, make the relevant decisions explicit in its existing data format. Useful fields may include a stable task ID, goal ID, prompt, accepted answers or rubric, explanation, hints, source and review state. Add numeric units and tolerances where needed. Keep response records separate: answer, assistance used, attempt and evaluation state. This is an example, not a required schema; a small shared demonstration does not need tracking.
 
 ## Limits of AI judgment
 
-Treat an AI score or error classification as a provisional judgment. Validate against teacher-reviewed examples and domain checks where available. When evidence is ambiguous, request clarification or mark it for review; do not manufacture certainty or use an uncalibrated confidence number as proof. Give learners a way to challenge feedback and give teachers an override with the original response and scoring rationale visible. Consequential decisions require an accountable human review process appropriate to the setting.
+Treat an AI score or error classification as a provisional judgment. Validate against teacher-reviewed examples and domain checks where available. When evidence is ambiguous, request clarification or mark it for review; do not manufacture certainty or use an uncalibrated confidence number as proof. Give learners a way to challenge feedback and give teachers an override with the original response and scoring rationale visible. Consequential decisions require an accountable human review process that fits the setting.
 
 ## Evaluate the learning claim
 

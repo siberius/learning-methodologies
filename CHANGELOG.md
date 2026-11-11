@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased — AI-slop cleanup (2026-11-11)
+
+- Remove repetitive "proportionate" qualifiers and vague "appropriate/relevant" wording in the English and Czech editions.
+- Replace negative contrasts and academic jargon ("documentary claims remain bounded", "algorithmic output", "cognitive offloading", "regulatory action") with plain statements.
+- Consolidate repeated model-profile disclaimers into one "What this reference does not claim" section.
+- Add a "Write learner-facing text without AI slop" section to the English and Czech `SKILL.md`.
+- Regenerate the English and Czech standalone editions; links, anchors, export consistency and license notices pass.
+- Spanish and Russian editions keep the 1.3.0 text and were not retranslated.
+
 ## 1.3.0 (2026-11-09)
 
 - Integrate the FALR framework (Four-Action Learner Regulation Framework – David Zinger) for learner self‑regulation in a shared cognitive space with AI across metacognition, runtime AI and didactic rationale sections.

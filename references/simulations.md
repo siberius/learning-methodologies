@@ -18,7 +18,7 @@ Record the learning objective, state variables, inputs, units, allowed ranges, a
 
 For numerical work, calculate outputs with a verified numerical engine or explicit rules. Keep this engine separate from any LLM commentary. The LLM may explain actual results but must not invent missing calculations or pretend an experiment ran.
 
-Use proportionate checks: a known example, a boundary case, unit consistency, and a relevant invariant or expected trend. For stochastic models, specify the source of randomness and support a reproducible seed when useful. Document limitations rather than implying universal validity.
+Use a few checks that fit the model: a known example, a boundary case, unit consistency and one expected trend. For stochastic models, specify the source of randomness and support a reproducible seed when useful. Document limitations rather than implying universal validity.
 
 ## Design the learning loop
 
@@ -30,4 +30,4 @@ Do not award understanding solely for reaching a target configuration. Seek an e
 
 State whether a character is fictional, composite, or based on documented history. Keep sourced facts distinguishable from reconstructed speech. Give provenance for historical claims and acknowledge disputed interpretations when relevant. Do not claim authentic access to a person's thoughts or fabricate citations.
 
-Define the role, scenario boundaries, learning objective, and debrief. Offer a clear exit from the role and access to an explanation. Match emotional intensity and subject matter to learners and classroom context; provide an alternative activity for sensitive scenarios. Assess the intended reasoning or communication against explicit criteria rather than rewarding agreement with the character.
+Define the role, scenario boundaries, learning objective, and debrief. Offer a clear exit from the role and access to an explanation. Match emotional intensity and subject matter to learners and classroom context; provide an alternative activity for sensitive scenarios. Assess the intended reasoning or communication against explicit criteria; agreement with the character is not evidence by itself.

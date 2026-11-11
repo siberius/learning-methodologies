@@ -19,37 +19,37 @@ Help design, implement or review educational applications whose learning activit
 
 ## Didactic methods for applications built with AI
 
-Use the methods to turn educational goals into learner actions, feedback rules and evidence in the generated application. For example, retrieval requires an attempt before revealing the answer, while scaffolding requires controllable help and a distinction between assisted and independent performance. AI can help implement these decisions; its output still needs subject and teaching review. This applies to offline applications as well as justified runtime AI.
+Use the methods to turn educational goals into learner actions, feedback rules and evidence in the generated application. For example, retrieval requires an attempt before revealing the answer, while scaffolding requires controllable help and a distinction between assisted and independent performance. AI can help implement these decisions; its output still needs subject and teaching review. This applies to offline applications and to runtime AI when the learning goal needs it.
 
 Read [didactic rationale](#reference-didactic-rationale) when explaining why a method fits or tracing it into implementation. It connects methods to product decisions and the evidence needed to assess them.
 
 ## Working route
 
-Use this route at the depth the task needs: establish the goal and constraints → choose a method for the learning obstacle → connect the learner's activity to evidence → implement within scope → check the result. For a review, inspect the existing design instead of implementing. Reuse known context; do not require a planning document for every step.
+Use this route at the depth the task needs: establish the goal and constraints, choose a method for the learning obstacle, connect the learner's activity to evidence, implement within scope and check the result. For a review, inspect the existing design instead of implementing. Reuse known context; do not require a planning document for every step.
 
-Read [decision examples](#reference-decision-examples) when help, alternative answers or uncertain curriculum alignment need clarification. They illustrate decisions, not scripts to copy into every lesson.
+Read [decision examples](#reference-decision-examples) when help, alternative answers or uncertain curriculum alignment needs clarification. They illustrate decisions, not scripts to copy into every lesson.
 
 ## Establish the learning context
 
 Use information already present in the request, project and supplied materials. Ask only about missing information that materially changes the design. For minor uncertainties, state a reasonable assumption and proceed. Avoid a fixed questionnaire or repeated approval for ordinary choices already covered by the request.
 
-Identify the relevant context: learners and prior knowledge, subject, intended outcomes, classroom or independent use, available time and devices, language, accessibility needs, and any supplied curriculum. Follow a curriculum when relevant to the setting; do not assume one national framework. Choose tone from the context and author preference. Do not infer attention, motivation, ability or preferred pedagogy from generation labels.
+Identify the context that changes the design: learners and prior knowledge, subject, intended outcomes, classroom or independent use, available time and devices, language, accessibility needs, and any supplied curriculum. Follow a curriculum when relevant to the setting; do not assume one national framework. Choose tone from the context and author preference. Do not infer attention, motivation, ability or preferred pedagogy from generation labels.
 
-Include the surrounding teaching activity where useful: preparation, individual or group work, teacher intervention, discussion and follow-up. A teacher-led demonstration may need a good discussion prompt rather than accounts and individual scores.
+Include the surrounding teaching activity where useful: preparation, individual or group work, teacher intervention, discussion and follow-up. A teacher-led demonstration may need a good discussion prompt; accounts and individual scores are not required.
 
 ## Connect goals to observable activity
 
-For each important goal, connect the learner's action, evidence, success criteria, assistance conditions and next instructional decision. Keep this concise for small tasks. For open inquiry, the evidence may concern question quality, use of evidence or revision of an explanation rather than one predetermined answer.
+For each important goal, connect the learner's action, evidence, success criteria, assistance conditions and next instructional decision. Keep this concise for small tasks. For open inquiry, the evidence may concern question quality, use of evidence or revision of an explanation; one predetermined answer is not the only option.
 
 Example: the learner predicts how changing resistance affects current, checks a model, explains any discrepancy, and solves a new case independently. Moving a slider or completing a screen alone does not establish understanding.
 
-Use the observed learning obstacle to choose a suitable intervention. Treat an explanation of an error as a provisional hypothesis, not a diagnosis. Select a small coherent set of methods; do not add features merely because they appear in the catalog. Read [methods](#reference-methods) when selecting or implementing a method, support sequence or progression rule.
+Use the observed learning obstacle to choose an intervention that fits it. Treat an explanation of an error as a provisional hypothesis, not a diagnosis. Select a small coherent set of methods; do not add features merely because they appear in the catalog. Read [methods](#reference-methods) when selecting or implementing a method, support sequence or progression rule.
 
 The method reference explicitly covers Socratic learning, the Feynman technique, the Zone of Proximal Development and scaffolding, worked examples, retrieval and spaced practice, error-based learning, metacognition, inquiry, role-play, peer and cooperative learning, projects, flipped teaching and optional gamification. These are selectable approaches, not required features of every application.
 
-Bloom's taxonomy describes cognitive goals and knowledge types. Keep difficulty and prerequisites separate; do not require six locked levels. For practical, interpersonal or other outcomes, choose suitable evidence and acknowledge what an on-screen task cannot establish.
+Bloom's taxonomy describes cognitive goals and knowledge types. Keep difficulty and prerequisites separate; do not require six locked levels. For practical, interpersonal or other outcomes, choose evidence that fits the outcome and acknowledge what an on-screen task cannot establish.
 
-## Choose a proportionate realization
+## Choose a realistic realization
 
 Distinguish AI used to build the application from AI used by learners in the finished product. Choose among reviewed static content, deterministic interactions or simulations, and runtime AI according to the goal and operating constraints. Hints, feedback and spaced practice can work without an AI service.
 
@@ -71,11 +71,11 @@ Read [assessment](#reference-assessment) when designing scored tasks, rubrics, a
 
 ## Preserve access and teacher agency
 
-Design for relevant WCAG 2.2 AA criteria and the learners' actual needs. Check keyboard operation, visible focus, understandable labels and feedback, alternatives to color or sound alone, and justified or adjustable timing. Choose appropriate ways to perceive information and express understanding; do not assign learners fixed learning styles. Seek specialist accessibility help when the implementation warrants it.
+Design for the WCAG 2.2 AA criteria that apply to the activity and the learners' actual needs. Check keyboard operation, visible focus, understandable labels and feedback, alternatives to color or sound alone, and justified or adjustable timing. Choose ways to perceive information and express understanding that fit the learner; do not assign learners fixed learning styles. Seek specialist accessibility help when the implementation warrants it.
 
-Collect only data needed for the activity and identify who sees it, where it goes and how it is retained. Check provider, school and local requirements for the actual deployment when relevant; do not invent universal legal rules. A local anonymous activity need not acquire accounts or persistent tracking.
+Collect only data needed for the activity and identify who sees it, where it goes and how it is retained. Check provider, school and local requirements for the actual deployment; do not invent universal legal rules. A local anonymous activity need not acquire accounts or persistent tracking.
 
-Provide a proportionate way for the teacher or responsible author to review content, correct judgments and intervene in inappropriate adaptation. This can be an editable content file rather than a management system. Significant grading or placement decisions need accountable human review.
+Give the teacher or responsible author a way to review content, correct judgments and intervene in inappropriate adaptation. An editable content file is enough; a management system is not required. Significant grading or placement decisions need accountable human review.
 
 ## Coordinate expertise without inflating the workflow
 
@@ -92,17 +92,31 @@ Carry their decisions into implementation. Do not label a convenient technical c
 
 ## Verify and report at the right level
 
-For implementation, check the affected learner path, meaningful errors, help and relevant failure states. For analysis-only requests, report findings and proposals without changing the product. Adapt checks to the application: a simulation needs model checks; runtime AI needs service-failure and output-handling checks; a simple static activity needs neither by default.
+For implementation, check the affected learner path, the errors learners actually make, the help route and the failure states that matter. For analysis-only requests, report findings and proposals without changing the product. Adapt checks to the application: a simulation needs model checks; runtime AI needs service-failure and output-handling checks; a simple static activity needs neither by default.
 
 Keep three conclusions separate: functional correctness, didactic suitability and observed learning outcomes. Technical checks alone do not establish educational effectiveness. A small pilot can reveal problems without proving causal benefit. Report actual checks and unresolved assumptions; do not invent learner observations or efficacy results.
 
-At handoff, summarize the learning goal, selected approach, important operating assumptions, checks actually completed and remaining limits. Include a goal-to-evidence table only when it makes the result easier to use. Keep the form appropriate to the user's request.
+At handoff, summarize the learning goal, selected approach, important operating assumptions, checks actually completed and remaining limits. Include a goal-to-evidence table only when it makes the result easier to use. Match the form to the user's request.
+
+## Write learner-facing text without AI slop
+
+The application's text carries the teaching. Apply the same standard to prompts, instructions, feedback and explanations:
+
+- Cut empty adjectives ("modern", "engaging", "interactive") unless the next sentence shows what makes them true.
+- State the claim directly; avoid "it is not just X, but Y" and "this is not X, it is Y".
+- Skip announcements such as "in this activity you will learn"; say what the learner does.
+- Feedback names what is correct, what is missing and the next concrete step.
+- Keep numbers, units and conditions specific; no "significantly improves" without a measure.
+- No emoji in buttons, headings or labels. Use text and a consistent icon set.
+- Match the vocabulary to the learners and keep one term for one thing.
+
+Read the text as a learner would. If a sentence could sit unchanged in another product, cut it or make it specific.
 
 ## Integration
 
 When selecting a model, effort or speed, or adapting the loading mechanism, read [model and host profiles](#reference-model-profiles). This includes documentation-based guidance for OpenAI, Claude and Gemini. Keep one shared educational contract and report actual testing separately from intended compatibility. Do not load the profile for an ordinary educational task that does not need it.
 
-Suitable for educational games, quizzes, tutorials, simulations, training and reviews of their teaching design. The core requires no packages, API, specific AI model or student data. The references below are embedded for standalone use. In a native bundle they are separate conditional files. Installation, deployment and other external changes require authorization for those actions. This skill does not replace project instructions or authorize additional scope.
+Use it for educational games, quizzes, tutorials, simulations and reviews of their teaching design. The core requires no packages, API, specific AI model or student data. The references below are embedded for standalone use. In a native bundle they are separate conditional files. Installation, deployment and other external changes require authorization for those actions. This skill does not replace project instructions or authorize additional scope.
 
 Design references: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [CAST UDL Guidelines](https://udlguidelines.cast.org/). These guide design and review; citing them does not certify conformance or educational effectiveness.
 
@@ -160,7 +174,7 @@ Retrieval practice asks learners to reconstruct knowledge before seeing the answ
 
 Help learners set a useful subgoal, plan, monitor understanding and revise their approach using evidence. Ask them to predict success or explain their choice, then compare with independent performance. Keep reflection specific: what evidence changed their view and what they will try next. Do not equate confidence with competence or add a lengthy mandatory journal to a small activity without a purpose.
 
-When working with generated hints, worked examples, or live AI, protect the learner's active role within the Shared Cognitive Space (FALR framework: Choice, Delay / Cognitive Pause, Evaluation, Self-Direction). Prevent an automatic transition from algorithmic output to learner action by inserting a cognitive pause before adopting or copying output. Prompt the learner to evaluate whether the output is valid, what is missing, what they actually understood themselves compared with what the system did for them, and whether to use, revise, verify, or reject the output.
+When working with generated hints, worked examples, or live AI, protect the learner's active role within the Shared Cognitive Space (FALR framework: Choice, Delay / Cognitive Pause, Evaluation, Self-Direction). Prevent passive acceptance: insert a short pause before the learner adopts or copies the model's answer, so the step does not become automatic. Prompt the learner to evaluate whether the output is valid, what is missing, what they actually understood themselves compared with what the system did for them, and whether to use, revise, verify, or reject the output.
 
 ### Methods: Concept maps and relationships
 
@@ -172,7 +186,7 @@ For implementation, use stable concept identifiers and typed, directed relations
 
 ### Methods: Contextual methods
 
-- Inquiry: scaffold question, prediction, test, observation and explanation. Claims about real-world behavior need appropriate real data or an adequately validated model; illustrative outputs must be labeled and bounded. Language-model narration cannot stand in for experimental evidence.
+- Inquiry: scaffold question, prediction, test, observation and explanation. Claims about real-world behavior need appropriate real data or an adequately validated model; illustrative outputs must be labeled, with a note on what they do not show. Language-model narration cannot stand in for experimental evidence.
 - Role-play: define the role, scenario boundaries and success criteria, then debrief. Mark historical dialogue as a reconstruction and distinguish sourced facts from invented speech. Fictional interaction can still have emotional or social consequences.
 - Peer learning: provide a shared task, accountable individual contribution and criteria for useful explanation. Include a way to resolve disagreements and check each learner's understanding.
 - Peer teaching: let learners explain and give feedback against understandable criteria, with access to a reviewed explanation or teacher when needed. Do not make an inexperienced peer the final authority on subject accuracy.
@@ -206,15 +220,15 @@ In an assessment mode, define permitted assistance and scoring before the attemp
 
 ### Assessment: Design trustworthy tasks
 
-Check the answer key, explanation and plausible alternatives. For multiple-choice tasks, prefer meaningful distractors linked to known errors and avoid accidental clues. For open responses, accept equivalent wording, valid alternative methods and appropriate assumptions. Do not make one model answer the only correct formulation.
+Check the answer key, explanation and plausible alternatives. For multiple-choice tasks, prefer meaningful distractors linked to known errors and avoid accidental clues. For open responses, accept equivalent wording, valid alternative methods and stated assumptions. Do not make one model answer the only correct formulation.
 
 Use a short rubric with observable criteria, performance descriptions and examples, including borderline and alternative correct responses. Keep dimensions separate when useful: factual accuracy, reasoning, procedure, communication or collaboration. Penalize language mechanics only when they belong to the goal. Speed and public rank need an explicit educational purpose; participation points, badges and completion certificates do not demonstrate mastery.
 
-When implementing a task bank, make the relevant decisions explicit in its existing data format. Useful fields may include a stable task ID, goal ID, prompt, accepted answers or rubric, explanation, hints, source and review state. Add numeric units and tolerances where needed. Keep response records separate: answer, assistance used, attempt and evaluation state. This is an example contract, not a required schema or reason to add tracking to a shared demonstration.
+When implementing a task bank, make the relevant decisions explicit in its existing data format. Useful fields may include a stable task ID, goal ID, prompt, accepted answers or rubric, explanation, hints, source and review state. Add numeric units and tolerances where needed. Keep response records separate: answer, assistance used, attempt and evaluation state. This is an example, not a required schema; a small shared demonstration does not need tracking.
 
 ### Assessment: Limits of AI judgment
 
-Treat an AI score or error classification as a provisional judgment. Validate against teacher-reviewed examples and domain checks where available. When evidence is ambiguous, request clarification or mark it for review; do not manufacture certainty or use an uncalibrated confidence number as proof. Give learners a way to challenge feedback and give teachers an override with the original response and scoring rationale visible. Consequential decisions require an accountable human review process appropriate to the setting.
+Treat an AI score or error classification as a provisional judgment. Validate against teacher-reviewed examples and domain checks where available. When evidence is ambiguous, request clarification or mark it for review; do not manufacture certainty or use an uncalibrated confidence number as proof. Give learners a way to challenge feedback and give teachers an override with the original response and scoring rationale visible. Consequential decisions require an accountable human review process that fits the setting.
 
 ### Assessment: Evaluate the learning claim
 
@@ -252,7 +266,7 @@ Record the learning objective, state variables, inputs, units, allowed ranges, a
 
 For numerical work, calculate outputs with a verified numerical engine or explicit rules. Keep this engine separate from any LLM commentary. The LLM may explain actual results but must not invent missing calculations or pretend an experiment ran.
 
-Use proportionate checks: a known example, a boundary case, unit consistency, and a relevant invariant or expected trend. For stochastic models, specify the source of randomness and support a reproducible seed when useful. Document limitations rather than implying universal validity.
+Use a few checks that fit the model: a known example, a boundary case, unit consistency and one expected trend. For stochastic models, specify the source of randomness and support a reproducible seed when useful. Document limitations rather than implying universal validity.
 
 ### Simulations: Design the learning loop
 
@@ -264,7 +278,7 @@ Do not award understanding solely for reaching a target configuration. Seek an e
 
 State whether a character is fictional, composite, or based on documented history. Keep sourced facts distinguishable from reconstructed speech. Give provenance for historical claims and acknowledge disputed interpretations when relevant. Do not claim authentic access to a person's thoughts or fabricate citations.
 
-Define the role, scenario boundaries, learning objective, and debrief. Offer a clear exit from the role and access to an explanation. Match emotional intensity and subject matter to learners and classroom context; provide an alternative activity for sensitive scenarios. Assess the intended reasoning or communication against explicit criteria rather than rewarding agreement with the character.
+Define the role, scenario boundaries, learning objective, and debrief. Offer a clear exit from the role and access to an explanation. Match emotional intensity and subject matter to learners and classroom context; provide an alternative activity for sensitive scenarios. Assess the intended reasoning or communication against explicit criteria; agreement with the character is not evidence by itself.
 
 ## Reference: runtime-ai
 
@@ -279,7 +293,7 @@ Specify what the model may do, which reviewed content or sources it can use, and
 
 Choose assistance by activity. Practice can use guiding questions, progressive hints, worked examples, and direct explanation when requested or when questioning stops helping. An assessment may restrict assistance according to the teacher's stated rules. Do not impose an endless Socratic loop or a universal ban on answers. Give the learner a way to ask for help, stop, or involve the teacher.
 
-Design live AI interfaces to prevent passive copying (cognitive offloading). Before adopting a generated procedure or response, require a brief regulatory action from the learner: clarifying intent before querying, pausing over the output (cognitive pause), evaluating completeness and validity, and consciously choosing the next step (continue, verify, reformulate, or decide not to use the output).
+Design live AI interfaces to prevent passive copying, where the tool thinks instead of the learner. Before adopting a generated procedure or response, require a brief check from the learner: clarify intent before querying, pause over the output, evaluate completeness and validity, and choose the next step (continue, verify, reformulate, or decide not to use the output).
 
 Use explicit rubrics for feedback and open responses. Compare model judgments with teacher-reviewed examples before relying on them. Significant grading, placement, or disciplinary decisions require accountable human review; a single model response must not be the sole decision-maker. Record uncertainty and let the teacher correct a judgment.
 
@@ -306,15 +320,19 @@ Offer an appropriate fallback such as reviewed hints, static exercises, saved pr
 Source section: Models, effort, speed and host adaptation
 
 
-Use this reference when recommending a model, choosing a speed/effort setting, or adapting how the host loads this skill. Keep the educational instructions identical across providers. The recommendations below are starting configurations for this workflow, not results of a cross-provider benchmark.
+Use this reference when recommending a model, choosing a speed/effort setting, or adapting how the host loads this skill. Keep the educational instructions identical across providers.
 
-Documentation checked: 2026-11-04. Model names, available settings, plans and prices change. Before using a named model, check the user's actual model list and the current official documentation. Do not claim to switch models or settings unless a supported control actually changed them.
+### Model Profiles: What this reference does not claim
+
+The recommendations are starting configurations for this workflow, not a benchmark or a measured ranking. They do not prove that one model family teaches better and do not predict latency. Model names, available settings, plans and prices change. Before using a named model, check the user's actual model list and the current official documentation. A UI label is not necessarily an API model ID. Confirm a configuration with representative tasks before calling it validated.
+
+Documentation checked: 2026-11-04.
 
 ### Model Profiles: Choose by task before choosing a name
 
 Use a smaller model for bounded edits with explicit criteria, a midrange model for ordinary design and implementation, and a stronger model for conflicting evidence, complex simulations or consequential review. These are task categories, not guaranteed capabilities. Keep the user's existing choice when it meets the criteria.
 
-The named table below is an **untested starting recommendation for this skill**, derived from documentation, not a measured ranking. No cross-provider comparison is established. Confirm a configuration with representative tasks before calling it validated.
+The named table below is an **untested starting recommendation for this skill**, derived from documentation.
 
 ### Model Profiles: Escalation and stopping rules
 
@@ -336,7 +354,7 @@ Recheck named guidance when the model or host version changes, a setting is abse
 | Design and implementation of a bounded learning activity | GPT-6.1 Sol, default effort or Medium | Sonnet 5.5, Medium for well-specified agentic work | Gemini 3.8 Flash, Medium |
 | Difficult didactic audit, conflicting sources, complex simulation or architecture | GPT-6 Astra, Light/Low or Medium; increase if needed | Opus 5.5, Medium, then High if needed | Gemini 4 Argon, Medium, then High if needed |
 
-These pairings are the skill author's recommendations inferred from vendor guidance. They do not establish equivalence between models or prove that one family teaches better. If a selected model is unavailable, recommend an available alternative and disclose the change; do not change a user selection without authorization. For example, an existing Gemini 3.1 Pro workflow can retain that model and its supported thinking levels. The table does not predict numerical latency; measure a representative task in the actual environment.
+These pairings are the skill author's recommendations inferred from vendor guidance. If a selected model is unavailable, recommend an available alternative and disclose the change; do not change a user selection without authorization. For example, an existing Gemini 3.1 Pro workflow can retain that model and its supported thinking levels. Measure a representative task in the actual environment for latency.
 
 Distinguish three choices: the model, the amount of reasoning, and any premium serving-speed tier. Lower effort can reduce reasoning work; a vendor's Fast service tier is a different control and may cost more. A model named Flash is a model family, not a universal fast-mode switch. Equal words such as Low, Medium and High do not promise equal reasoning or latency across products.
 
@@ -405,11 +423,11 @@ A learner explains: “Plants get their food from soil; sunlight warms it up.”
 
 ### Decision Examples: Work with an unavailable curriculum
 
-A teacher requests “full alignment with our school curriculum” but supplies no school document. Use the stated learning goal to produce a provisional activity. Request the relevant excerpt only when exact alignment matters; identify what remains unverified. Never invent local outcome codes or certify coverage. For Czech schools, a general RVP reference does not establish alignment with the particular ŠVP. Why: useful drafting can proceed while documentary claims remain bounded.
+A teacher requests “full alignment with our school curriculum” but supplies no school document. Use the stated learning goal to produce a provisional activity. Request the relevant excerpt only when exact alignment matters; identify what remains unverified. Never invent local outcome codes or certify coverage. For Czech schools, a general RVP reference does not establish alignment with the particular ŠVP. Why: useful drafting can proceed, and the limits of the documentary claims stay visible.
 
 ### Decision Examples: Insert a Cognitive Pause Before Adopting AI Output
 
-In an app with an embedded AI assistant, a learner asks for a solution outline or error explanation. Instead of an "Apply to my solution" button, insert a cognitive pause: prevent direct copying and ask a brief verification question ("Which step is central here? What is missing from the AI suggestion for your specific case?"). Allow the learner to revise the suggestion, verify it on another example, or decide not to use it. Record the model's generated text as supported assistance, not as evidence of the learner's understanding. Reason: a cognitive pause prevents an automatic transition from algorithmic output to learner action without active cognitive processing.
+In an app with an embedded AI assistant, a learner asks for a solution outline or error explanation. Instead of an "Apply to my solution" button, insert a cognitive pause: prevent direct copying and ask a brief verification question ("Which step is central here? What is missing from the AI suggestion for your specific case?"). Allow the learner to revise the suggestion, verify it on another example, or decide not to use it. Record the model's generated text as supported assistance, not as evidence of the learner's understanding. Reason: a pause stops the learner from copying the model's answer without thinking it through.
 
 ## Reference: tutor-state
 
@@ -422,9 +440,9 @@ Read when designing a multi-step tutor, resumable activity or exam practice. The
 
 Separate explanation, practice and assessment where the activity needs them. Explanation can show a worked example. Practice asks for a response, waits, gives criterion-based feedback and offers help. Assessment follows declared rules for assistance and feedback timing. Let the learner pause, request help or leave; a restricted assessment may end or mark the attempt supported when content help is requested. Preserve accessibility accommodations that do not reveal content.
 
-For conversational practice, keep one actionable question pending unless the task calls for a batch. Do not generate the learner's answer or reveal the solution while waiting. Distinguish idle, awaiting-answer, evaluating, feedback and paused states as needed. Disable duplicate submissions or associate them with the same attempt; a late service response must not grade a new question or overwrite a changed mode. Treat model output as a proposed response, not permission to change grades or assessment rules.
+For conversational practice, keep one actionable question pending unless the task calls for a batch. Do not generate the learner's answer or reveal the solution while waiting. Distinguish idle, awaiting-answer, evaluating, feedback and paused states as needed. Disable duplicate submissions or associate them with the same attempt; a late service response must not grade a new question or overwrite a changed mode. Model output is a proposed response; only the teacher changes grades or assessment rules.
 
-Keep mode, goal, current task, attempt identifier, answer exposure and feedback status in application state. Render a brief progress indicator if useful; repeating a decorative status line is not state management. On an explicit mode switch, explain changed assistance conditions and preserve earlier exposure. A revealed task does not become an independent assessment merely by changing a label. Use a fresh suitable task when new independent evidence is needed.
+Keep mode, goal, current task, attempt identifier, answer exposure and feedback status in application state. Render a brief progress indicator if useful; repeating a decorative status line is not state management. On an explicit mode switch, explain changed assistance conditions and preserve earlier exposure. Changing a label does not turn a revealed task into an independent assessment. Use a fresh suitable task when new independent evidence is needed.
 
 ### Tutor State: Resume from evidence, not a mastery claim
 
@@ -455,7 +473,7 @@ Check only relevant paths: question → response → feedback; help → supporte
 Source section: Why didactic methods belong in AI-assisted application development
 
 
-Read when explaining the skill's purpose or deciding how a teaching method should change an application. The skill supports developers and educators using AI to design and build educational applications. It also guides applications that use AI during learning, when that is warranted. The method must be reflected in learner actions, feedback and evidence, not merely mentioned in a prompt or feature label.
+Read when explaining the skill's purpose or deciding how a teaching method should change an application. The skill supports developers and educators using AI to design and build educational applications. It also guides applications that use AI during learning, when that is warranted. The method must show up in learner actions, feedback and evidence. A sentence in a prompt or a feature label is not enough.
 
 ### Didactic Rationale: Turn a teaching decision into observable behavior
 
@@ -481,7 +499,7 @@ Separate AI at authoring time from AI at runtime. Reviewed static content and de
 
 ### Didactic Rationale: State the limits of the rationale
 
-This is an explanation of design choices, not evidence that this skill or every implementation improves outcomes. Subject correctness, accessibility and classroom feasibility require appropriate checks. A technical pass does not demonstrate learning; suitable learner evidence and, for causal claims, an appropriate evaluation are needed. Research guidance linked in the methods reference informs particular choices and does not certify the whole package. Retain teacher review for consequential judgments and adapt curriculum to the actual setting.
+This explains design choices; it does not prove that this skill or every implementation improves outcomes. Subject correctness, accessibility and classroom feasibility require checks in the actual setting. A technical pass does not demonstrate learning; suitable learner evidence and, for causal claims, an appropriate evaluation are needed. Research guidance linked in the methods reference informs particular choices and does not certify the whole package. Retain teacher review for consequential judgments and adapt curriculum to the actual setting.
 
 ## License notice
 

@@ -18,7 +18,7 @@ Zaznamenej vzdělávací cíl, stavové proměnné, vstupy, jednotky, povolené 
 
 Číselné výsledky počítej ověřeným výpočetním jádrem nebo výslovně definovanými pravidly. Výpočet odděl od komentáře jazykového modelu. AI může vysvětlovat získané výsledky, nesmí si domýšlet chybějící výpočet ani předstírat provedení experimentu.
 
-Přiměřeně ověř známý příklad, mezní případ, správnost jednotek a příslušný invariant nebo očekávaný trend. U náhodných modelů popiš zdroj náhodnosti a podle potřeby umožni opakování se stejným inicializačním číslem. Uveď omezení modelu.
+Ověř několik kontrol, které modelu odpovídají: známý příklad, mezní případ, správnost jednotek a jeden očekávaný trend. U náhodných modelů popiš zdroj náhodnosti a podle potřeby umožni opakování se stejným inicializačním číslem. Uveď omezení modelu.
 
 ## Průběh učení
 

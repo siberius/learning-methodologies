@@ -1,6 +1,6 @@
 # Why didactic methods belong in AI-assisted application development
 
-Read when explaining the skill's purpose or deciding how a teaching method should change an application. The skill supports developers and educators using AI to design and build educational applications. It also guides applications that use AI during learning, when that is warranted. The method must be reflected in learner actions, feedback and evidence, not merely mentioned in a prompt or feature label.
+Read when explaining the skill's purpose or deciding how a teaching method should change an application. The skill supports developers and educators using AI to design and build educational applications. It also guides applications that use AI during learning, when that is warranted. The method must show up in learner actions, feedback and evidence. A sentence in a prompt or a feature label is not enough.
 
 ## Turn a teaching decision into observable behavior
 
@@ -26,4 +26,4 @@ Separate AI at authoring time from AI at runtime. Reviewed static content and de
 
 ## State the limits of the rationale
 
-This is an explanation of design choices, not evidence that this skill or every implementation improves outcomes. Subject correctness, accessibility and classroom feasibility require appropriate checks. A technical pass does not demonstrate learning; suitable learner evidence and, for causal claims, an appropriate evaluation are needed. Research guidance linked in the methods reference informs particular choices and does not certify the whole package. Retain teacher review for consequential judgments and adapt curriculum to the actual setting.
+This explains design choices; it does not prove that this skill or every implementation improves outcomes. Subject correctness, accessibility and classroom feasibility require checks in the actual setting. A technical pass does not demonstrate learning; suitable learner evidence and, for causal claims, an appropriate evaluation are needed. Research guidance linked in the methods reference informs particular choices and does not certify the whole package. Retain teacher review for consequential judgments and adapt curriculum to the actual setting.
