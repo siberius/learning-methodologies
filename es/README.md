@@ -6,7 +6,9 @@ Autor: Luděk Sušický. Licencia MIT. Esta edición española comparte la base 
 
 biolog, středoškolský a vysokoškolský učitel informatických předmětů
 
-Versión actual: **1.3.0**. Las ediciones lingüísticas incluyen una ruta de trabajo breve, ejemplos de decisión, modos del tutor y aprendizaje reanudable, mapas conceptuales y reglas explícitas para elegir modelos y escalar. Las configuraciones con nombres de modelos son recomendaciones iniciales, no resultados de pruebas entre proveedores.
+Versión actual: **1.4.0**. Las ediciones lingüísticas incluyen una ruta de trabajo breve, ejemplos de decisión, modos del tutor y aprendizaje reanudable, mapas conceptuales y reglas explícitas para elegir modelos y escalar. Las configuraciones con nombres de modelos son recomendaciones iniciales, no resultados de pruebas entre proveedores.
+
+El skill ofrece pocas opciones didácticas pertinentes ante una elección importante nueva: explicación breve, ejemplo concreto y recomendación. Recuerda tus elecciones y las conecta con implementación y comprobación. Puedes decir «elige por mí las decisiones habituales» para delegar o volver a pedir una comparación. Las actividades pequeñas sin conexión mantienen su alcance. Las fichas de métodos, la interfaz cognitiva y la práctica adaptativa opcional apoyan este proceso.
 
 ## Para qué sirve
 
@@ -19,6 +21,20 @@ Versión actual: **1.3.0**. Las ediciones lingüísticas incluyen una ruta de tr
 - Elegir modelo, esfuerzo y velocidad adecuados mediante orientación fechada de OpenAI, Claude y Gemini, explicitando el estado de verificación.
 
 Los métodos incluyen aprendizaje socrático, técnica de Feynman, zona de desarrollo próximo y andamiaje, ejemplos resueltos, práctica de recuperación y espaciada, metacognición, indagación, juego de roles, aprendizaje entre iguales y cooperativo, proyectos y enseñanza invertida. Son opciones seleccionadas para la tarea; instalar el skill no las convierte en funciones obligatorias.
+
+## Instalación
+
+Elige una edición con [Skills CLI](https://github.com/vercel-labs/skills). `-g` instala para el usuario y `-a codex` selecciona Codex. Usa `-a claude-code` para Claude Code u omite la opción para elegir interactivamente. Instala solo las ediciones que utilices.
+
+```bash
+npx skills add siberius/learning-methodologies --skill metodologias-de-aprendizaje --full-depth -g -a codex
+```
+
+Sin `--agent`, `skills use` imprime un prompt preparado. Para iniciar temporalmente un agente compatible con el skill:
+
+```bash
+npx skills use siberius/learning-methodologies --skill metodologias-de-aprendizaje --full-depth --agent codex
+```
 
 ## Elige un formato
 

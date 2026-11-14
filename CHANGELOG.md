@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.4.0 (2026-11-14)
+
+- Clarify age, educational role and topic experience in all editions. Add conditional audience profiles from preschool to adult and mixed groups, functional access needs, creator questions and audience-specific method adaptations.
+
+- Add guided creator decisions with brief method choices, explicit delegation, decision continuity and implementation evidence in EN/CS/ES/RU.
+- Add three conditional references per edition: design dialogue, cognitive interface and adaptive practice. Preserve offline scope and optional runtime AI.
+- Add twelve stable method cards, differentiated support, transfer and open game design, two-sided item checks, and correction of dependent assessment records.
+- Integrate the supplied gamification synthesis and reviewed Claude ecosystem ideas selectively; retain accessibility, source attribution and uncertainty.
+- Update usage guidance and regenerate standalone exports. Behavioral checks and package validation are recorded separately; no classroom-effectiveness claim.
+
+## Unreleased: learning games research (2026-11-14)
+
+- Extend all four editions with a conditional reference for learning games and purposeful gamification, including international primary, secondary, university and adult contexts.
+- Add a mechanic selection matrix, playable learning sequences, independent learning evidence, accessibility, proportional implementation and validation criteria.
+- Distinguish research findings, design frameworks and practitioner experience; include context limits and evidence checked through 2026-11-14.
+- Regenerate all four standalone editions from maintained sources. This update does not claim classroom effectiveness or new cross-model behavioral validation.
+
 ## Unreleased — AI-slop cleanup (2026-11-11)
 
 - Remove repetitive "proportionate" qualifiers and vague "appropriate/relevant" wording in the English and Czech editions.

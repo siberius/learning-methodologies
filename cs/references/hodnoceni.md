@@ -48,3 +48,13 @@ Dokončení, používání, čas, spokojenost, odezvu a technické chyby sleduj 
 - [IES: Organizing Instruction and Study to Improve Student Learning](https://ies.ed.gov/ncee/wwc/PracticeGuide/1): samostatné vybavování a opakování s odstupem podporují návrh ověřování.
 
 Postup, příklad rubriky i implementační volby jsou metodická doporučení. Vhodnost posuď podle žáků, předmětu, důsledků hodnocení a dostupných dokladů.
+
+## Ověř rozhodnutí a oprav důsledky
+
+U úlohy s jednou správnou odpovědí nezávisle vyřeš skutečné zadání a zkus obhájit každou možnost podle uvedených jednotek, přesnosti a předpokladů. Obhajitelná musí zůstat právě jedna. U vícečetného výběru dodrž oznámené pravidlo; u otevřených úloh zachovej platné alternativy. Potom aplikuj každý deklarovaný chybný postup na skutečná data: musí vést k zamýšlenému distraktoru. Po změně zadání znovu prověř dotčené možnosti. Ekvivalentní zlomky nebo neurčené zaokrouhlení nesmějí vytvořit další správnou odpověď.
+
+Propoj pozorovanou odpověď, možné vysvětlení, rozlišující doplňující úlohu a konkrétní další krok. Jedna chyba neurčuje příčinu. Při návrhu podle důkazů (ECD) vymez cílovou kompetenci, pozorovatelný důkaz a úlohu, která jej vyvolá. Herní událost může odrážet motorickou obtíž, zkoumání nebo tipování; telemetrie sama neurčuje vytrvalost ani osobnost. Vysvětli potřebný sběr dat.
+
+Při chybě obsahu, klíče či výkladu tutora chybu přiznej a oprav; prověř navazující nápovědy, úlohy, hodnocení a pokrok. Dotčený pokus nevydávej za důkaz neznalosti. Zachovej potřebný původní důkaz a verzi obsahu; označ nejistotu a podle potřeby nabídni nové ověření. Učitelský i žákovský pohled musí používat stejnou verzi zadání a možností.
+
+Ověřovací postupy rozvíjejí návrhové principy [Learning Commons pro kontrolu porozumění](https://github.com/learning-commons-org/agent-skills/tree/main/skills/k12-check-for-understanding). Nepřebírají pevné formáty, americké kurikulum jako výchozí ani omezení uvádění zdrojů.

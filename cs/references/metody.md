@@ -2,6 +2,32 @@
 
 Tuto referenci použij po vymezení vzdělávacího cíle a dokladů jeho dosažení. Zvol nejmenší účelnou intervenci pro konkrétní překážku v učení. Typ aplikace sám neurčuje výukovou metodu. Uvedené metody tvoří nabídku, nikoli povinný seznam funkcí.
 
+## Karty metod pro konkrétní volbu
+
+Používej stabilní ID napříč překlady a záznamy rozhodnutí. Řádky propojují stručný popis pro tvůrce, potřebu, činnost a důkaz. Oddíly níže rozvádějí podporu a meze. U vybrané karty konkretizuj malé provedení, případné rozšíření, kontrolu selhání a relevantní zdroj; celý katalog standardně nezobrazuj. Zdroje podporují konkrétní principy, nikoli účinnost vytvořené aplikace.
+
+U vybrané karty výslovně uveď cílovou skupinu, potřebné vstupní znalosti a úpravu jazyka, opory či hodnocení; metodu nepřiřazuj jen podle věku.
+
+| ID a stručný popis | Kdy nabídnout a malé provedení | Důkaz a kontrola podpory |
+| --- | --- | --- |
+| `worked-example-fading`: vidět postup, doplnit ho a samostatně použít | Nový postup; ověřený příklad a doplňovací úloha | Nový samostatný případ; zkušený může přeskočit a pomoc lze vrátit |
+| `guided-inquiry`: předpovědět, změnit proměnnou, vysvětlit výsledek | Pochopení systému; jeden vymezený experiment | Zdůvodnění nové předpovědi; náhodná manipulace nenahradí úsudek |
+| `productive-failure`: zkusit postupy a porovnat je s vysvětlením | Dostatečné vstupní znalosti a čas na uspořádání poznatků | Porovnání postupů a použití vysvětleného principu; začátečník nesmí uvíznout |
+| `retrieval-spacing`: vybavit před odhalením a později se vrátit | Uchování dostupné znalosti; pokus, oprava a pozdější návrat | Samostatné vybavení s odstupem; okamžitá oprava není rozložení |
+| `contrast-interleaving`: rozlišit podobné případy a vybrat strategii | Záměna kategorií či postupů po počáteční opoře | Vysvětlení rozlišujícího znaku; náhodná směs témat nestačí |
+| `socratic-dialogue`: cílenou otázkou prozkoumat uvažování | Zdůvodnění může odhalit užitečnou nejistotu | Revize či obhajoba s důkazy; přímé vysvětlení zůstává dostupné |
+| `self-explanation`: vysvětlit vlastními slovy a přepracovat | Odhalení mezer po úvodním učení | Obsahová správnost a použití, nikoli samotná plynulost |
+| `cooperative-project`: sladit role při tvorbě smysluplného výsledku | Společné bádání či autentická úloha s dostatkem času | Individuální příspěvek a vysvětlení; skupinový úspěch není zvládnutí všech |
+| `role-play`: rozhodovat v roli a reflektovat | Perspektivy, komunikace nebo rozhodování o postupu | Vysvětlení voleb a následků; souhlas s postavou není správnost |
+| `metacognitive-review`: porovnat plán či jistotu s důkazy | Řízení vlastního učení a dalších kroků | Změna postupu podle výkonu; jistota není schopnost |
+| `criterion-rubric`: posoudit pozorovatelné kvality podle kritérií | Otevřené odpovědi, projekty či zdůvodněné alternativy | Hraniční příklady a možnost opravy; neodměňovat názorovou shodu |
+| `representation-transfer`: propojit konkrétní a formální reprezentace | Úspěch zůstává vázán na herní objekty | Použití v nové reprezentaci; zachovat přístupné rovnocenné cesty |
+
+U diferencovaných variant pojmenuj společný cíl a rozhodnutí, které musí zůstat v každé verzi. Měň jazyk, reprezentaci, tempo a podporu, aniž cílové rozhodnutí tiše vyřešíš. Podporovaným žákům zachovej zajímavý kontext. Rozšíření přidá zdůvodnění, protipříklad či přenos, nemusí jen další položky. Záměrnou změnu cíle označ. Skupiny vycházejí z revidovatelných důkazů, ne trvalých nálepek schopností.
+
+Volitelná rozšíření jako trvalé opakování či živá AI potřebují důvod a příslušné reference. U kurikulárních vazeb uchovej zdroj, verzi a zemi; rozliš oficiální požadavek, komponentu a odhadnutý předpoklad. Hrana pojmové mapy není automaticky ověřenou posloupností učení.
+
+
 ## Vycházej z pozorované potřeby
 
 | Pozorovaná překážka | Možný postup | Co ověřit |

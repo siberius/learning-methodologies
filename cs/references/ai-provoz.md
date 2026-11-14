@@ -31,3 +31,7 @@ Stanov rozpočet, limity relace, časové limity a možnost zrušení požadavku
 Navrhni přiměřenou náhradu: zkontrolované nápovědy, statické úlohy, uložený postup nebo pomoc učitele. Nedostupnou zpětnou vazbu označ; nevymýšlej ji. Počítej s různými školními zařízeními a omezeným připojením. Záložní průchod sám o sobě není důvodem přidat další backend.
 
 Před použitím ve třídě projdi hlavní aktivitu, chybnou odpověď, žádost o pomoc, nejisté hodnocení a selhání služby. Uveď zbývající omezení a rozsah kontroly učitelem.
+
+## Ověř generovaný obsah ve vymezených mezích
+
+Před zpřístupněním generovaných úloh proveď relevantní kontroly oborové správnosti, řešitelnosti, stavových přechodů a vykreslení. Jediné řešení vyžaduj jen u úloh, které ho slibují. Oprávnění a hranice strukturovaných výstupů vynucuj mimo model; schéma nedokládá pravdivost a deterministická kontrola zaručuje jen vlastnosti, které ověřuje. Neplatný obsah odmítni nebo odděl k revizi a zachovej ověřenou náhradu. Důsledky chyby pro nápovědy, hodnocení a pokrok řeš postupem oprav v `hodnoceni.md`.

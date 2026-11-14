@@ -36,3 +36,13 @@ Registra finalización, uso, tiempo, disfrute, latencia y errores como indicador
 - [Guía práctica del IES](https://ies.ed.gov/ncee/wwc/PracticeGuide/1): la recuperación autónoma y el repaso diferido orientan el enfoque de evaluación propuesto.
 
 El proceso, la rúbrica de ejemplo y las decisiones de implementación anteriores son recomendaciones de diseño. Su adecuación debe comprobarse según el alumnado, la materia, las consecuencias y la evidencia disponible.
+
+## Comprueba decisiones y corrige consecuencias
+
+En un ítem de respuesta única, resuelve el enunciado real de forma independiente e intenta defender cada opción con sus unidades, precisión y supuestos. Debe quedar una sola defendible. Para respuesta múltiple sigue la regla declarada; en tareas abiertas conserva alternativas válidas. Aplica después cada procedimiento erróneo declarado a los datos reales: debe producir el distractor previsto. Revisa opciones afectadas tras cambiar el enunciado. Fracciones equivalentes o redondeo no especificado no deben generar otra respuesta correcta.
+
+Conecta respuesta observada, explicación posible, tarea que distinga causas y siguiente acción concreta. Una respuesta incorrecta no diagnostica la causa. En diseño centrado en evidencias (ECD), identifica competencia, evidencia observable y tarea que la provoca. Un evento del juego puede reflejar dificultad motora, exploración o azar; la telemetría no demuestra persistencia ni personalidad. Explica la recogida necesaria de datos.
+
+Si contenido, clave o explicación del tutor son incorrectos, reconoce y corrige el error; revisa ayudas, tareas, puntuaciones y progreso dependientes. No uses el intento afectado como prueba de ignorancia. Conserva evidencia original necesaria y versión del contenido; indica incertidumbre y ofrece otra comprobación cuando proceda. Las vistas docente y estudiantil deben usar la misma versión del enunciado y opciones.
+
+Estos procedimientos desarrollan principios de [Learning Commons para comprobar comprensión](https://github.com/learning-commons-org/agent-skills/tree/main/skills/k12-check-for-understanding). No importan formatos fijos, currículo estadounidense por defecto ni restricciones de atribución.

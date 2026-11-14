@@ -2,21 +2,24 @@
 
 ## Kdy skill použít
 
-Při tvorbě vzdělávací aplikace, podstatné změně její výuky nebo pedagogické revizi. Pro změnu barvy tlačítka či běžnou technickou opravu bez dopadu na výuku jej nenačítej. Agent převezme dostupné informace a zeptá se jen na významné neznámé.
+Při tvorbě vzdělávací aplikace, podstatné změně její výuky nebo pedagogické revizi. Pro změnu barvy tlačítka či běžnou technickou opravu bez dopadu na výuku jej nenačítej. Agent převezme dostupné informace a zeptá se na významné neznámé a otevřené výukové volby.
+
+## Průběžná rozhodnutí při tvorbě
+
+Skill při nové podstatné volbě nabídne několik relevantních výukových možností: krátké vysvětlení, konkrétní příklad a doporučení. Pamatuje si volby a propojí je s implementací a ověřením. Pokynem „běžná rozhodnutí vyber za mě“ můžeš volby delegovat nebo později znovu požádat o srovnání. Malá offline pomůcka zůstává malá. Postup podporují karty metod, návrh kognitivního rozhraní a volitelné adaptivní procvičování.
 
 ## Instalace přes skills.sh CLI
 
-Doporučený a nejrychlejší způsob instalace pro více než 20 AI prostředí (Claude Code, Cursor, Codex, Antigravity, OpenCode, Cline aj.) je pomocí nástroje `skills`:
+Vyber jednu jazykovou variantu přes [Skills CLI](https://github.com/vercel-labs/skills). `-g` znamená instalaci pro uživatele a `-a codex` vybírá Codex. Pro Claude Code použij `-a claude-code`, případně volbu asistenta vynech a vyber ho interaktivně. Instaluj jen používané varianty.
 
 ```bash
-# Instalace české varianty do aktuálního projektu
-npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth
+npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth -g -a codex
+```
 
-# Globální instalace pro všechny projekty
-npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth -g
+Bez `--agent` příkaz `skills use` vypíše připravený prompt. Pro dočasné spuštění podporovaného asistenta se skillem:
 
-# Cílení na konkrétního agenta (např. Claude Code)
-npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth -a claude-code
+```bash
+npx skills use siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth --agent codex
 ```
 
 ## Nativní balíček
@@ -51,10 +54,14 @@ Předej agentovi `vzdelavaci-metodiky.md` a výslovně požádej o jeho použit�
 | AI služba v hotové aplikaci | `references/ai-provoz.md` |
 | Konkrétní česká škola, RVP/ŠVP či zkouška | `references/ceske-skolstvi.md` |
 | Model, uvažování, rychlost nebo přizpůsobení klientovi | `references/modely-a-prostredi.md` |
+| Volby tvůrce a návaznost rozhodnutí | `references/dialog-navrhu.md` |
+| Reprezentace, multimédia a pozornost | `references/kognitivni-rozhrani.md` |
+| Plánování opakování a výběr obtížnosti | `references/adaptivni-procvicovani.md` |
+| Herní mechaniky, motivace a přenos | `references/vzdelavaci-hry.md` |
 
 U nativní verze nenačítej vše předem. Sdílená demonstrace nemusí získat individuální účty a offline kvíz nemusí získat chatbot. Jednoduchý úkol také nevyžaduje více agentů.
 
-## Udržuj obě jazykové varianty
+## Udržuj jazykové varianty
 
 České jádro a reference jsou v `cs/`, anglické v kořeni projektu. Česká verze je metodickou adaptací anglického základu; kurikulární reference a české formáty odpovědí jsou její doplnění. Při společné metodické opravě zkontroluj dopad ve všech čtyřech variantách, ale nepřenášej automaticky české RVP do mezinárodní verze. Nelze ověřit shodu pouhou shodou počtu oddílů.
 

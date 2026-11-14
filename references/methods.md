@@ -2,6 +2,32 @@
 
 Use this reference after defining the learning goal and evidence of success. Choose the smallest useful intervention for the learner's current obstacle. An app format alone does not determine a teaching method. Do not add every method listed here.
 
+## Method cards for a concrete choice
+
+Use these stable IDs across translations and decision records. Each row supplies a short creator-facing description, the need, learner action and evidence. The detailed sections below supply support and limits. For the selected card, state the small implementation, any optional extension, a failure check and the relevant source; do not display the full catalogue by default. Sources support particular learning principles, not the effectiveness of the generated application.
+
+For the selected card, state the target audience, necessary prior knowledge and adaptations to language, support or assessment; do not select a method by age alone.
+
+| ID and short description | When to offer and small implementation | Evidence and support check |
+| --- | --- | --- |
+| `worked-example-fading`: see a procedure, complete it, then use it independently | New procedure; reviewed example and completion task | New independent case; allow experts to skip and restore help when needed |
+| `guided-inquiry`: predict, change a variable, explain the result | Understand a system; one bounded experiment | Explain a new prediction; random manipulation cannot substitute for reasoning |
+| `productive-failure`: try approaches before comparing them with an explanation | Adequate prior knowledge and time for consolidation | Compare approaches and use the consolidated idea; do not strand a novice |
+| `retrieval-spacing`: recall before revealing, return later | Retain accessible knowledge; attempt, correction and later review | Independent recall after delay; immediate repair alone is not spacing |
+| `contrast-interleaving`: distinguish similar cases and choose a strategy | Confused categories or procedures after initial support | Explain the distinguishing feature; a random topic mixture is insufficient |
+| `socratic-dialogue`: examine reasoning through a focused question | A reasoned answer can expose a useful uncertainty | Revise or defend with evidence; direct explanation remains available |
+| `self-explanation`: explain in one's own words and revise | Surface gaps after initial learning | Content accuracy and application, not fluency alone |
+| `cooperative-project`: coordinate roles to create a meaningful product | Shared investigation or authentic task with enough time | Individual contribution and explanation; group success is not everyone's mastery |
+| `role-play`: decide from a situated role and reflect | Perspectives, communication or procedural judgment | Explain choices and consequences; agreement with a character is not correctness |
+| `metacognitive-review`: compare a plan or confidence with evidence | Guide self-regulation and next steps | A revised action based on performance; confidence is not ability |
+| `criterion-rubric`: assess observable qualities against criteria | Open responses, projects or justified alternatives | Examples at boundaries and a revision route; do not reward agreement |
+| `representation-transfer`: connect concrete and formal representations | Success remains tied to game objects | Apply in a new representation; preserve accessible equivalent paths |
+
+For differentiated versions, name the common learning goal and the decision every version must retain. Vary language, representation, pace and support without silently supplying that decision. Keep an engaging context for supported learners. Extend with justification, counterexamples or transfer rather than only more items. Explicitly identify an intentional goal change. Grouping follows revisable evidence, not permanent ability labels.
+
+Optional extensions such as persistent review or live AI need a concrete reason and their conditional references. Preserve source/version/jurisdiction for curriculum links; distinguish official standards, components and inferred prerequisites. A concept-map edge is not automatically a verified learning progression.
+
+
 ## Choose from an observed learning need
 
 | Observed obstacle | Candidate intervention | Check before adopting |

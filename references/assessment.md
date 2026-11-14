@@ -36,3 +36,13 @@ Track completion, usage, time, enjoyment, latency and errors as operational or e
 - [IES practice guide](https://ies.ed.gov/ncee/wwc/PracticeGuide/1): independent retrieval and delayed review inform the proposed evaluation approach.
 
 The workflow, example rubric and implementation choices above are design recommendations. Their suitability must be checked against the learners, subject, stakes and available evidence.
+
+## Check decisions and repair consequences
+
+For a single-answer item, solve the actual prompt independently and try to defend every option under its stated units, precision and assumptions. Exactly one must remain defensible. For multiple-answer items use the declared answer rule; for open tasks retain valid alternatives. Then apply each claimed erroneous procedure to the actual item data: it must produce the intended distractor. Recheck affected options after changing the prompt. Equivalent fractions or unstated rounding must not create a second correct answer.
+
+Map observed response to possible explanation, a distinguishing follow-up and a concrete next action. One wrong answer does not diagnose its cause. In evidence-centered design, identify the target competence, observable evidence and task that elicits it. Game events may have alternative explanations such as motor difficulty, exploration or guessing; telemetry alone does not establish persistence or personality. Explain necessary data collection.
+
+If the content, answer key or tutor explanation is wrong, acknowledge and correct it, then inspect dependent hints, tasks, scores and progress. Do not treat an affected attempt as evidence of learner ignorance. Preserve the needed original evidence and content version; mark uncertainty and offer a fresh check where necessary. Teacher and learner views must use the same version of prompts and choices.
+
+These verification procedures are adapted as design principles from [Learning Commons' check-for-understanding resources](https://github.com/learning-commons-org/agent-skills/tree/main/skills/k12-check-for-understanding). They do not import its fixed formats, US curriculum defaults or source-attribution restrictions.

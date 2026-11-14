@@ -2,9 +2,9 @@
 name: vzdelavaci-metodiky
 description: Navrhuje a posuzuje vzdělávací aplikace propojením cílů, činnosti žáka, podpory a dokladů učení. Použij při tvorbě, podstatné změně výuky nebo pedagogickém auditu kvízu, hry, simulace či trenažéru. Podle kontextu řeší české RVP/ŠVP. Nepoužívej pro kosmetickou změnu nebo běžnou technickou opravu bez didaktického dopadu.
 metadata:
-  version: "1.3.0"
+  version: "1.4.0"
   language: "cs"
-  based_on: "learning-methodologies@1.3.0"
+  based_on: "learning-methodologies@1.4.0"
   license: "MIT"
   author: "Luděk Sušický"
   repo: "https://github.com/siberius/learning-methodologies"
@@ -25,6 +25,16 @@ Metody převádějí vzdělávací cíl do činnosti žáka, pravidel zpětné v
 
 Při vysvětlování vhodnosti metody a jejího provedení čti [didaktické zdůvodnění](#reference-didakticke-zduvodneni). Propojuje metody s rozhodnutími v aplikaci a potřebnými doklady.
 
+## Provázej tvůrce rozhodováním
+
+Při každém podstatném didaktickém rozhodnutí posuď cíl, činnost žáka, doklad učení, podporu a podmínky. Využij dřívější volby. U otevřené významné volby nabídni malý relevantní výběr, zpravidla dvě až tři možnosti, se stručným srozumitelným popisem a příkladem použití v tomto projektu. Jednu doporuč, vysvětli podstatný dopad a zeptej se, kterou cestu tvůrce chce. Při zahájení nebo obnovení takové volby čti [dialog návrhu](#reference-dialog-navrhu). Rozhovor s tvůrcem odliš od výukového dialogu se žákem.
+
+Vyřešené a odmítnuté volby neotvírej bez relevantní změny. Respektuj výslovné delegování běžných rozhodnutí a pokračuj s krátkým zdůvodněním. Mlčení neschvaluje rozšíření rozsahu. Při čekání pracuj na nezávislých částech. Kosmetická úprava tento postup nespouští.
+
+Podrobnosti vybírej podle potřeby: [metody](#reference-metody) pro činnost a podporu; [hry](#reference-vzdelavaci-hry) pro motivaci a mechaniky; [hodnocení](#reference-hodnoceni) pro důkazy a bodování; [kognitivní rozhraní](#reference-kognitivni-rozhrani) pro reprezentace, multimédia a pozornost; [adaptivní procvičování](#reference-adaptivni-procvicovani) pro opakované návraty a výběr obtížnosti. Simulace, stav tutora a živou AI načítej podle podmínek níže. Před nabídkou si přečti relevantní metodu; nenačítej všechny reference.
+
+Zvolenou metodu převeď do pozorovatelného chování aplikace a smysluplné kontroly. Rozliš nabídnuto, vybráno, implementováno a ověřeno. Technické ověření nedokládá vzdělávací účinnost.
+
 ## Stručný pracovní postup
 
 Postup přizpůsob úkolu: zjisti cíl a podmínky, vyber metodu podle překážky v učení, propoj činnost žáka s dokladem učení, implementuj v zadaném rozsahu a ověř výsledek. Při revizi místo implementace posuď existující návrh. Využij známý kontext; jednotlivé kroky nevyžadují samostatné plánovací dokumenty.
@@ -33,13 +43,15 @@ Postup přizpůsob úkolu: zjisti cíl a podmínky, vyber metodu podle překáž
 
 ## Převezmi kontext a vymez záměr
 
-Využij informace ze zadání, projektu a dodaných podkladů. Ptej se na chybějící údaj, pokud mění podstatné rozhodnutí. U méně významné nejistoty uveď rozumný předpoklad a pokračuj. Neopakuj pevný dotazník ani schvalování běžných voleb již zahrnutých v zadání.
+Využij informace ze zadání, projektu a dodaných podkladů. Při doplňování kontextu se ptej na chybějící údaj, pokud mění podstatné rozhodnutí. U méně významné nejistoty uveď rozumný předpoklad a pokračuj. Neopakuj pevný dotazník ani schvalování běžných voleb již zahrnutých v zadání.
 
 Zohledni předchozí znalosti, věk či ročník, obor, cíl, jazyk, potřeby přístupnosti, dostupná zařízení a čas. Rozlišuj samostatnou práci, dvojice, skupinu a učitelskou demonstraci. Zahrň přípravu, diskusi, zásah učitele a navazující práci, pokud pomáhají záměru. Nepředpokládej zařízení a účet pro každého žáka.
 
 Tón vycházej z kontextu a preference autora. Z generačního označení neodvozuj pozornost, motivaci, schopnosti ani potřebu memů. Český jazyk aplikace sám neznamená povinnost pracovat podle RVP; odborné školení dospělých může mít jiný rámec.
 
 Při skutečné vazbě na českou školu čti [české školní prostředí](#reference-ceske-skolstvi). Zjisti potřebný typ školy, obor a použitou verzi RVP/ŠVP. Ověřenou návaznost odliš od pracovního návrhu. Nevymýšlej kódy ani znění očekávaných výstupů či výsledků učení a nepředstírej znalost nedodaného ŠVP.
+
+Rozliš věk, vzdělávací roli a zkušenost s tématem; dítě, žák, student a dospělý účastník nejsou zaměnitelné kategorie ani stupně schopností. Při vymezování či změně cílové skupiny čti profil účastníka v [dialogu návrhu](#reference-dialog-navrhu). Označení a podporu přizpůsob konkrétnímu prostředí, v obecné části používej neutrální pojmenování. Tvůrce, učící se člověk a doprovázející učitel či rodič mohou být různé osoby.
 
 ## Propoj cíl, činnost a doklad učení
 
@@ -50,6 +62,8 @@ Příklad: žák předpoví změnu proudu při změně odporu, porovná předpov
 Metodu vybírej podle cíle a konkrétní překážky v učení. Vysvětlení chyby ber jako pracovní hypotézu, pokud nebylo ověřeno. Navrhni malý související celek; nepřidávej všechny metody z katalogu.
 
 Při výběru a provádění postupů čti [metody učení](#reference-metody). Katalog výslovně zahrnuje sokratické učení, Feynmanovu techniku, zónu nejbližšího vývoje a scaffolding, řešené příklady, vybavování a opakování s odstupem, práci s chybou, metakognici, badatelskou výuku, hraní rolí, vrstevnické a kooperativní učení, projektovou výuku, převrácenou třídu a volitelnou gamifikaci.
+
+Při návrhu herních mechanik, motivace nebo revizi vzdělávací hry čti [vzdělávací hry a účelnou gamifikaci](#reference-vzdelavaci-hry). Reference řeší hratelný průchod učením, výběr mechanik, meze důkazů a provedení od malé pomůcky po dlouhodobý produkt. Přizpůsobuj ZŠ, SŠ, VŠ i dospělým v různých zemích podle vstupních znalostí a místního kontextu.
 
 Bloomovu taxonomii používej k popisu kognitivního cíle a typu znalosti. Obtížnost a návaznost učiva řeš samostatně; nevynucuj šest zamčených úrovní. U praktických, sociálních či postojových cílů zvol důkazy, které odpovídají cíli, a přiznej hranice obrazovkové aktivity. Nesouhlas s postavou nebo názorem sám není chyba argumentace.
 
@@ -115,7 +129,7 @@ Přečti text očima žáka. Pokud by věta mohla zůstat beze změny v jiném p
 
 Při volbě modelu, uvažování, rychlosti nebo způsobu načtení čti [modely a prostředí](#reference-modely-a-prostredi). Reference obsahuje podklady pro OpenAI, Claude a Gemini. Zachovej společné didaktické zásady a odlišuj zamýšlenou kompatibilitu od provedených testů. Při běžném didaktickém úkolu bez této potřeby ji nenačítej.
 
-Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 1.3.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference jsou níže vloženy pro samostatné použití. V nativním balíčku tvoří oddělené soubory načítané podle potřeby. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
+Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 1.4.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference jsou níže vloženy pro samostatné použití. V nativním balíčku tvoří oddělené soubory načítané podle potřeby. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
 
 Návrhové rámce: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [CAST UDL](https://udlguidelines.cast.org/). Jejich uvedení není certifikátem přístupnosti ani vzdělávací účinnosti.
 
@@ -125,6 +139,32 @@ Zdrojový oddíl: Volba výukových metod
 
 
 Tuto referenci použij po vymezení vzdělávacího cíle a dokladů jeho dosažení. Zvol nejmenší účelnou intervenci pro konkrétní překážku v učení. Typ aplikace sám neurčuje výukovou metodu. Uvedené metody tvoří nabídku, nikoli povinný seznam funkcí.
+
+### Metody: Karty metod pro konkrétní volbu
+
+Používej stabilní ID napříč překlady a záznamy rozhodnutí. Řádky propojují stručný popis pro tvůrce, potřebu, činnost a důkaz. Oddíly níže rozvádějí podporu a meze. U vybrané karty konkretizuj malé provedení, případné rozšíření, kontrolu selhání a relevantní zdroj; celý katalog standardně nezobrazuj. Zdroje podporují konkrétní principy, nikoli účinnost vytvořené aplikace.
+
+U vybrané karty výslovně uveď cílovou skupinu, potřebné vstupní znalosti a úpravu jazyka, opory či hodnocení; metodu nepřiřazuj jen podle věku.
+
+| ID a stručný popis | Kdy nabídnout a malé provedení | Důkaz a kontrola podpory |
+| --- | --- | --- |
+| `worked-example-fading`: vidět postup, doplnit ho a samostatně použít | Nový postup; ověřený příklad a doplňovací úloha | Nový samostatný případ; zkušený může přeskočit a pomoc lze vrátit |
+| `guided-inquiry`: předpovědět, změnit proměnnou, vysvětlit výsledek | Pochopení systému; jeden vymezený experiment | Zdůvodnění nové předpovědi; náhodná manipulace nenahradí úsudek |
+| `productive-failure`: zkusit postupy a porovnat je s vysvětlením | Dostatečné vstupní znalosti a čas na uspořádání poznatků | Porovnání postupů a použití vysvětleného principu; začátečník nesmí uvíznout |
+| `retrieval-spacing`: vybavit před odhalením a později se vrátit | Uchování dostupné znalosti; pokus, oprava a pozdější návrat | Samostatné vybavení s odstupem; okamžitá oprava není rozložení |
+| `contrast-interleaving`: rozlišit podobné případy a vybrat strategii | Záměna kategorií či postupů po počáteční opoře | Vysvětlení rozlišujícího znaku; náhodná směs témat nestačí |
+| `socratic-dialogue`: cílenou otázkou prozkoumat uvažování | Zdůvodnění může odhalit užitečnou nejistotu | Revize či obhajoba s důkazy; přímé vysvětlení zůstává dostupné |
+| `self-explanation`: vysvětlit vlastními slovy a přepracovat | Odhalení mezer po úvodním učení | Obsahová správnost a použití, nikoli samotná plynulost |
+| `cooperative-project`: sladit role při tvorbě smysluplného výsledku | Společné bádání či autentická úloha s dostatkem času | Individuální příspěvek a vysvětlení; skupinový úspěch není zvládnutí všech |
+| `role-play`: rozhodovat v roli a reflektovat | Perspektivy, komunikace nebo rozhodování o postupu | Vysvětlení voleb a následků; souhlas s postavou není správnost |
+| `metacognitive-review`: porovnat plán či jistotu s důkazy | Řízení vlastního učení a dalších kroků | Změna postupu podle výkonu; jistota není schopnost |
+| `criterion-rubric`: posoudit pozorovatelné kvality podle kritérií | Otevřené odpovědi, projekty či zdůvodněné alternativy | Hraniční příklady a možnost opravy; neodměňovat názorovou shodu |
+| `representation-transfer`: propojit konkrétní a formální reprezentace | Úspěch zůstává vázán na herní objekty | Použití v nové reprezentaci; zachovat přístupné rovnocenné cesty |
+
+U diferencovaných variant pojmenuj společný cíl a rozhodnutí, které musí zůstat v každé verzi. Měň jazyk, reprezentaci, tempo a podporu, aniž cílové rozhodnutí tiše vyřešíš. Podporovaným žákům zachovej zajímavý kontext. Rozšíření přidá zdůvodnění, protipříklad či přenos, nemusí jen další položky. Záměrnou změnu cíle označ. Skupiny vycházejí z revidovatelných důkazů, ne trvalých nálepek schopností.
+
+Volitelná rozšíření jako trvalé opakování či živá AI potřebují důvod a příslušné reference. U kurikulárních vazeb uchovej zdroj, verzi a zemi; rozliš oficiální požadavek, komponentu a odhadnutý předpoklad. Hrana pojmové mapy není automaticky ověřenou posloupností učení.
+
 
 ### Metody: Vycházej z pozorované potřeby
 
@@ -256,6 +296,16 @@ Dokončení, používání, čas, spokojenost, odezvu a technické chyby sleduj 
 
 Postup, příklad rubriky i implementační volby jsou metodická doporučení. Vhodnost posuď podle žáků, předmětu, důsledků hodnocení a dostupných dokladů.
 
+### Hodnocení: Ověř rozhodnutí a oprav důsledky
+
+U úlohy s jednou správnou odpovědí nezávisle vyřeš skutečné zadání a zkus obhájit každou možnost podle uvedených jednotek, přesnosti a předpokladů. Obhajitelná musí zůstat právě jedna. U vícečetného výběru dodrž oznámené pravidlo; u otevřených úloh zachovej platné alternativy. Potom aplikuj každý deklarovaný chybný postup na skutečná data: musí vést k zamýšlenému distraktoru. Po změně zadání znovu prověř dotčené možnosti. Ekvivalentní zlomky nebo neurčené zaokrouhlení nesmějí vytvořit další správnou odpověď.
+
+Propoj pozorovanou odpověď, možné vysvětlení, rozlišující doplňující úlohu a konkrétní další krok. Jedna chyba neurčuje příčinu. Při návrhu podle důkazů (ECD) vymez cílovou kompetenci, pozorovatelný důkaz a úlohu, která jej vyvolá. Herní událost může odrážet motorickou obtíž, zkoumání nebo tipování; telemetrie sama neurčuje vytrvalost ani osobnost. Vysvětli potřebný sběr dat.
+
+Při chybě obsahu, klíče či výkladu tutora chybu přiznej a oprav; prověř navazující nápovědy, úlohy, hodnocení a pokrok. Dotčený pokus nevydávej za důkaz neznalosti. Zachovej potřebný původní důkaz a verzi obsahu; označ nejistotu a podle potřeby nabídni nové ověření. Učitelský i žákovský pohled musí používat stejnou verzi zadání a možností.
+
+Ověřovací postupy rozvíjejí návrhové principy [Learning Commons pro kontrolu porozumění](https://github.com/learning-commons-org/agent-skills/tree/main/skills/k12-check-for-understanding). Nepřebírají pevné formáty, americké kurikulum jako výchozí ani omezení uvádění zdrojů.
+
 ## Reference: simulace
 
 Zdrojový oddíl: Simulace a hraní rolí
@@ -331,6 +381,10 @@ Stanov rozpočet, limity relace, časové limity a možnost zrušení požadavku
 Navrhni přiměřenou náhradu: zkontrolované nápovědy, statické úlohy, uložený postup nebo pomoc učitele. Nedostupnou zpětnou vazbu označ; nevymýšlej ji. Počítej s různými školními zařízeními a omezeným připojením. Záložní průchod sám o sobě není důvodem přidat další backend.
 
 Před použitím ve třídě projdi hlavní aktivitu, chybnou odpověď, žádost o pomoc, nejisté hodnocení a selhání služby. Uveď zbývající omezení a rozsah kontroly učitelem.
+
+### Provoz AI: Ověř generovaný obsah ve vymezených mezích
+
+Před zpřístupněním generovaných úloh proveď relevantní kontroly oborové správnosti, řešitelnosti, stavových přechodů a vykreslení. Jediné řešení vyžaduj jen u úloh, které ho slibují. Oprávnění a hranice strukturovaných výstupů vynucuj mimo model; schéma nedokládá pravdivost a deterministická kontrola zaručuje jen vlastnosti, které ověřuje. Neplatný obsah odmítni nebo odděl k revizi a zachovej ověřenou náhradu. Důsledky chyby pro nápovědy, hodnocení a pokrok řeš postupem oprav v `hodnoceni.md`.
 
 ## Reference: ceske-skolstvi
 
@@ -559,6 +613,223 @@ Rozliš AI při tvorbě a za běhu. Mnohé postupy lze realizovat offline pomoc�
 ### Didaktické zdůvodnění: Meze zdůvodnění
 
 Jde o vysvětlení návrhových rozhodnutí, nikoli důkaz účinku tohoto skillu či každé aplikace. Obsah, přístupnost a proveditelnost ve třídě potřebují konkrétní kontroly. Technický průchod nedokládá učení; potřebné jsou vhodné doklady výkonu a pro příčinné tvrzení odpovídající vyhodnocení. Výzkumné podklady uvedené u metod podporují konkrétní rozhodnutí, necertifikují celý balíček. U významných posouzení zachovej odpovědnou kontrolu učitele a kurikulum přizpůsob skutečnému prostředí.
+
+## Reference: vzdelavaci-hry
+
+Zdrojový oddíl: Vzdělávací hry a účelná gamifikace
+
+
+Čti při návrhu herních mechanik, motivace nebo podstatné změně vztahu hraní a učení. Doporučení propojují výzkum s návrhovým úsudkem; nedokládají účinnost nové aplikace. Zdroje ověřeny 2026-11-14.
+
+### Vzdělávací hry: Vyber činnost před odměnou
+
+Rozlišuj vzdělávací hru (učení probíhá hraním), gamifikaci (herní prvky podporují jinou činnost) a simulaci (model může sloužit bádání bez vítězství a skóre). Dobrá pomůcka nemusí potřebovat odměnový systém.
+
+Sepiš stručnou vazbu: uživatel a vstupní znalosti; cílový výkon; hráčovo rozhodnutí; důsledek a zpětná vazba; samostatný doklad; další krok učení. Malé aktivitě stačí odstavec. Najdi možnou zkratku: lze vyhrát tipováním, opakovaným klikáním, zapamatováním pozic, opsáním odpovědi nebo výkonem spoluhráče?
+
+Upřednostni mechaniku vyžadující zamýšlené přemýšlení. Pro poměry může hráč upravovat směs za smysluplných podmínek, vysvětlit předpověď a vyřešit nový případ. Kvíz může dobře sloužit vybavování; každý fakt nepotřebuje simulovaný svět. U otevřených cílů připusť různá obhajitelná řešení.
+
+### Vzdělávací hry: Vyber malý související celek
+
+| Potřeba | Možná mechanika a provedení | Ověření nebo známka selhání |
+|---|---|---|
+| Začít bez znalosti ovládání | Bezpečný první úkol; nástroj představ až při použití | Nováček provede akci bez vysvětlování autora |
+| Pochopit systém | Předpověď, změna jedné proměnné, důsledek, vysvětlení | Náhodné posouvání nenahradí novou předpověď |
+| Uchovat znalost | Vybavovací mise s pozdějším návratem a opravou | Samostatný výkon s odstupem; okamžité opakování je oprava |
+| Vybrat správný postup | Po úvodní podpoře střídej zaměnitelné typy úloh | Žák vybere a vysvětlí strategii; náhodná směs témat nestačí |
+| Překonat začátečnickou nejistotu | Řešený příklad, doplnění, samostatná výzva | Pomoc zůstává zaznamenána a lze se k ní vrátit |
+| Vidět vlastní postup | Soukromá mapa dovedností s doklady a dalším krokem | Rozlišuje dokončení, úspěch s podporou a samostatný výkon |
+| Rozhodovat o učení | Smysluplná volba cesty, kontextu či postupu | Volba mění zkušenost; předpoklady a alternativy jsou zřejmé |
+| Probudit zvědavost | Záhada, jejíž stopy tvoří oborové důkazy | Rozuzlení řeší otázku učiva; příběh nezahltí procvičování |
+| Spolupracovat | Doplňující se role, společný výsledek, střídání odpovědnosti | Každý něco samostatně vysvětlí nebo použije |
+| Ocenit dosažený výsledek | Volitelný odznak s průhledným kritériem | Popisuje doklad; nezastupuje posouzení zvládnutí |
+| Soutěžit | Volitelné srovnatelné výzvy nebo vlastní zlepšení | Sleduj znevýhodnění, odchod a spěch; nabídni cestu bez veřejného pořadí |
+| Vracet se dlouhodobě | Vlastní cíle, pokračování v práci, vyžádané připomínky | Absence nemaže doklady učení ani přístup k pomoci |
+
+Jde o návrhové hypotézy, nikoli žebříček prokázaně účinných funkcí. Body, série dní, avatary ani žebříčky nemají univerzální vzdělávací účinek. Herní měnu odděl od dokladů učení. Běžná chyba nemá spotřebovat přístup k výuce. Vyhni se tlaku přes propadající odměny, placené obnovení, nákup náhodných odměn nebo veřejné ponižování. To jsou návrhové zásady, nikoli tvrzení o experimentálním porovnání všech variant.
+
+Obtížnost opři o cílové rozhodnutí. Náročnost čtení, motorická přesnost a časový tlak mohou zkreslit jeho měření. Rychlost používej, pokud je plynulost či reakční doba součástí cíle; přesnost a rychlost vyhodnocuj rozlišitelně. Neexistuje univerzální optimální procento úspěšnosti. Podporu upravuj podle více pozorování a umožni opravit nevhodné zařazení.
+
+### Vzdělávací hry: Vytvoř průchod učením
+
+Před rozsáhlou ekonomikou implementuj jeden hratelný problém. Po akci následuje srozumitelný důsledek, využitelná zpětná vazba, další příležitost a přirozené místo k ukončení. Chybu vysvětli na úrovni úlohy nebo strategie. Oslava sama neopraví chybnou představu.
+
+Když chybějící znalost brání užitečnému pokusu, nabídni řešený příklad. Úvodní zkoumání může připravit následný výklad, ale produktivní neúspěch potřebuje navazující vysvětlení a propojení poznatků. Neospravedlňuje uvíznutí začátečníka. Rozlišuj seznamování, procvičování s pomocí a samostatné ověřování. Odhalení řešení označuje podporovaný pokus; později ověř jiný příklad.
+
+Vybavování, rozložení a střídání přizpůsob úloze. Vracej i dříve správně zvládnutý obsah. Při vybavování požaduj rekonstrukci před odhalením odpovědi. Střídej případy vyžadující rozlišení a zvol odpovídající zpětnou vazbu. Pevný rozvrh intervalů neoznačuj za optimální pro každý obor a dobu uchování.
+
+### Vzdělávací hry: Přizpůsob věku a zemi
+
+Vycházej ze znalostí a potřeb podpory. U mladších žáků může pomoci konkrétní znázornění a podpora čtení; u středoškoláků porovnávání vysvětlení; u VŠ a dospělých oborová věrohodnost a pružné tempo. Jsou to výchozí hypotézy. Dospělý začátečník může potřebovat velkou podporu a zkušené dítě náročnější výzvu.
+
+Prověř místní terminologii, zápis čísel a jednotek, směr čtení, kulturní odkazy, organizaci školy a dostupná zařízení. Kurikulum mapuj vůči určené zemi a verzi. Jazyk rozhraní neurčuje národní kurikulum. Podle situace zahrň sdílené zařízení a vedení učitelem. Simulace profesního úkonu neprokazuje praktickou způsobilost.
+
+Zajisti klávesnici i alternativu k přetahování jedním ukazatelem, textové stavy vedle barvy a zvuku, viditelný fokus, ovladatelný pohyb a vhodné časování. Alternativní odpověď musí zachovat ověřovanou dovednost. Přístupnost a vhodnost věku ověřuj s cílovými uživateli; uvedení UDL nebo WCAG je nedokládá.
+
+### Vzdělávací hry: Implementuj podle rozsahu
+
+Krátké aktivitě stačí ověřený obsah, deterministická pravidla a stav relace. Lokální ukládání přidej, když má význam pokračování. U dlouhodobého produktu zvaž verze dovedností a úloh, podporované a samostatné pokusy, plán opakování, export, mazání a opravu učitelem. Účty, server i sledování chování potřebují konkrétní důvod.
+
+Ukládaný pokus může obsahovat `skill_id`, `item_version`, `mode`, `support_used`, `response`, `result` a `feedback_version`. Uchovávej pouze potřebná pole; surové odpovědi a časy nemusí opustit zařízení. Měnu a vzhled postavy udržuj v herním stavu zvlášť. Výpadek sítě ani opakované odeslání nesmí zdvojit odměnu nebo změnit zaznamenané hodnocení.
+
+U živé AI stanov zdroje, hranice hodnocení, náhradní chování a lidský přezkum. Ověř přesvědčivé chybné vysvětlení, ekvivalentní správnou odpověď a výpadek. Učení posuzuj i po odebrání pomoci. Výzkum konkrétních tutorů nedokládá přínos každého chatbota ani povinného čekání na pomoc. AI použitá při tvorbě nevyžaduje AI službu v produktu.
+
+Při koordinaci specialistů nebo agentů sdílej stejný cíl, příklady úloh a pravidla důkazů. Odděl kontrolu oboru, výuky, hratelnosti a implementace. Rozpor řeš příkladem nebo zdrojem. Více person v jednom promptu není nezávislé ověření; samostatné agenty využij jen při autorizaci a skutečném přínosu.
+
+### Vzdělávací hry: Ověř tři odlišné výsledky
+
+1. Technické chování: správná i alternativní odpověď, chybná představa, tipování, odhalení, opakování, pokračování a případný výpadek. Úspěch s pomocí se nesmí skrytě změnit na samostatné zvládnutí.
+2. Použitelnost a hraní: pozoruj první úkol a zotavení po chybě u cílových uživatelů. Zaznamenej nejasnosti, strategická rozhodnutí a možnost skončit. Malý pilot odhaluje problémy; neprokazuje populační účinek.
+3. Učení: nová samostatná úloha, podle cíle uchování s odstupem a přenos mimo povrchové znaky hry. Pro srovnávací tvrzení použij věrohodnou alternativu se srovnatelným obsahem a časem; zohledni vstupní znalosti, odpadnutí a nerovnou účast. Uveď nejistotu. Čas v aplikaci a obliba nejsou dokladem učení.
+
+Malému projektu stačí výuková hypotéza a proveditelný pilot. U produktu s významnými důsledky stanov výsledky a srovnání před sběrem dat. Herní metriky drž odděleně od vzdělávacích. Mechaniku změň či odeber, pokud podporuje obcházení, odrazuje od pomoci nebo přidává námahu bez užitečné role v učení.
+
+### Vzdělávací hry: Zdroje a meze závěrů
+
+- [Sailer a Homner, 2020](https://doi.org/10.1007/s10648-019-09498-w): metaanalýza podporuje průměrný přínos gamifikace s rozdíly mezi studiemi; motivační a behaviorální účinky byly při přísnějším posouzení kvality méně stabilní. Není to záruka pro konkrétní odznak či žebříček.
+- [Clark a kol., 2016](https://doi.org/10.3102/0034654315582065): porovnání her a jejich úprav podporuje důraz na výukový návrh a opory. Médium samo neurčuje výsledek.
+- [Li a kol., 2024](https://doi.org/10.1007/s11423-023-10337-7): malý průměrný přínos pro vnitřní motivaci ve 35 intervencích. Vnímaná kompetence se liší od měřeného zvládnutí učiva.
+- [Habgood a Ainsworth, 2011](https://doi.org/10.1080/10508406.2010.508029): dvě studie jedné matematické hry podporují začlenění učiva do hlavní činnosti. Malé specifické vzorky neurčují univerzální recept.
+- [Agarwal a kol., 2021](https://doi.org/10.1007/s10648-021-09595-9) a [Ruitenburg a kol., 2026](https://doi.org/10.1007/s10648-026-10225-5): školní výzkum vybavování a procvičování závislého na kontextu. Druhá práce rozlišuje vybavování, rozložení a střídání; malé skupiny pro některé moderátory omezují zobecnění.
+- [Wisniewski a kol., 2020](https://doi.org/10.3389/fpsyg.2019.03087): účinky zpětné vazby se liší a záleží na využitelné informaci. [Sinha a Kapur, 2021](https://doi.org/10.3102/00346543211019105): řešení před výkladem může pomáhat při promyšleném provedení, s mezemi podle žáků a podmínek.
+- [Almeida a kol., 2023](https://doi.org/10.1016/j.infsof.2022.107142): mapování popisuje hlášené nežádoucí účinky a obcházení. Počet negativních zpráv neudává četnost škodlivosti mechaniky.
+- [MIT / Learning Games Network, 2015](https://education.mit.edu/wp-content/uploads/2018/10/BalancedDesignGuide2015.pdf): návrhový rámec propojení cíle, činnosti a důkazu. [George Fan, GDC 2012](https://media.gdcvault.com/gdc2012/slides/Design%20Track/Fan_George_How%20I%20Got.pdf): zkušenosti autora s hratelným uvedením do hry. Oba zdroje pomáhají návrhu; neposkytují kauzální odhad vzdělávací účinnosti.
+- [Bastani a kol., 2025](https://doi.org/10.1073/pnas.2422633122) a [Kestin a kol., 2025](https://doi.org/10.1038/s41598-025-97652-6): různé experimenty ukazují význam návrhu tutora a samostatného výkonu. Liší se populace, učivo i intervence.
+- [WCAG 2.2](https://www.w3.org/TR/WCAG22/) obsahuje kritéria přístupnosti; [CAST UDL 3.0](https://udlguidelines.cast.org/) návrhový rámec. Jejich role se liší od experimentů s učením.
+
+### Vzdělávací hry: Propoj prožitek, pravidla a přenos
+
+MDA použij jako návrhový pohled: popiš zamýšlený prožitek, očekávané chování hráče a pravidla, která ho umožní. Objevování může potřebovat ovladatelný model a smysluplná pozorování; sebevyjádření více platných konstrukcí. Neomezuj všechny obory na jeden herní žánr. SDT pomáhá sledovat autonomii, kompetenci a vztahy; MDA ani označení z Octalysis nedokládají účinnost.
+
+U otevřené konstrukční hádanky vymez omezení a ověřitelný úspěch bez vynucení jediného autorova řešení. Nabídni porovnání vlastních platných návrhů podle relevantních protichůdných kritérií, například spotřeby zdrojů a přesnosti. Komunitní histogram potřebuje skutečná vhodná data a volitelné sdílení; rozdělení nevymýšlej. Optimalizace nemusí přinášet herní měnu.
+
+Propoj herní reprezentace s oborovým zápisem či skutečným rozhodováním a ověř nový případ mimo povrchové znaky hry. Nevnucuj všem rozdělenou obrazovku ani tři etapy. Odezva hry má objasnit podstatnou změnu bez zakrytí uvažování. Série dní a odměny mají být volitelné a bez trestání; přerušení nesmí odebrat doklady učení ani pomoc. Veřejný pokrok vyžaduje volbu sdílení.
+
+[MDA autorů Hunicke, LeBlanc a Zubek](https://www.cs.northwestern.edu/~hunicke/MDA.pdf) je návrhový rámec. Výše uvedené studie her mají různé populace a výsledky; údaje o návratnosti uživatelů nezaměňuj za přírůstky učení.
+
+## Reference: dialog-navrhu
+
+Zdrojový oddíl: Dialog při návrhu vzdělávání
+
+
+Použij při první podstatné pedagogické volbě a při změně požadavků či důkazů, která ji znovu otevírá. Jde o návrhový postup, nikoli experimentální tvrzení o učení.
+
+### Dialog návrhu: Rozliš účastníka a podmínky učení
+
+Věk, školní role a zkušenost jsou různé údaje. „Dítě“ popisuje věkový kontext, „žák“ obvykle školní roli a „student“ studijní prostředí; kategorie se mohou překrývat. V obecném návrhu používej „učící se člověk“ nebo „účastník“, v konkrétní aplikaci přirozené místní označení. Výskyty slova „žák“ ve školních příkladech neomezují celý skill na děti. V přímých pokynech často stačí „Vyzkoušej“, „Vysvětli“ nebo „Porovnej“ bez označování člověka.
+
+Před výběrem metody vytvoř stručný pracovní profil z dostupného kontextu: věková skupina a vzdělávací prostředí; vstupní znalosti konkrétního tématu; čtení a jazyk; samostatnost a dostupná pomoc; cíl a důsledky hodnocení; zařízení a funkční potřeby přístupu. Jde o návrhové údaje o cílové skupině, nikoli povinný osobní profil. Nepotřebuješ datum narození, diagnózu ani celý školní záznam. Neznámé označ jako neznámé nebo předpoklad; neodvozuj je ze samotného slova „student“.
+
+| Kontext a vhodné pojmenování | Co před návrhem ověřit | Možná úprava, pokud odpovídá potřebě |
+| --- | --- | --- |
+| Předškolní dítě, pokud je zadání zahrnuje | Čtení, ovládání, doprovod dospělého a smysl obrazovkové činnosti | Názorná krátká instrukce, společná hra a činnost mimo displej; nepředpokládat samostatné čtení |
+| Žák prvního stupně nebo místní obdoby | Znalost pojmů a zápisu, čtení zadání, zařízení | Konkrétní reprezentace propojená s pojmem, předvedení ovládání, dostupná opora |
+| Žák druhého stupně nebo místní obdoby | Předpoklady učiva, rozdíly ve třídě, práce ve skupině | Porovnávání postupů, vysvětlení a volba podpory při společném cíli |
+| Středoškolák, žák či student podle místního použití | Všeobecný nebo odborný obor, zkušenost, účel hodnocení | Oborový problém, argumentace nebo profesní scénář; simulace nenahradí praktické ověření |
+| Student VŠ | Oborové předpoklady a zkušenost s konkrétním tématem | Autentická úloha, práce s důkazy, více řešení; u nového tématu stále dostupný příklad |
+| Dospělý účastník kurzu, samouk či pracovník | Vlastní cíl, praxe, čas a použití v životě nebo práci | Relevantní situace, možnost přeskočit známé, pružné tempo a návrat k práci |
+| Starší dospělý, pokud je tato informace relevantní | Individuální zkušenost, jazyk, ovládání a potřeby přístupu | Úpravy textu, času či ovládání podle potřeby; věk sám neznamená malou digitální zkušenost |
+| Smíšená skupina | Které potřeby jsou společné a které vyžadují varianty | Společný cíl, volitelná opora, různé vstupní úlohy a samostatné doklady |
+
+Řádky jsou návrhové možnosti, nikoli vývojová diagnóza nebo povinné přiřazení metod podle věku. Stupně škol a názvy ročníků se mezi zeměmi liší. Dítě může být v tématu pokročilé a dospělý začátečník. Jazyková podpora, přístupnost a rozdílné tempo se týkají všech skupin. Nepřiřazuj pevné vizuální, sluchové či jiné učební styly.
+
+Rozliš, kdo se učí, kdo aplikaci obsluhuje a kdo vidí výsledky: učitel může vést společnou tabuli, rodič doprovázet dítě a tvůrce nemusí být ani jeden z nich. Zařazení mezi děti automaticky neurčuje sdílení výsledků s kýmkoli. Potřebné role a rozsah přístupu vymez podle skutečného použití.
+
+Pokud údaj chybí a mění návrh, zeptej se například: „Pro koho je aktivita určena: děti na prvním stupni, starší školáky, nebo dospělé začátečníky? Co už v tématu zvládají?“ Nabídku uprav podle zadání, nevypisuj pokaždé všechny skupiny a známé údaje se znovu neptej. Při nejasném slově „studenti“ nejprve ověř prostředí, pokud ovlivní výsledek.
+
+U nabídky metody řekni, komu a proč v tomto projektu pomůže. Například „Pro dospělé začátečníky doporučuji vysvětlený příklad z jejich práce; podporu pak ubereme podle samostatných pokusů.“ U zkušených dětí může být vhodnější otevřená výzva. Změna cílové skupiny znovu otevírá dotčený jazyk, obsah, oporu, hodnocení a ovládání, nikoli automaticky celý projekt.
+
+
+### Dialog návrhu: Nabídni možnosti v okamžiku potřeby
+
+Převezmi známé uživatele, vstupní znalosti, cíl, zemi, zařízení, čas a omezení. Ptej se na chybějící údaj, jen pokud mění rozhodnutí. Výchozí je průběžné vedení. Tvůrce může delegovat jednu volbu nebo další běžná rozhodnutí a později vedení obnovit.
+
+| Spouštěč | Relevantní možnosti k vysvětlení |
+| --- | --- |
+| Cíl a první činnost | Řešený příklad s ubíráním pomoci, řízené bádání, vybavování, konstrukce či autentický projekt |
+| Motivace a účast | Vlastní pokrok, smysluplná volba, kooperativní role, volitelné herní prvky |
+| Chyby a pomoc | Cílená nápověda, kontrastní příklad, přímé vysvětlení a další pokus |
+| Hodnocení | Formativní zpětná vazba, kriteriální rubrika, samostatné ověření, portfolio či připravené vrstevnické hodnocení |
+| Pokračování | Stav relace, lokální pokračování, opakování s odstupem či kalibrovaná obtížnost |
+| Zjištění z prototypu | Oprava zavádějící reprezentace, omezení opory, přenos nebo odstranění obcházené odměny |
+
+Jde o příležitosti, ne povinné zastávky. V malém projektu spoj související volby. Nabídni jen proveditelné možnosti: krátký popis, příklad v aplikaci a podstatnou náročnost, datovou potřebu či omezení. Doporuč variantu a polož jednu konkrétní otázku. Podle situace umožni jednoduchou verzi nebo odložení; nevyžaduj znalost odborných názvů. Další metody rozveď na žádost.
+
+### Dialog návrhu: Pamatuj si rozhodnutí
+
+Malé práci stačí rozhovor; u delší využij existující návrhový záznam projektu. Uchovej cíl, omezení, ID metody, důvod, stav, odmítnuté alternativy a otevřené otázky. Možné stavy: `offered`, `selected`, `implemented`, `verified`, `deferred`, `declined`. Záznam drž odděleně od údajů žáků. Změna požadavku otevírá jen dotčené volby; vysvětli proč. Neodpovězení není výběr. Během čekání na zásadní volbu pokračuj v nezávislé práci.
+
+### Dialog návrhu: Od volby k produktu
+
+Použij činnost, důkaz, podporu a kontrolu z karty metody. Vytvoř související průchod a vysvětli neslučitelné volby. Řešený příklad může předcházet pozdějšímu vybavování; produktivní neúspěch potřebuje následné uspořádání a vysvětlení. Ani jedno neznamená testovat na každé obrazovce.
+
+U offline aktivity se zlomky: „Doporučuji skládání dílků se souvisejícím zápisem, protože cílem je stejná hodnota různých zlomků. Číselná osa zvýrazní stejnou polohu; doplňování řešeného příkladu poskytne větší počáteční oporu. Který způsob má být hlavní?“ Později nabídni nový úkol bez dílků nebo rozbor chyby k ověření přenosu. Úvodní rozhovor neopakuj.
+
+Tvůrce si objednává aplikaci. Neměň rozhovor na povinné doučování, programátorský domácí úkol ani nedokončená TODO. Při předání ukaž realizaci zvolených metod, provedené kontroly a nejistoty. Automatické vyvolání skillu závisí na hostiteli; testuj ho odděleně od chování po načtení.
+
+## Reference: kognitivni-rozhrani
+
+Zdrojový oddíl: Kognitivní rozhraní a reprezentace
+
+
+Čti při návrhu diagramů, multimédií, instrukcí, umístění zpětné vazby nebo rozhraní, které může zakrýt učební úkol. Vycházej z uživatelů a zařízení, nikoli pevného vizuálního stylu.
+
+### Kognitivní rozhraní: Soustřeď pozornost na rozhodnutí
+
+Při náročné práci omez nesouvisející pohyb a zvuk; zachovej potřebný kontext a ovládání. Související popisky a vysvětlení umísti blízko objektu, aniž ho zakryjí. Na malé obrazovce použij propojené zvýraznění, přístupný popis nebo postupné zobrazení, pokud sousední umístění není praktické. Samotná barva nesmí nést rozlišení.
+
+Složitou operaci rozděl do kroků řízených žákem. Neznámé ovládání a pojmy představ před jejich kombinováním. Zkušeným zachovej přímou cestu a možnost vrátit se k pomoci. Animace má objasnit změnu nebo akci; poskytni omezení pohybu a stejně srozumitelný statický stav.
+
+### Kognitivní rozhraní: Propoj reprezentace a ověř přenos
+
+Pokud konkrétní objekty podporují abstraktní pojem, ukaž stejný vztah v objektech, diagramu a oborovém zápisu. Vysvětli propojení a zadej nové použití s menší povrchovou oporou. Rozdělená obrazovka je jedna možnost, nikoli povinnost. Zachovej rovnocennou cestu klávesnicí a bez přetahování. Ověř, že nelze uspět jen párováním barev nebo poloh.
+
+Příklad: manipulace stejnými množstvími, odpovídající rovnost a vysvětlení, proč platí; později nová rovnost bez pomůcky. Zkušený žák může začít zápisem. Reprezentaci vrať, pokud pomůže. V jiném oboru může přenos znamenat posouzení nového zdroje nebo použití postupu v jiné situaci.
+
+### Kognitivní rozhraní: Zachovej přístup a smysluplné důkazy
+
+Omez zbytečně souběžné proudy informací, ale zachovej titulky, přepis, opakované přehrání, jazykovou podporu a přístup čtečkou. Princip redundance nezakazuje text vedle audia. Neschovávej nezbytné instrukce do nápovědy dostupné jen najetím myši. Pokud je zvuk či čas součástí ověřované dovednosti, vymez podmínky a posuď úpravy přístupu.
+
+U konceptuální kontroly může dobrovolný odhad jistoty pomoci porovnat přesvědčení s výkonem. Nezaměňuj jistotu za zvládnutí a nevyžaduj ji po každé akci. Zpětná vazba má vysvětlit podstatný rozdíl a umožnit použití opravy; nevyráběj překvapení ani pochybnost o správném postupu.
+
+Ověř čitelnost popisků, pořadí fokusu, zvětšení, úzký displej, omezení pohybu a celý průchod pomocí a novým pokusem. Posuzuj činnost žáka, ne jen vzhled komponent. Neprovedené kontroly přiznej.
+
+### Kognitivní rozhraní: Zdroje a meze
+
+[Waxman & Goldie, 2023](https://media.repository.chds.hsph.harvard.edu/static/filer_public/ca/62/ca625803-3d73-4855-b3e1-765870ce3772/2023_jwaxman_monograph_cogtheory_multimed.pdf) podporuje návrhová rozhodnutí, nikoli univerzální zákazy uspořádání. [Matlen a Devlin, 2020](https://web.stanford.edu/~kdevlin/Papers/Matlen-Devlin_CHI2020.pdf) popisují raný koncept přenosu, ne ověření každé rozdělené obrazovky. [W3C k titulkům](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html) vysvětluje podmínky přístupnosti. Pro cílové vydání ověř aktuální normativní požadavky.
+
+## Reference: adaptivni-procvicovani
+
+Zdrojový oddíl: Adaptivní procvičování a pokračování učení
+
+
+Čti pro opakované relace, plánování nebo výběr obtížnosti. Rozliš kdy opakovat, kterou úlohu zadat a kolik pomoci nabídnout. Nemusí je řídit stejný model.
+
+| Potřeba | Malé provedení | Volitelné rozšíření a předpoklady |
+| --- | --- | --- |
+| Jedna aktivita | Ověřené úlohy, zřetelná posloupnost, pomoc a stav relace | Obvykle bez trvalého modelu žáka |
+| Vybavení po dnech | Výslovný plán návratů a lokální historie | FSRS pro stabilní položky a srozumitelné záznamy opakování |
+| Výběr obtížnosti | Ověřené úrovně úloh a průhledné větvení | Elo s vhodnými daty odpovědí, nejistotou a kalibrací |
+| Návaznost dovedností | Mapa dovedností se samostatnými doklady | BKT nebo IRT jen se zdůvodněným modelem, daty a ověřením |
+| Dlouhodobý plán | Cíl, dostupný čas, aktuální etapa a další úkol | Revidovatelné milníky, otevřené otázky a termíny návratu |
+
+Vysvětli funkci před algoritmem. Zachovej stack projektu; nepřidávej plánovač, server ani účty jen kvůli jejich uvedení zde. Jednoduchá pravidla jsou legitimní s popsanými mezemi. HLR je další trénovaný model vybavení pro vhodná data, nikoli výchozí implementační požadavek.
+
+### Adaptivní procvičování: Podmínky před adaptací
+
+Vymez stabilní ID položek a dovedností, verze obsahu, interpretaci odpovědi a podmínky pomoci. Rozliš tipnutí, podporu, odhalení a samostatnou odpověď. Dodrž význam hodnocení zvolené knihovny; nepovažuj tiše každou podpořenou odpověď za samostatné vybavení. Herní měnu odděl od modelu učení. Uchovávej minimum dat a časy jen tam, kde je plánování potřebuje.
+
+Urči počáteční chování a použitelnou náhradu při chybějící, poškozené nebo zastaralé historii. Předpoklady ověř na reprezentativních datech včetně jazyka a přístupnosti. Umožni opravu učitelem a přístup k pomoci. Predikce úspěchu je nejistá; univerzální cíl 80–90 % úspěšnosti ani dvě správné odpovědi neměří ZPD a neprokazují zvládnutí. Cílová retence je volba mezi zátěží a očekávaným vybavením, nikoli záruka výsledku.
+
+Při výběru algoritmu využij udržovanou implementaci s ověřenou verzí. Prověř aktualizace, časová pásma a přelom dne, duplicitní odeslání, změnu obsahu, export a obnovu i neplatná data. Rozšíření porovnej s jednoduchým základem; přesnost predikce, zapojení a učení jsou odlišné výsledky. Z času odpovědi neodvozuj diagnózu ani osobnost.
+
+### Adaptivní procvičování: Uzavření a obnovení etapy
+
+Zaznamenej výsledek, podmínky pomoci, otevřené otázky a proveditelný další krok. Dokončení etapy odliš od doloženého zvládnutí. Vytvoření další etapy automaticky nedokončuje předchozí. Shrnutí zachová potřebné odkazy na důkazy a nejistotu, nikoli celé přepisy. Po návratu přiměřenou úlohou ověř zastaralé předpoklady; přerušení nemaže pokrok.
+
+### Adaptivní procvičování: Zdroje
+
+[Dokumentace Anki FSRS](https://docs.ankiweb.net/manual/deck-options), [Pelánek o vzdělávacím Elo](https://www.fi.muni.cz/~xpelanek/publications/CAE-elo.pdf) a [Settles a Meeder o HLR](https://research.duolingo.com/papers/settles.acl16.pdf). Popisují konkrétní modely a prostředí, ne účinnost nové aplikace. Při integraci knihovny ověř její aktuální dokumentaci.
 
 ## Licenční oznámení
 

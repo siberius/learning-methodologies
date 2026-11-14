@@ -2,7 +2,7 @@
 name: learning-methodologies
 description: Design or review educational applications by connecting learning goals, learner needs, activities, feedback and evidence of learning. Use for new learning tools or substantive changes to their teaching design. Do not apply to cosmetic changes or ordinary bug fixes without a learning-design issue.
 metadata:
-  version: "1.3.0"
+  version: "1.4.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"
@@ -23,6 +23,16 @@ Use the methods to turn educational goals into learner actions, feedback rules a
 
 Read [didactic rationale](#reference-didactic-rationale) when explaining why a method fits or tracing it into implementation. It connects methods to product decisions and the evidence needed to assess them.
 
+## Guide the creator through decisions
+
+At each substantive learning-design decision, revisit the goal, learner action, evidence, support and constraints. Use existing choices. For an unresolved consequential choice, offer a small relevant selection, usually two or three options, each with a plain-language description and a concrete application here. Recommend one and explain the main tradeoff; ask which approach the creator wants. Read [design dialogue](#reference-design-dialogue) when starting or revisiting such a choice. This governs the creator conversation, separately from the learner's tutor interaction.
+
+Do not reopen settled or declined choices without a relevant change. Honor explicit delegation of routine decisions and continue with a short rationale. Silence does not approve a scope expansion. While waiting, work on independent parts. A cosmetic change does not trigger this process.
+
+Load details by need: [methods](#reference-methods) for learning activities and support; [games](#reference-learning-games) for motivation and mechanics; [assessment](#reference-assessment) for evidence and scoring; [cognitive interface](#reference-cognitive-ux) for representations, multimedia and attention; [adaptive practice](#reference-adaptive-practice) for repeated sessions or difficulty selection. Use the existing conditional routes below for simulation, tutor state and runtime AI. Read the relevant method before offering it; do not load every reference.
+
+Translate the chosen method into observable product behavior and a meaningful check. Distinguish offered, selected, implemented and verified decisions. Technical verification does not establish learning effectiveness.
+
 ## Working route
 
 Use this route at the depth the task needs: establish the goal and constraints, choose a method for the learning obstacle, connect the learner's activity to evidence, implement within scope and check the result. For a review, inspect the existing design instead of implementing. Reuse known context; do not require a planning document for every step.
@@ -31,11 +41,13 @@ Read [decision examples](#reference-decision-examples) when help, alternative an
 
 ## Establish the learning context
 
-Use information already present in the request, project and supplied materials. Ask only about missing information that materially changes the design. For minor uncertainties, state a reasonable assumption and proceed. Avoid a fixed questionnaire or repeated approval for ordinary choices already covered by the request.
+Use information already present in the request, project and supplied materials. For context gaps, ask only about information that materially changes the design. For minor uncertainties, state a reasonable assumption and proceed. Avoid a fixed questionnaire or repeated approval for ordinary choices already covered by the request.
 
 Identify the context that changes the design: learners and prior knowledge, subject, intended outcomes, classroom or independent use, available time and devices, language, accessibility needs, and any supplied curriculum. Follow a curriculum when relevant to the setting; do not assume one national framework. Choose tone from the context and author preference. Do not infer attention, motivation, ability or preferred pedagogy from generation labels.
 
 Include the surrounding teaching activity where useful: preparation, individual or group work, teacher intervention, discussion and follow-up. A teacher-led demonstration may need a good discussion prompt; accounts and individual scores are not required.
+
+Separate age, educational role and experience with the topic; child, pupil, student and adult participant are neither interchangeable categories nor ability levels. When establishing or changing the audience, read the learner profile in [design dialogue](#reference-design-dialogue). Adapt terminology and support to the setting; use neutral terms in general guidance. The creator, learner and accompanying teacher or parent can be different people.
 
 ## Connect goals to observable activity
 
@@ -44,6 +56,8 @@ For each important goal, connect the learner's action, evidence, success criteri
 Example: the learner predicts how changing resistance affects current, checks a model, explains any discrepancy, and solves a new case independently. Moving a slider or completing a screen alone does not establish understanding.
 
 Use the observed learning obstacle to choose an intervention that fits it. Treat an explanation of an error as a provisional hypothesis, not a diagnosis. Select a small coherent set of methods; do not add features merely because they appear in the catalog. Read [methods](#reference-methods) when selecting or implementing a method, support sequence or progression rule.
+
+For game mechanics, motivational features or educational-game reviews, read [learning games and purposeful gamification](#reference-learning-games). It covers playable learning loops, mechanic selection, evidence limits and implementation from small tools to longitudinal products. Adapt to primary, secondary, university and adult learners across countries using prior knowledge and local context.
 
 The method reference explicitly covers Socratic learning, the Feynman technique, the Zone of Proximal Development and scaffolding, worked examples, retrieval and spaced practice, error-based learning, metacognition, inquiry, role-play, peer and cooperative learning, projects, flipped teaching and optional gamification. These are selectable approaches, not required features of every application.
 
@@ -126,6 +140,32 @@ Source section: Choosing learning methods
 
 
 Use this reference after defining the learning goal and evidence of success. Choose the smallest useful intervention for the learner's current obstacle. An app format alone does not determine a teaching method. Do not add every method listed here.
+
+### Methods: Method cards for a concrete choice
+
+Use these stable IDs across translations and decision records. Each row supplies a short creator-facing description, the need, learner action and evidence. The detailed sections below supply support and limits. For the selected card, state the small implementation, any optional extension, a failure check and the relevant source; do not display the full catalogue by default. Sources support particular learning principles, not the effectiveness of the generated application.
+
+For the selected card, state the target audience, necessary prior knowledge and adaptations to language, support or assessment; do not select a method by age alone.
+
+| ID and short description | When to offer and small implementation | Evidence and support check |
+| --- | --- | --- |
+| `worked-example-fading`: see a procedure, complete it, then use it independently | New procedure; reviewed example and completion task | New independent case; allow experts to skip and restore help when needed |
+| `guided-inquiry`: predict, change a variable, explain the result | Understand a system; one bounded experiment | Explain a new prediction; random manipulation cannot substitute for reasoning |
+| `productive-failure`: try approaches before comparing them with an explanation | Adequate prior knowledge and time for consolidation | Compare approaches and use the consolidated idea; do not strand a novice |
+| `retrieval-spacing`: recall before revealing, return later | Retain accessible knowledge; attempt, correction and later review | Independent recall after delay; immediate repair alone is not spacing |
+| `contrast-interleaving`: distinguish similar cases and choose a strategy | Confused categories or procedures after initial support | Explain the distinguishing feature; a random topic mixture is insufficient |
+| `socratic-dialogue`: examine reasoning through a focused question | A reasoned answer can expose a useful uncertainty | Revise or defend with evidence; direct explanation remains available |
+| `self-explanation`: explain in one's own words and revise | Surface gaps after initial learning | Content accuracy and application, not fluency alone |
+| `cooperative-project`: coordinate roles to create a meaningful product | Shared investigation or authentic task with enough time | Individual contribution and explanation; group success is not everyone's mastery |
+| `role-play`: decide from a situated role and reflect | Perspectives, communication or procedural judgment | Explain choices and consequences; agreement with a character is not correctness |
+| `metacognitive-review`: compare a plan or confidence with evidence | Guide self-regulation and next steps | A revised action based on performance; confidence is not ability |
+| `criterion-rubric`: assess observable qualities against criteria | Open responses, projects or justified alternatives | Examples at boundaries and a revision route; do not reward agreement |
+| `representation-transfer`: connect concrete and formal representations | Success remains tied to game objects | Apply in a new representation; preserve accessible equivalent paths |
+
+For differentiated versions, name the common learning goal and the decision every version must retain. Vary language, representation, pace and support without silently supplying that decision. Keep an engaging context for supported learners. Extend with justification, counterexamples or transfer rather than only more items. Explicitly identify an intentional goal change. Grouping follows revisable evidence, not permanent ability labels.
+
+Optional extensions such as persistent review or live AI need a concrete reason and their conditional references. Preserve source/version/jurisdiction for curriculum links; distinguish official standards, components and inferred prerequisites. A concept-map edge is not automatically a verified learning progression.
+
 
 ### Methods: Choose from an observed learning need
 
@@ -243,6 +283,16 @@ Track completion, usage, time, enjoyment, latency and errors as operational or e
 
 The workflow, example rubric and implementation choices above are design recommendations. Their suitability must be checked against the learners, subject, stakes and available evidence.
 
+### Assessment: Check decisions and repair consequences
+
+For a single-answer item, solve the actual prompt independently and try to defend every option under its stated units, precision and assumptions. Exactly one must remain defensible. For multiple-answer items use the declared answer rule; for open tasks retain valid alternatives. Then apply each claimed erroneous procedure to the actual item data: it must produce the intended distractor. Recheck affected options after changing the prompt. Equivalent fractions or unstated rounding must not create a second correct answer.
+
+Map observed response to possible explanation, a distinguishing follow-up and a concrete next action. One wrong answer does not diagnose its cause. In evidence-centered design, identify the target competence, observable evidence and task that elicits it. Game events may have alternative explanations such as motor difficulty, exploration or guessing; telemetry alone does not establish persistence or personality. Explain necessary data collection.
+
+If the content, answer key or tutor explanation is wrong, acknowledge and correct it, then inspect dependent hints, tasks, scores and progress. Do not treat an affected attempt as evidence of learner ignorance. Preserve the needed original evidence and content version; mark uncertainty and offer a fresh check where necessary. Teacher and learner views must use the same version of prompts and choices.
+
+These verification procedures are adapted as design principles from [Learning Commons' check-for-understanding resources](https://github.com/learning-commons-org/agent-skills/tree/main/skills/k12-check-for-understanding). They do not import its fixed formats, US curriculum defaults or source-attribution restrictions.
+
 ## Reference: simulations
 
 Source section: Simulations and role-play
@@ -314,6 +364,10 @@ Separate instructions from supplied content, restrict tool access and destinatio
 Set a realistic usage budget, per-session limits, timeouts, and cancellation. Show an understandable state while waiting. Handle network loss, unavailable models, invalid output, and exhausted quota without losing learner work. Retry only when safe and bounded.
 
 Offer an appropriate fallback such as reviewed hints, static exercises, saved progress, or teacher help. Label unavailable feedback rather than fabricating it. Before classroom use, exercise the main learning path, an incorrect answer, a help request, uncertain feedback, and a service failure. Document unresolved limitations and the teacher's review responsibilities.
+
+### Runtime Ai: Verify generated content within defined limits
+
+Before releasing generated exercises, use applicable checks for domain correctness, solvability, state transitions and rendering. Require uniqueness only for tasks that promise it. Validate permission and structured-output boundaries outside the model; a schema does not prove truth and deterministic checks guarantee only the properties they actually check. Reject or quarantine invalid content and retain a reviewed fallback. For correction of dependent hints, assessment and progress, apply the correction procedure in `assessment.md`.
 
 ## Reference: model-profiles
 
@@ -500,6 +554,223 @@ Separate AI at authoring time from AI at runtime. Reviewed static content and de
 ### Didactic Rationale: State the limits of the rationale
 
 This explains design choices; it does not prove that this skill or every implementation improves outcomes. Subject correctness, accessibility and classroom feasibility require checks in the actual setting. A technical pass does not demonstrate learning; suitable learner evidence and, for causal claims, an appropriate evaluation are needed. Research guidance linked in the methods reference informs particular choices and does not certify the whole package. Retain teacher review for consequential judgments and adapt curriculum to the actual setting.
+
+## Reference: learning-games
+
+Source section: Learning games and purposeful gamification
+
+
+Use this reference when a project needs game mechanics, motivational features, or a substantial redesign of play and learning. The recommendations combine research with design judgments; they do not establish the effectiveness of a new product. Evidence checked: 2026-11-14.
+
+### Learning Games: Choose the learning activity before the reward
+
+Distinguish a learning game (learning happens through playing), gamification (game elements support another activity), and a simulation (a model can support inquiry without winning or scoring). A good tool may need none of the reward systems below.
+
+Write one compact design contract: learner and prerequisites; target performance; player decision; consequence and feedback; independent evidence; next learning step. For a small activity, a paragraph suffices. Identify the plausible shortcut: can a player win through guessing, repeated clicking, memorizing positions, reading the answer, or relying on a teammate?
+
+Prefer mechanics that require the intended thinking. To teach proportional reasoning, make the player adjust a mixture under meaningful constraints, explain a prediction, and solve a fresh case. A quiz can still serve retrieval practice; embedding every fact in a simulated world is unnecessary. For exploratory goals, allow alternative defensible solutions.
+
+### Learning Games: Select a small coherent set
+
+| Need | Candidate mechanic and implementation | Check or failure condition |
+|---|---|---|
+| Starting without knowing the controls | A safe playable first task; introduce a tool when needed | A newcomer completes the action without the author explaining it |
+| Understanding a system | Predict, manipulate one variable, inspect consequences, explain | Random manipulation cannot substitute for a new prediction |
+| Retaining knowledge | Retrieval missions revisited after a delay, with correction | Later unaided performance; replaying immediately is repair, not spacing |
+| Choosing the right procedure | Mix confusable problem types after initial support | Learner selects and explains a strategy; random topic shuffling is insufficient |
+| Progressing from novice performance | Worked example, partial completion, independent challenge | Help use stays visible; assistance can return when needed |
+| Seeing progress | A private map of skills with evidence and next steps | Completion, supported success and independent evidence remain distinguishable |
+| Having agency | Meaningful choice of route, context or method within the goal | Choices change the experience; prerequisites and alternative routes remain clear |
+| Curiosity | A mystery whose clues are disciplinary evidence | Reveal resolves a learning question; story reading does not dominate practice |
+| Working together | Complementary roles, shared outcome, rotating responsibilities | Each participant explains or applies something independently |
+| Recognition | Optional badges tied to transparent accomplishments | A badge describes evidence; it never substitutes for mastery judgment |
+| Competition | Optional comparable challenges or personal improvement | Check disadvantage, withdrawal and rushing; provide a route without public ranking |
+| Returning over time | Learner-chosen goals, resumable sessions, reminders if requested | Absence does not erase learning records or block access to help |
+
+These are design hypotheses, not a ranked list of proven features. Points, streaks, avatars and leaderboards have no universal learning effect. Keep game currency separate from educational evidence. Do not make ordinary learning errors consume access to instruction. Avoid pressure from expiring rewards, paid recovery, random reward purchases or public humiliation. These are product-design commitments, not claims that every instance has been experimentally compared.
+
+Let difficulty come from the target decision. Reading load, motor precision and time pressure can contaminate its measurement. Use speed only when fluency or response time belongs to the goal; keep accuracy and speed interpretable separately. There is no universal optimal success percentage. Adjust support from multiple observations and let learners or teachers correct an inappropriate placement.
+
+### Learning Games: Shape the learning sequence
+
+Introduce one playable problem before an elaborate economy. Follow an action with a consequence the learner can interpret, useful feedback, another opportunity and a natural stopping point. Explain an error at the level of the task or strategy. A celebration alone cannot correct a misconception.
+
+Use a worked example when missing knowledge prevents useful attempts. An initial exploratory problem can prepare learners for subsequent explanation, but productive failure requires consolidation. It does not justify leaving a beginner stuck. Separate initial learning, practice with support, and independent assessment. A reveal marks an assisted attempt; assess a different instance later.
+
+Build retrieval, spacing and interleaving according to the learning task. Schedule returns to previously correct material as well as errors. Ask for reconstruction before revealing an answer when retrieval is intended. Mix cases that require discrimination, with feedback suited to the activity. Do not advertise a fixed interval schedule as optimal for every subject or retention period.
+
+### Learning Games: Adapt across ages and countries
+
+Use observed knowledge and support needs rather than generational stereotypes. Primary learners may need concrete representations and supported reading; secondary learners may benefit from contrasting explanations; university and adult learners may need disciplinary authenticity and flexible pacing. These are starting hypotheses. An adult novice can need substantial scaffolding, while an experienced child can need greater challenge.
+
+Check local terminology, number and unit formats, reading direction, cultural references, school structure and available devices. Map curriculum only against an identified jurisdiction and version. Never infer a national curriculum from interface language. Include shared-device and teacher-led use where relevant. A simulation of a professional action does not certify practical competence.
+
+Provide keyboard and single-pointer alternatives to dragging, readable status text beyond color or sound, visible focus, controllable motion and suitable timing. Preserve the assessed skill when offering alternative responses. Accessibility and age suitability require testing with intended users; invoking UDL or WCAG alone proves neither.
+
+### Learning Games: Implement at the right scale
+
+For a short activity, start with reviewed content, deterministic rules and session state. Add local persistence only if resuming matters. For a longitudinal product, consider skill and item versions, supported versus independent attempts, scheduled review, export/deletion and teacher correction. Accounts, servers and behavioral telemetry require a concrete need.
+
+If evidence is stored, a useful minimal attempt record can contain `skill_id`, `item_version`, `mode`, `support_used`, `response`, `result` and `feedback_version`. Store only fields actually needed; raw responses and timestamps need not leave the device. Keep currency and cosmetics in separate game state. A network failure or repeated submission must not duplicate rewards or change a recorded assessment.
+
+For runtime AI, define allowed sources, grading boundaries, fallback behavior and a route to human review. Test plausible but wrong explanations, equivalent correct answers and unavailable service. Evaluate learning after assistance is removed. Research on particular tutors does not establish that every chatbot helps, or that compulsory waiting before help is beneficial. AI used to build the application does not imply AI calls in the finished product.
+
+When coordinating specialists or agents, give them the same goal, task examples and evidence rules. Separate content correctness, learning design, playability and implementation checks. Resolve disagreements using an example or source. Multiple personas in one prompt are not independent validation; use independent agents only when authorized and useful.
+
+### Learning Games: Validate three different outcomes
+
+1. Technical behavior: correct and alternative answers, misconception, repeated guessing, reveal, retry, resume and applicable network failure. Check that supported success never silently becomes independent mastery.
+2. Usability and play: observe intended users attempting the first task and recovering from an error. Note confusion, strategic choices and whether they can stop. A small pilot diagnoses problems; it cannot establish a population effect.
+3. Learning: assess a new unaided task, delayed retention where relevant, and transfer beyond the game's surface. For a comparative claim, use a credible alternative with comparable content and time; account for prior knowledge, attrition and unequal participation. Report uncertainty and avoid treating time-on-site or enjoyment as learning.
+
+For small projects, document the learning hypothesis and a feasible pilot. For consequential products, specify outcomes and comparison before collecting data. Keep play metrics and learning metrics separate. Remove or revise a mechanic when it encourages shortcuts, discourages help, or adds effort without a useful learning role.
+
+### Learning Games: Evidence and its limits
+
+- [Sailer & Homner, 2020](https://doi.org/10.1007/s10648-019-09498-w): meta-analysis supports average benefits of gamification, with heterogeneous results; motivational and behavioral effects were less stable under stricter study-quality analysis. This is no guarantee for a particular badge or leaderboard.
+- [Clark et al., 2016](https://doi.org/10.3102/0034654315582065): game comparisons and design-enhancement comparisons support attention to instructional design and scaffolding. A medium alone does not determine learning.
+- [Li et al., 2024](https://doi.org/10.1007/s11423-023-10337-7): small average intrinsic-motivation benefit across 35 interventions. Perceived competence is distinct from measured subject mastery.
+- [Habgood & Ainsworth, 2011](https://doi.org/10.1080/10508406.2010.508029): two studies of one mathematics game support integrating learning into core actions. The small, specific samples do not establish a universal game formula.
+- [Agarwal et al., 2021](https://doi.org/10.1007/s10648-021-09595-9) and [Ruitenburg et al., 2026](https://doi.org/10.1007/s10648-026-10225-5): classroom evidence for retrieval and context-dependent practice schedules. The latter distinguishes retrieval, spacing and interleaving; sparse moderator groups limit generalization.
+- [Wisniewski et al., 2020](https://doi.org/10.3389/fpsyg.2019.03087): feedback effects vary; actionable information matters. [Sinha & Kapur, 2021](https://doi.org/10.3102/00346543211019105): problem solving before instruction can help under designed conditions, with important learner and implementation boundaries.
+- [Almeida et al., 2023](https://doi.org/10.1016/j.infsof.2022.107142): mapping identifies reported adverse effects and shortcuts. Counts of negative reports do not estimate how often a mechanic harms users.
+- [MIT / Learning Games Network, 2015](https://education.mit.edu/wp-content/uploads/2018/10/BalancedDesignGuide2015.pdf): a design framework linking goals, actions and evidence. [George Fan, GDC 2012](https://media.gdcvault.com/gdc2012/slides/Design%20Track/Fan_George_How%20I%20Got.pdf): practitioner experience with playable onboarding. Both inform design; neither supplies a causal estimate of educational effectiveness.
+- [Bastani et al., 2025](https://doi.org/10.1073/pnas.2422633122) and [Kestin et al., 2025](https://doi.org/10.1038/s41598-025-97652-6): different experiments show why tutor design and unaided outcomes matter. Populations, subjects and interventions differ.
+- [WCAG 2.2](https://www.w3.org/TR/WCAG22/) supplies accessibility criteria; [CAST UDL 3.0](https://udlguidelines.cast.org/) supplies a design framework. These have a different evidential role from learning experiments.
+
+### Learning Games: Connect experience, mechanics and transfer
+
+Use MDA as a design lens: describe the intended experience, expected player behavior and rules that produce it. For example, discovery may need a controllable model and meaningful observations; expression may need multiple valid constructions. Do not restrict every subject to one game genre. SDT can guide attention to autonomy, competence and relatedness; neither MDA nor an Octalysis label proves effectiveness.
+
+For an open engineering puzzle, define constraints and a verifiable success condition without requiring the author's one solution. Offer comparison of the learner's own valid designs along relevant competing criteria, such as resource use and accuracy. A community histogram needs actual suitable data and optional sharing; do not invent a distribution. Optimization need not earn extra currency.
+
+Connect game representations to domain notation or real decisions, then check a new case outside the game's surface cues. Do not impose a split screen or three stages on every learner. Game feel should communicate meaningful change without obscuring reasoning. Keep streaks and rewards optional and nonpunitive; interruption must not remove learning evidence or help. Public progress requires a sharing choice.
+
+[MDA by Hunicke, LeBlanc and Zubek](https://www.cs.northwestern.edu/~hunicke/MDA.pdf) is a design framework. The cited learning-game studies above have distinct populations and outcomes; do not use product retention numbers as learning gains.
+
+## Reference: design-dialogue
+
+Source section: Dialogue during educational design
+
+
+Use at the first substantive pedagogical choice and when new evidence or changed requirements reopen it. These rules are a design workflow, not experimental claims about learning.
+
+### Design Dialogue: Identify the learner and learning conditions
+
+Age, educational role and subject experience are different attributes. “Child” describes an age context; “pupil” and “student” describe educational roles whose usage varies across countries. Categories overlap. Use “learner” or “participant” in general design and locally appropriate language in the product. School examples do not restrict the skill to children. Direct instructions can simply say “Try”, “Explain” or “Compare”.
+
+Before selecting a method, build a brief working audience profile from known context: age group and setting; prior knowledge of this topic; reading and language; independence and available support; goal and assessment consequences; devices and functional access needs. These are audience design facts, not a mandatory personal record. Do not require a birth date, diagnosis or complete school history. Mark unknowns or assumptions; the word “student” does not establish them.
+
+| Context and useful term | What to establish | Possible adaptation when needed |
+| --- | --- | --- |
+| Preschool child, when requested | Reading, controls, adult accompaniment and purpose of screen activity | Concrete short instructions, shared play and off-screen activity; do not assume independent reading |
+| Primary-school pupil or local equivalent | Concepts, notation, reading the task and devices | Link concrete representation to concept, demonstrate controls and provide support |
+| Lower-secondary learner or local equivalent | Prerequisites, classroom variation and group work | Compare strategies, explain and choose support toward a common goal |
+| Upper-secondary or vocational student | Academic or vocational field, experience and assessment purpose | Subject problem, argument or professional scenario; simulation does not replace practical assessment |
+| University student | Discipline prerequisites and experience with this topic | Authentic tasks, evidence and multiple solutions; examples remain available for new topics |
+| Adult participant, independent learner or worker | Personal goal, experience, time and real use | Relevant situations, skip known material, flexible pace and resumption |
+| Older adult, when relevant | Individual experience, language, controls and access needs | Adjust text, time or controls as needed; age does not imply poor digital experience |
+| Mixed group | Shared needs and needs requiring variants | Common goal, optional support, varied entry tasks and individual evidence |
+
+These are design options, not developmental diagnoses or required age-to-method mappings. School stages and grade names vary internationally. A child may be advanced in the subject and an adult a beginner. Language support, accessibility and pace differences can apply to any group. Do not assign fixed visual, auditory or other learning styles.
+
+Distinguish who learns, who operates the application and who sees results. A teacher may run a shared display, a parent accompany a child, and the creator may be neither. A child audience does not automatically determine who can see results. Define roles and access for actual use.
+
+When a missing fact changes the design, ask, for example: “Is this for primary-school children, older school learners or adult beginners? What can they already do in this topic?” Tailor the options; do not repeat every group or known information. Clarify an ambiguous “students” only when the setting affects the result.
+
+Explain who benefits from a proposed method here and why: “For these adult beginners, I recommend a worked example from their work, then less support as independent attempts improve.” Experienced children may instead benefit from an open challenge. An audience change reopens affected language, content, support, assessment and controls, not automatically the entire project.
+
+
+### Design Dialogue: Offer at the point of need
+
+Take known audience, prior knowledge, goal, jurisdiction, devices, time and constraints from the project. Ask for a missing fact only if it changes the decision. The default is a guided conversation. The creator can delegate one choice or subsequent routine choices, then resume guidance later.
+
+| Trigger | Relevant choices to explain |
+| --- | --- |
+| Goal and first activity | Worked example with fading, guided inquiry, retrieval, construction or authentic project |
+| Motivation and participation | Personal progress, meaningful choice, cooperative roles, optional game mechanics |
+| Error and help design | Targeted hint, contrasting example, direct explanation and another attempt |
+| Assessment | Formative feedback, criterion rubric, independent check, portfolio or supported peer review |
+| Continued use | Session-only state, local continuation, spaced review or calibrated difficulty |
+| Prototype evidence | Repair a misleading representation, reduce support, add transfer or remove an exploited reward |
+
+These are opportunities, not mandatory stops. Combine related choices in a small project. Present only viable options, with a short description, an example in this product and the consequential cost, data need or limitation. Recommend an option and ask one focused question. Allow a simple version or deferral where useful; do not require the creator to know theory names. Additional methods are available on request.
+
+### Design Dialogue: Remember decisions
+
+Reuse the conversation for small tasks; for longer work use the project's existing design record. Keep goal, constraints, method ID, reason, status, declined alternatives and unresolved questions. Suggested statuses: `offered`, `selected`, `implemented`, `verified`, `deferred`, `declined`. Keep this separate from learner records. A new requirement reopens only affected decisions; explain why. Do not equate lack of response with selection. Continue independent work while a material choice is pending.
+
+### Design Dialogue: From a choice to a product
+
+Use the method card's learner action, evidence, support and check. Keep one coherent learning sequence; explain incompatible choices. A worked example can precede later retrieval; productive failure needs subsequent consolidation. Neither implies testing on every screen.
+
+For an offline fractions activity: “I recommend combining pieces and showing the matching fraction because the goal is equivalence. A number line instead emphasizes equal position; completing a worked example provides more initial support. Which should be the main activity?” Later, offer a new task without pieces or an error-analysis task to check transfer. Do not repeat the initial interview.
+
+The creator is commissioning an application. Do not turn this conversation into mandatory tutoring, coding homework or unfinished TODOs. At handoff show where each selected method works, what was checked and what remains uncertain. Automatic skill discovery depends on the host; test discovery separately from behavior after invocation.
+
+## Reference: cognitive-ux
+
+Source section: Cognitive interface and representations
+
+
+Read when designing diagrams, multimedia, instructions, feedback placement or an interface that may obscure the learning task. Apply to the intended learners and devices, not to a fixed visual style.
+
+### Cognitive Ux: Keep attention on the decision
+
+Remove irrelevant competing motion and sound during demanding work; retain useful context and controls. Put related labels and explanations close to their referents without obscuring the object. On small screens use a linked highlight, accessible description or sequential view when adjacent placement is impractical. Color alone cannot carry the distinction.
+
+Segment complex operations into learner-controlled steps. Introduce unfamiliar controls and terms before combining them. Preserve a direct route for experienced learners and a way back to help. Animation should clarify a change or action; provide reduced-motion behavior and an equivalent understandable static state.
+
+### Cognitive Ux: Link representations and check transfer
+
+When concrete objects support an abstract concept, show how the same relationship appears in objects, diagrams and domain notation. Explain the correspondence, then ask for a new application with less surface support. A split view is one implementation, not a requirement. Keep equivalent keyboard and non-drag paths. Verify that learners cannot succeed merely by matching colors or positions.
+
+Example: manipulate equal quantities, show the corresponding equality and ask why it stays true; later solve a new equality without the manipulative. Experienced learners may start with notation. Restore the representation if it helps. For nonmathematical tasks, transfer may mean evaluating a new source or applying a procedure in another scenario.
+
+### Cognitive Ux: Preserve access and meaningful evidence
+
+Avoid unnecessary simultaneous streams, but preserve captions, transcripts, replay, language support and screen-reader access. A redundancy principle is not a ban on text alongside audio. Do not hide essential instructions in hover-only tips. If audio or time is the assessed skill, state the conditions and review accommodations explicitly.
+
+For a conceptual checkpoint, an optional confidence judgment can help compare belief with performance. Do not treat confidence as mastery or require it after every action. Feedback should explain the relevant contrast and provide an opportunity to use it; do not manufacture surprise or doubt about correct work.
+
+Check label readability, focus order, zoom, narrow layouts, reduced motion and the complete help/retry path. Inspect the learner's actual task, not only component appearance. State unperformed checks.
+
+### Cognitive Ux: Sources and limits
+
+[Waxman & Goldie, 2023](https://media.repository.chds.hsph.harvard.edu/static/filer_public/ca/62/ca625803-3d73-4855-b3e1-765870ce3772/2023_jwaxman_monograph_cogtheory_multimed.pdf) informs design choices, not universal layout prohibitions. [Matlen and Devlin, 2020](https://web.stanford.edu/~kdevlin/Papers/Matlen-Devlin_CHI2020.pdf) describes an early transfer-oriented concept, not validation of every split-screen design. [W3C captions](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html) explains accessibility conditions. Verify current normative requirements for the target release.
+
+## Reference: adaptive-practice
+
+Source section: Adaptive practice and continued learning
+
+
+Read when the product needs repeated sessions, scheduling or difficulty selection. Distinguish when to review, which task to present and how much help to offer. They need not use the same model.
+
+| Need | Small implementation | Optional extension and prerequisites |
+| --- | --- | --- |
+| One activity | Reviewed tasks, explicit sequence, help and session state | Usually no persistent learner model |
+| Recall across days | Explicit review schedule and local history | FSRS for stable items and interpretable review events |
+| Select difficulty | Reviewed item levels and transparent branching | Elo with suitable response data, uncertainty and calibration |
+| Track skill dependencies | Skill map with independent evidence | BKT or IRT only with a defensible model, data and validation |
+| Long-term plan | Goal, available time, current phase and next task | Revisable milestones, carry-over questions and review dates |
+
+Explain the function before the algorithm. Preserve the existing stack; do not install a scheduler, backend or account system merely because it is listed here. Simple rules remain legitimate when their limits are explicit. HLR is another trained recall model for suitable data, not a default implementation requirement.
+
+### Adaptive Practice: Conditions before adaptation
+
+Define stable item/skill IDs, content versions, response interpretation and assistance conditions. Separate guessed, assisted, revealed and independent responses. Follow the chosen library's rating semantics; do not silently treat every assisted response as independent recall. Keep game currency outside the learning model. Use minimal data and timestamps only where needed for scheduling.
+
+Specify cold-start behavior and a useful fallback when history is absent, corrupt or outdated. Review assumptions against representative data, including language and access conditions. Permit teacher correction and learner access to help. Predicted success is uncertain; neither a universal 80–90% success target nor two correct answers measures ZPD or proves mastery. Desired recall retention is a workload tradeoff, not a guaranteed learning outcome.
+
+Use a maintained, version-checked implementation if an algorithm is selected. Test updates, time zones/day boundaries, duplicate submissions, content changes, export/resume and invalid data. Compare the extension with the simple baseline; prediction accuracy, engagement and learning are separate outcomes. Do not infer disability or personality from response time.
+
+### Adaptive Practice: End or resume a phase
+
+Record the result, assistance conditions, unresolved questions and feasible next step. Completion of a phase is distinct from demonstrated mastery. Creating a new phase does not complete the previous one automatically. Summaries preserve necessary evidence pointers and uncertainty rather than entire transcripts. On return, verify stale assumptions with a proportionate task; interruptions should not erase progress.
+
+### Adaptive Practice: Sources
+
+[Anki FSRS documentation](https://docs.ankiweb.net/manual/deck-options), [Pelánek on educational Elo](https://www.fi.muni.cz/~xpelanek/publications/CAE-elo.pdf), and [Settles and Meeder on HLR](https://research.duolingo.com/papers/settles.acl16.pdf). These describe particular models and settings; they do not establish the effectiveness of a new app. Check current implementation documentation when integrating a library.
 
 ## License notice
 

@@ -2,7 +2,7 @@
 name: learning-methodologies
 description: Design or review educational applications by connecting learning goals, learner needs, activities, feedback and evidence of learning. Use for new learning tools or substantive changes to their teaching design. Do not apply to cosmetic changes or ordinary bug fixes without a learning-design issue.
 metadata:
-  version: "1.3.0"
+  version: "1.4.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"
@@ -19,6 +19,16 @@ Use the methods to turn educational goals into learner actions, feedback rules a
 
 Read [didactic rationale](references/didactic-rationale.md) when explaining why a method fits or tracing it into implementation. It connects methods to product decisions and the evidence needed to assess them.
 
+## Guide the creator through decisions
+
+At each substantive learning-design decision, revisit the goal, learner action, evidence, support and constraints. Use existing choices. For an unresolved consequential choice, offer a small relevant selection, usually two or three options, each with a plain-language description and a concrete application here. Recommend one and explain the main tradeoff; ask which approach the creator wants. Read [design dialogue](references/design-dialogue.md) when starting or revisiting such a choice. This governs the creator conversation, separately from the learner's tutor interaction.
+
+Do not reopen settled or declined choices without a relevant change. Honor explicit delegation of routine decisions and continue with a short rationale. Silence does not approve a scope expansion. While waiting, work on independent parts. A cosmetic change does not trigger this process.
+
+Load details by need: [methods](references/methods.md) for learning activities and support; [games](references/learning-games.md) for motivation and mechanics; [assessment](references/assessment.md) for evidence and scoring; [cognitive interface](references/cognitive-ux.md) for representations, multimedia and attention; [adaptive practice](references/adaptive-practice.md) for repeated sessions or difficulty selection. Use the existing conditional routes below for simulation, tutor state and runtime AI. Read the relevant method before offering it; do not load every reference.
+
+Translate the chosen method into observable product behavior and a meaningful check. Distinguish offered, selected, implemented and verified decisions. Technical verification does not establish learning effectiveness.
+
 ## Working route
 
 Use this route at the depth the task needs: establish the goal and constraints, choose a method for the learning obstacle, connect the learner's activity to evidence, implement within scope and check the result. For a review, inspect the existing design instead of implementing. Reuse known context; do not require a planning document for every step.
@@ -27,11 +37,13 @@ Read [decision examples](references/decision-examples.md) when help, alternative
 
 ## Establish the learning context
 
-Use information already present in the request, project and supplied materials. Ask only about missing information that materially changes the design. For minor uncertainties, state a reasonable assumption and proceed. Avoid a fixed questionnaire or repeated approval for ordinary choices already covered by the request.
+Use information already present in the request, project and supplied materials. For context gaps, ask only about information that materially changes the design. For minor uncertainties, state a reasonable assumption and proceed. Avoid a fixed questionnaire or repeated approval for ordinary choices already covered by the request.
 
 Identify the context that changes the design: learners and prior knowledge, subject, intended outcomes, classroom or independent use, available time and devices, language, accessibility needs, and any supplied curriculum. Follow a curriculum when relevant to the setting; do not assume one national framework. Choose tone from the context and author preference. Do not infer attention, motivation, ability or preferred pedagogy from generation labels.
 
 Include the surrounding teaching activity where useful: preparation, individual or group work, teacher intervention, discussion and follow-up. A teacher-led demonstration may need a good discussion prompt; accounts and individual scores are not required.
+
+Separate age, educational role and experience with the topic; child, pupil, student and adult participant are neither interchangeable categories nor ability levels. When establishing or changing the audience, read the learner profile in [design dialogue](references/design-dialogue.md). Adapt terminology and support to the setting; use neutral terms in general guidance. The creator, learner and accompanying teacher or parent can be different people.
 
 ## Connect goals to observable activity
 
@@ -40,6 +52,8 @@ For each important goal, connect the learner's action, evidence, success criteri
 Example: the learner predicts how changing resistance affects current, checks a model, explains any discrepancy, and solves a new case independently. Moving a slider or completing a screen alone does not establish understanding.
 
 Use the observed learning obstacle to choose an intervention that fits it. Treat an explanation of an error as a provisional hypothesis, not a diagnosis. Select a small coherent set of methods; do not add features merely because they appear in the catalog. Read [methods](references/methods.md) when selecting or implementing a method, support sequence or progression rule.
+
+For game mechanics, motivational features or educational-game reviews, read [learning games and purposeful gamification](references/learning-games.md). It covers playable learning loops, mechanic selection, evidence limits and implementation from small tools to longitudinal products. Adapt to primary, secondary, university and adult learners across countries using prior knowledge and local context.
 
 The method reference explicitly covers Socratic learning, the Feynman technique, the Zone of Proximal Development and scaffolding, worked examples, retrieval and spaced practice, error-based learning, metacognition, inquiry, role-play, peer and cooperative learning, projects, flipped teaching and optional gamification. These are selectable approaches, not required features of every application.
 

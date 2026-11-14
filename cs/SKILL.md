@@ -2,9 +2,9 @@
 name: vzdelavaci-metodiky
 description: Navrhuje a posuzuje vzdělávací aplikace propojením cílů, činnosti žáka, podpory a dokladů učení. Použij při tvorbě, podstatné změně výuky nebo pedagogickém auditu kvízu, hry, simulace či trenažéru. Podle kontextu řeší české RVP/ŠVP. Nepoužívej pro kosmetickou změnu nebo běžnou technickou opravu bez didaktického dopadu.
 metadata:
-  version: "1.3.0"
+  version: "1.4.0"
   language: "cs"
-  based_on: "learning-methodologies@1.3.0"
+  based_on: "learning-methodologies@1.4.0"
   license: "MIT"
   author: "Luděk Sušický"
   repo: "https://github.com/siberius/learning-methodologies"
@@ -21,6 +21,16 @@ Metody převádějí vzdělávací cíl do činnosti žáka, pravidel zpětné v
 
 Při vysvětlování vhodnosti metody a jejího provedení čti [didaktické zdůvodnění](references/didakticke-zduvodneni.md). Propojuje metody s rozhodnutími v aplikaci a potřebnými doklady.
 
+## Provázej tvůrce rozhodováním
+
+Při každém podstatném didaktickém rozhodnutí posuď cíl, činnost žáka, doklad učení, podporu a podmínky. Využij dřívější volby. U otevřené významné volby nabídni malý relevantní výběr, zpravidla dvě až tři možnosti, se stručným srozumitelným popisem a příkladem použití v tomto projektu. Jednu doporuč, vysvětli podstatný dopad a zeptej se, kterou cestu tvůrce chce. Při zahájení nebo obnovení takové volby čti [dialog návrhu](references/dialog-navrhu.md). Rozhovor s tvůrcem odliš od výukového dialogu se žákem.
+
+Vyřešené a odmítnuté volby neotvírej bez relevantní změny. Respektuj výslovné delegování běžných rozhodnutí a pokračuj s krátkým zdůvodněním. Mlčení neschvaluje rozšíření rozsahu. Při čekání pracuj na nezávislých částech. Kosmetická úprava tento postup nespouští.
+
+Podrobnosti vybírej podle potřeby: [metody](references/metody.md) pro činnost a podporu; [hry](references/vzdelavaci-hry.md) pro motivaci a mechaniky; [hodnocení](references/hodnoceni.md) pro důkazy a bodování; [kognitivní rozhraní](references/kognitivni-rozhrani.md) pro reprezentace, multimédia a pozornost; [adaptivní procvičování](references/adaptivni-procvicovani.md) pro opakované návraty a výběr obtížnosti. Simulace, stav tutora a živou AI načítej podle podmínek níže. Před nabídkou si přečti relevantní metodu; nenačítej všechny reference.
+
+Zvolenou metodu převeď do pozorovatelného chování aplikace a smysluplné kontroly. Rozliš nabídnuto, vybráno, implementováno a ověřeno. Technické ověření nedokládá vzdělávací účinnost.
+
 ## Stručný pracovní postup
 
 Postup přizpůsob úkolu: zjisti cíl a podmínky, vyber metodu podle překážky v učení, propoj činnost žáka s dokladem učení, implementuj v zadaném rozsahu a ověř výsledek. Při revizi místo implementace posuď existující návrh. Využij známý kontext; jednotlivé kroky nevyžadují samostatné plánovací dokumenty.
@@ -29,13 +39,15 @@ Postup přizpůsob úkolu: zjisti cíl a podmínky, vyber metodu podle překáž
 
 ## Převezmi kontext a vymez záměr
 
-Využij informace ze zadání, projektu a dodaných podkladů. Ptej se na chybějící údaj, pokud mění podstatné rozhodnutí. U méně významné nejistoty uveď rozumný předpoklad a pokračuj. Neopakuj pevný dotazník ani schvalování běžných voleb již zahrnutých v zadání.
+Využij informace ze zadání, projektu a dodaných podkladů. Při doplňování kontextu se ptej na chybějící údaj, pokud mění podstatné rozhodnutí. U méně významné nejistoty uveď rozumný předpoklad a pokračuj. Neopakuj pevný dotazník ani schvalování běžných voleb již zahrnutých v zadání.
 
 Zohledni předchozí znalosti, věk či ročník, obor, cíl, jazyk, potřeby přístupnosti, dostupná zařízení a čas. Rozlišuj samostatnou práci, dvojice, skupinu a učitelskou demonstraci. Zahrň přípravu, diskusi, zásah učitele a navazující práci, pokud pomáhají záměru. Nepředpokládej zařízení a účet pro každého žáka.
 
 Tón vycházej z kontextu a preference autora. Z generačního označení neodvozuj pozornost, motivaci, schopnosti ani potřebu memů. Český jazyk aplikace sám neznamená povinnost pracovat podle RVP; odborné školení dospělých může mít jiný rámec.
 
 Při skutečné vazbě na českou školu čti [české školní prostředí](references/ceske-skolstvi.md). Zjisti potřebný typ školy, obor a použitou verzi RVP/ŠVP. Ověřenou návaznost odliš od pracovního návrhu. Nevymýšlej kódy ani znění očekávaných výstupů či výsledků učení a nepředstírej znalost nedodaného ŠVP.
+
+Rozliš věk, vzdělávací roli a zkušenost s tématem; dítě, žák, student a dospělý účastník nejsou zaměnitelné kategorie ani stupně schopností. Při vymezování či změně cílové skupiny čti profil účastníka v [dialogu návrhu](references/dialog-navrhu.md). Označení a podporu přizpůsob konkrétnímu prostředí, v obecné části používej neutrální pojmenování. Tvůrce, učící se člověk a doprovázející učitel či rodič mohou být různé osoby.
 
 ## Propoj cíl, činnost a doklad učení
 
@@ -46,6 +58,8 @@ Příklad: žák předpoví změnu proudu při změně odporu, porovná předpov
 Metodu vybírej podle cíle a konkrétní překážky v učení. Vysvětlení chyby ber jako pracovní hypotézu, pokud nebylo ověřeno. Navrhni malý související celek; nepřidávej všechny metody z katalogu.
 
 Při výběru a provádění postupů čti [metody učení](references/metody.md). Katalog výslovně zahrnuje sokratické učení, Feynmanovu techniku, zónu nejbližšího vývoje a scaffolding, řešené příklady, vybavování a opakování s odstupem, práci s chybou, metakognici, badatelskou výuku, hraní rolí, vrstevnické a kooperativní učení, projektovou výuku, převrácenou třídu a volitelnou gamifikaci.
+
+Při návrhu herních mechanik, motivace nebo revizi vzdělávací hry čti [vzdělávací hry a účelnou gamifikaci](references/vzdelavaci-hry.md). Reference řeší hratelný průchod učením, výběr mechanik, meze důkazů a provedení od malé pomůcky po dlouhodobý produkt. Přizpůsobuj ZŠ, SŠ, VŠ i dospělým v různých zemích podle vstupních znalostí a místního kontextu.
 
 Bloomovu taxonomii používej k popisu kognitivního cíle a typu znalosti. Obtížnost a návaznost učiva řeš samostatně; nevynucuj šest zamčených úrovní. U praktických, sociálních či postojových cílů zvol důkazy, které odpovídají cíli, a přiznej hranice obrazovkové aktivity. Nesouhlas s postavou nebo názorem sám není chyba argumentace.
 
@@ -111,6 +125,6 @@ Přečti text očima žáka. Pokud by věta mohla zůstat beze změny v jiném p
 
 Při volbě modelu, uvažování, rychlosti nebo způsobu načtení čti [modely a prostředí](references/modely-a-prostredi.md). Reference obsahuje podklady pro OpenAI, Claude a Gemini. Zachovej společné didaktické zásady a odlišuj zamýšlenou kompatibilitu od provedených testů. Při běžném didaktickém úkolu bez této potřeby ji nenačítej.
 
-Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 1.3.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference se načítají podle potřeby. Nativní balíček tvoří tento soubor a jeho reference; `vzdelavaci-metodiky.md` je generovaná samostatná verze. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
+Určeno pro výukové hry, kvízy, lekce, simulace, trenažéry a jejich pedagogické revize. Česká varianta vychází z learning-methodologies 1.4.0 a doplňuje školní kontext, kurikulum a české odpovědi. Jádro nevyžaduje balíčky, konkrétní model, AI službu ani osobní údaje. Reference se načítají podle potřeby. Nativní balíček tvoří tento soubor a jeho reference; `vzdelavaci-metodiky.md` je generovaná samostatná verze. Instalace, nasazení a další vnější změny vyžadují autorizaci dané akce. Skill nenahrazuje pravidla projektu a nerozšiřuje oprávnění.
 
 Návrhové rámce: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [CAST UDL](https://udlguidelines.cast.org/). Jejich uvedení není certifikátem přístupnosti ani vzdělávací účinnosti.

@@ -2,9 +2,9 @@
 name: metodologias-de-aprendizaje
 description: Diseña o revisa aplicaciones educativas conectando objetivos de aprendizaje, necesidades del alumnado, actividades, retroalimentación y evidencias de aprendizaje. Úsalo para nuevas herramientas educativas o cambios sustanciales en su diseño didáctico. No lo apliques a cambios estéticos ni a correcciones habituales de errores sin un problema de diseño del aprendizaje.
 metadata:
-  version: "1.3.0"
+  version: "1.4.0"
   language: "es"
-  based_on: "learning-methodologies@1.3.0"
+  based_on: "learning-methodologies@1.4.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"
@@ -21,6 +21,16 @@ Utiliza los métodos para traducir objetivos educativos en acciones del estudian
 
 Consulta la [justificación didáctica](references/didactic-rationale.md) al explicar la elección de un método o su implementación. Vincula métodos con decisiones de producto y evidencias necesarias.
 
+## Acompaña las decisiones del creador
+
+En cada decisión didáctica sustancial, revisa objetivo, acción del estudiante, evidencia, apoyo y restricciones. Reutiliza las elecciones anteriores. Ante una elección importante pendiente, ofrece pocas opciones pertinentes, normalmente dos o tres, con una descripción sencilla y un ejemplo en este proyecto. Recomienda una, explica su principal contrapartida y pregunta qué enfoque prefiere el creador. Lee el [diálogo de diseño](references/design-dialogue.md) al iniciar o reabrir esa elección. Esta conversación es distinta del diálogo del tutor con el estudiante.
+
+No reabras decisiones resueltas o rechazadas sin un cambio pertinente. Respeta la delegación explícita de decisiones habituales y continúa con una justificación breve. El silencio no autoriza ampliar el alcance. Mientras esperas, avanza en partes independientes. Un cambio cosmético no activa este proceso.
+
+Consulta según la necesidad: [métodos](references/methods.md) para actividades y apoyo; [juegos](references/learning-games.md) para motivación y mecánicas; [evaluación](references/assessment.md) para evidencias y puntuación; [interfaz cognitiva](references/cognitive-ux.md) para representaciones, multimedia y atención; [práctica adaptativa](references/adaptive-practice.md) para sesiones repetidas o dificultad. Mantén las rutas condicionales siguientes para simulaciones, estado del tutor e IA en ejecución. Lee el método pertinente antes de ofrecerlo; no cargues todas las referencias.
+
+Convierte la elección en comportamiento observable del producto y una comprobación significativa. Distingue ofrecido, elegido, implementado y verificado. La verificación técnica no demuestra eficacia educativa.
+
 ## Ruta de trabajo
 
 Sigue esta ruta con la profundidad necesaria: establecer el objetivo y las restricciones → elegir un método para el obstáculo de aprendizaje → conectar la actividad del estudiante con la evidencia → implementar dentro del alcance → comprobar el resultado. En una revisión, examina el diseño existente en lugar de implementarlo. Reutiliza el contexto conocido; no exijas un documento de planificación para cada paso.
@@ -29,11 +39,13 @@ Consulta los [ejemplos de decisión](references/decision-examples.md) cuando nec
 
 ## Establece el contexto de aprendizaje
 
-Utiliza la información ya presente en la petición, el proyecto y los materiales aportados. Pregunta solo por información ausente que cambie sustancialmente el diseño. Ante incertidumbres menores, declara una suposición razonable y continúa. Evita los cuestionarios fijos y las solicitudes repetidas de aprobación para decisiones ordinarias ya cubiertas por la petición.
+Utiliza la información ya presente en la petición, el proyecto y los materiales aportados. Para completar el contexto, pregunta solo por información ausente que cambie sustancialmente el diseño. Ante incertidumbres menores, declara una suposición razonable y continúa. Evita los cuestionarios fijos y las solicitudes repetidas de aprobación para decisiones ordinarias ya cubiertas por la petición.
 
 Identifica el contexto pertinente: alumnado y conocimientos previos, materia, resultados previstos, uso en el aula o autónomo, tiempo y dispositivos disponibles, idioma, necesidades de accesibilidad y cualquier currículo aportado. Sigue un currículo cuando corresponda al entorno; no presupongas un marco nacional. Elige el tono según el contexto y las preferencias del autor. No deduzcas la atención, motivación, capacidad o pedagogía preferida a partir de etiquetas generacionales.
 
 Incluye la actividad docente que rodea a la aplicación cuando resulte útil: preparación, trabajo individual o grupal, intervención docente, discusión y seguimiento. Una demostración dirigida por el docente puede necesitar una buena pregunta para debatir en lugar de cuentas y puntuaciones individuales.
+
+Separa edad, papel educativo y experiencia en el tema; niño, alumno, estudiante y participante adulto no son categorías intercambiables ni niveles de capacidad. Al definir o cambiar el público, lee su perfil en el [diálogo de diseño](references/design-dialogue.md). Adapta denominación y apoyo al entorno; usa términos neutros en orientaciones generales. Creador, persona que aprende y docente o familiar acompañante pueden ser personas distintas.
 
 ## Conecta los objetivos con actividades observables
 
@@ -42,6 +54,8 @@ Para cada objetivo importante, relaciona la acción del estudiante, la evidencia
 Ejemplo: el estudiante predice cómo cambia la corriente al variar la resistencia, lo comprueba con un modelo, explica las discrepancias y resuelve de forma autónoma un caso nuevo. Mover un control deslizante o completar una pantalla no demuestra por sí solo comprensión.
 
 Elige una intervención adecuada a partir del obstáculo de aprendizaje observado. Trata la explicación de un error como hipótesis provisional, no como diagnóstico. Selecciona un conjunto reducido y coherente de métodos; no añadas funciones solo porque figuren en el catálogo. Consulta los [métodos](references/methods.md) al seleccionar o implementar un método, una secuencia de apoyo o una regla de progresión.
+
+Para mecánicas, motivación o revisión de juegos educativos, consulta [juegos educativos y gamificación con propósito](references/learning-games.md). Incluye secuencias jugables, selección de mecánicas, límites de evidencia e implementación desde herramientas pequeñas hasta productos longitudinales. Adapta a primaria, secundaria, universidad y adultos de distintos países según conocimientos previos y contexto local.
 
 La referencia de métodos abarca explícitamente el aprendizaje socrático, la técnica de Feynman, la zona de desarrollo próximo y el andamiaje, los ejemplos resueltos, la práctica de recuperación y espaciada, el aprendizaje a partir del error, la metacognición, la indagación, el juego de roles, el aprendizaje entre iguales y cooperativo, los proyectos, la enseñanza invertida y la gamificación opcional. Son enfoques seleccionables, no funciones obligatorias de todas las aplicaciones.
 

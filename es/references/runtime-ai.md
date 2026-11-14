@@ -27,3 +27,7 @@ Separa las instrucciones del contenido suministrado, restringe herramientas y de
 Fija un presupuesto realista, límites por sesión, tiempos de espera y cancelación. Muestra un estado comprensible durante la espera. Gestiona pérdidas de conexión, modelos no disponibles, salidas inválidas y cuotas agotadas sin perder el trabajo. Reintenta solo de manera segura y limitada.
 
 Ofrece una alternativa adecuada: pistas revisadas, ejercicios estáticos, progreso guardado o ayuda docente. Identifica la retroalimentación no disponible en lugar de inventarla. Antes del uso en el aula, recorre el flujo principal, una respuesta incorrecta, una solicitud de ayuda, retroalimentación incierta y un fallo de servicio. Documenta las limitaciones pendientes y las responsabilidades de revisión del docente.
+
+## Verifica el contenido generado dentro de límites definidos
+
+Antes de publicar ejercicios generados, aplica comprobaciones pertinentes de exactitud, resolución, transiciones y presentación. Exige solución única solo cuando la tarea la promete. Aplica permisos y validación estructural fuera del modelo; un esquema no demuestra verdad y las comprobaciones deterministas garantizan solo las propiedades comprobadas. Rechaza o aparta contenido inválido para revisión y conserva una alternativa revisada. Para corregir ayudas, evaluación y progreso dependientes, aplica el procedimiento de `assessment.md`.

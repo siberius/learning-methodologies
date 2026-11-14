@@ -29,3 +29,7 @@ Separate instructions from supplied content, restrict tool access and destinatio
 Set a realistic usage budget, per-session limits, timeouts, and cancellation. Show an understandable state while waiting. Handle network loss, unavailable models, invalid output, and exhausted quota without losing learner work. Retry only when safe and bounded.
 
 Offer an appropriate fallback such as reviewed hints, static exercises, saved progress, or teacher help. Label unavailable feedback rather than fabricating it. Before classroom use, exercise the main learning path, an incorrect answer, a help request, uncertain feedback, and a service failure. Document unresolved limitations and the teacher's review responsibilities.
+
+## Verify generated content within defined limits
+
+Before releasing generated exercises, use applicable checks for domain correctness, solvability, state transitions and rendering. Require uniqueness only for tasks that promise it. Validate permission and structured-output boundaries outside the model; a schema does not prove truth and deterministic checks guarantee only the properties they actually check. Reject or quarantine invalid content and retain a reviewed fallback. For correction of dependent hints, assessment and progress, apply the correction procedure in `assessment.md`.

@@ -4,7 +4,25 @@
 
 Utiliza el skill para una aplicación educativa nueva, un cambio sustancial en su diseño didáctico o una revisión de este. Un cambio estético o una corrección ordinaria de errores no requiere rediseñar la enseñanza.
 
-Aporta los datos conocidos sobre alumnado, objetivo, contexto y restricciones prácticas. El agente debe aprovechar la información existente y preguntar solo por carencias relevantes. No debe repetir una entrevista fija sobre público y tono ni solicitar aprobación para decisiones ordinarias ya cubiertas por la petición.
+Aporta los datos conocidos sobre alumnado, objetivo, contexto y restricciones prácticas. El agente debe aprovechar la información existente y preguntar por carencias relevantes de contexto y elecciones didácticas pendientes. No debe repetir una entrevista fija sobre público y tono ni solicitar aprobación para decisiones ordinarias ya cubiertas por la petición.
+
+## Decisiones guiadas durante la creación
+
+El skill ofrece pocas opciones didácticas pertinentes ante una elección importante nueva: explicación breve, ejemplo concreto y recomendación. Recuerda tus elecciones y las conecta con implementación y comprobación. Puedes decir «elige por mí las decisiones habituales» para delegar o volver a pedir una comparación. Las actividades pequeñas sin conexión mantienen su alcance. Las fichas de métodos, la interfaz cognitiva y la práctica adaptativa opcional apoyan este proceso.
+
+## Instalación con Skills CLI
+
+Elige una edición con [Skills CLI](https://github.com/vercel-labs/skills). `-g` instala para el usuario y `-a codex` selecciona Codex. Usa `-a claude-code` para Claude Code u omite la opción para elegir interactivamente. Instala solo las ediciones que utilices.
+
+```bash
+npx skills add siberius/learning-methodologies --skill metodologias-de-aprendizaje --full-depth -g -a codex
+```
+
+Sin `--agent`, `skills use` imprime un prompt preparado. Para iniciar temporalmente un agente compatible con el skill:
+
+```bash
+npx skills use siberius/learning-methodologies --skill metodologias-de-aprendizaje --full-depth --agent codex
+```
 
 ## Paquete nativo del skill
 
@@ -39,6 +57,10 @@ Los nombres de modelos no son mecanismos de instalación. La compatibilidad depe
 | Modelo científico, experimento o juego de roles | `references/simulations.md` |
 | Servicio de IA en la aplicación terminada | `references/runtime-ai.md` |
 | Modelo, esfuerzo de razonamiento, velocidad o adaptación al cliente | `references/model-profiles.md` |
+| Elecciones del creador y continuidad | `references/design-dialogue.md` |
+| Representaciones, multimedia y atención | `references/cognitive-ux.md` |
+| Planificación del repaso y dificultad | `references/adaptive-practice.md` |
+| Mecánicas, motivación y transferencia | `references/learning-games.md` |
 
 No cargues automáticamente todas las referencias en modo nativo. Un cuestionario sin conexión puede dar retroalimentación y pistas sin IA durante el uso. Una demostración docente puede necesitar preguntas de discusión en lugar de registros individuales. Utiliza una o varias perspectivas según la tarea, sin iniciar automáticamente varios agentes.
 

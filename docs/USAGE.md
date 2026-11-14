@@ -4,21 +4,24 @@
 
 Use the skill for a new educational application, a substantive change to its learning design or a review of that design. A cosmetic edit or ordinary bug fix does not require a teaching redesign.
 
-Provide the learners, goal, context and practical constraints you know. The agent should use existing information and ask only for material gaps. It should not repeat a fixed audience-and-tone interview or request approval for routine design choices already covered by your brief.
+Provide the learners, goal, context and practical constraints you know. The agent should use existing information and ask about material context gaps and unresolved teaching choices. It should not repeat a fixed audience-and-tone interview or request approval for routine design choices already covered by your brief.
+
+## Guided decisions during creation
+
+The skill offers a few relevant teaching options when a new consequential choice arises: a short explanation, a concrete example and a recommendation. It remembers your choices and connects them to implementation and verification. Say “choose routine decisions for me” to delegate, or ask to compare alternatives again. Small offline activities remain small. Method cards, cognitive interface guidance and optional adaptive practice support this workflow.
 
 ## Installation via skills.sh CLI
 
-The recommended way to install and manage the skill across 20+ coding agents (including Claude Code, Cursor, Codex, Antigravity, OpenCode, Cline, Windsurf) is using the `skills` CLI:
+Install one language edition with the [Skills CLI](https://github.com/vercel-labs/skills). `-g` selects user-level installation; `-a codex` selects Codex. Replace it with `-a claude-code` for Claude Code, or omit the agent option to choose interactively. Install only the editions you use.
 
 ```bash
-# Install to current project
-npx skills add siberius/learning-methodologies
+npx skills add siberius/learning-methodologies --skill learning-methodologies --full-depth -g -a codex
+```
 
-# Install globally across all projects
-npx skills add siberius/learning-methodologies -g
+Without `--agent`, `skills use` prints a prepared prompt. To launch a supported agent with this skill temporarily:
 
-# Target a specific assistant (e.g. Claude Code or Cursor)
-npx skills add siberius/learning-methodologies -a claude-code
+```bash
+npx skills use siberius/learning-methodologies --skill learning-methodologies --full-depth --agent codex
 ```
 
 ## Native skill bundle
@@ -55,6 +58,10 @@ Model names are not installation mechanisms. Compatibility depends on the host a
 | Scientific model, experiment or role-play | `references/simulations.md` |
 | AI service in the finished app | `references/runtime-ai.md` |
 | Model, reasoning effort, speed or client adaptation | `references/model-profiles.md` |
+| Creator choices and decision continuity | `references/design-dialogue.md` |
+| Representations, multimedia and attention | `references/cognitive-ux.md` |
+| Review scheduling and difficulty selection | `references/adaptive-practice.md` |
+| Game mechanics, motivation and transfer | `references/learning-games.md` |
 
 Do not load every reference automatically in native mode. An offline quiz can provide feedback and hints without runtime AI. A teacher demonstration may need discussion prompts rather than individual records. Use one or several perspectives according to the task, without automatically launching multiple agents.
 

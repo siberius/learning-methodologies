@@ -2,6 +2,32 @@
 
 Utiliza esta referencia después de definir el objetivo y la evidencia de logro. Elige la intervención útil más pequeña para el obstáculo actual del estudiante. El formato de una aplicación no determina por sí solo un método docente. No añadas todos los métodos de esta lista.
 
+## Fichas para una elección concreta
+
+Usa ID estables entre traducciones y registros. Cada fila conecta descripción para el creador, necesidad, acción y evidencia. Las secciones siguientes desarrollan apoyo y límites. Para la ficha elegida, concreta implementación pequeña, ampliación opcional, comprobación de fallos y fuente pertinente; no muestres todo el catálogo por defecto. Las fuentes apoyan principios específicos, no la eficacia de la aplicación generada.
+
+Para la ficha elegida, indica público, conocimientos previos necesarios y adaptaciones de idioma, apoyo o evaluación; no elijas el método solo por edad.
+
+| ID y descripción | Cuándo ofrecer e implementación pequeña | Evidencia y comprobación del apoyo |
+| --- | --- | --- |
+| `worked-example-fading`: observar, completar y aplicar un procedimiento | Procedimiento nuevo; ejemplo revisado y tarea incompleta | Caso independiente nuevo; permitir saltar apoyo conocido y recuperarlo |
+| `guided-inquiry`: predecir, cambiar una variable y explicar | Comprender un sistema; experimento delimitado | Justificar otra predicción; manipulación aleatoria no sustituye razonamiento |
+| `productive-failure`: intentar enfoques y compararlos con una explicación | Conocimientos previos y tiempo para consolidar | Comparar enfoques y aplicar la idea; no abandonar al principiante |
+| `retrieval-spacing`: recordar antes de revelar y volver después | Conservar conocimientos accesibles; intento, corrección y repaso | Recuperación independiente con demora; corrección inmediata no es espaciado |
+| `contrast-interleaving`: distinguir casos similares y elegir estrategia | Confusión de categorías o procedimientos tras apoyo inicial | Explicar el rasgo distintivo; mezclar temas al azar no basta |
+| `socratic-dialogue`: examinar razonamiento mediante una pregunta | Una respuesta razonada puede revelar incertidumbre útil | Revisar o defender con evidencia; explicación directa disponible |
+| `self-explanation`: explicar con palabras propias y revisar | Detectar lagunas tras aprendizaje inicial | Exactitud y aplicación, no solo fluidez |
+| `cooperative-project`: coordinar roles para producir algo significativo | Indagación compartida o tarea auténtica con tiempo | Contribución y explicación individual; éxito grupal no prueba dominio de todos |
+| `role-play`: decidir desde un papel y reflexionar | Perspectivas, comunicación o juicio procedimental | Explicar decisiones y consecuencias; coincidir con el personaje no es acertar |
+| `metacognitive-review`: comparar plan o confianza con evidencia | Autorregulación y próximos pasos | Cambiar una acción según desempeño; confianza no es capacidad |
+| `criterion-rubric`: valorar cualidades observables mediante criterios | Respuestas abiertas, proyectos y alternativas justificadas | Ejemplos límite y revisión; no premiar acuerdo de opiniones |
+| `representation-transfer`: conectar representaciones concretas y formales | Éxito ligado a objetos del juego | Aplicar en otra representación; conservar vías accesibles equivalentes |
+
+En versiones diferenciadas identifica objetivo común y decisión que debe conservar cada una. Varía idioma, representación, ritmo y ayuda sin resolver por el estudiante esa decisión. Conserva un contexto interesante para quienes reciben apoyo. Amplía con justificación, contraejemplos o transferencia, no solo más ítems. Explicita un cambio intencional del objetivo. Los grupos dependen de evidencia revisable, no etiquetas permanentes.
+
+Extensiones como repaso persistente o IA requieren motivo y referencias correspondientes. Conserva fuente, versión y jurisdicción de vínculos curriculares; distingue estándar oficial, componente y prerrequisito inferido. Una conexión conceptual no es automáticamente una progresión validada.
+
+
 ## Elige a partir de una necesidad observada
 
 | Obstáculo observado | Intervención posible | Comprobación antes de adoptarla |

@@ -19,7 +19,9 @@ A portable AI skill for designing and reviewing educational applications. It con
 
 MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 
-Current version: **1.3.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, learner-facing text guidance, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
+Current version: **1.4.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, learner-facing text guidance, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
+
+The skill offers a few relevant teaching options when a new consequential choice arises: a short explanation, a concrete example and a recommendation. It remembers your choices and connects them to implementation and verification. Say “choose routine decisions for me” to delegate, or ask to compare alternatives again. Small offline activities remain small. Method cards, cognitive interface guidance and optional adaptive practice support this workflow.
 
 ## Why these methods guide development with AI
 
@@ -40,23 +42,16 @@ Methods include Socratic learning, the Feynman technique, the Zone of Proximal D
 
 ## Installation and Quick Start
 
-Install the skill into your coding agent (Claude Code, Cursor, Codex, Antigravity, OpenCode and others) using the `skills` CLI from [skills.sh](https://skills.sh):
+Install one language edition with the [Skills CLI](https://github.com/vercel-labs/skills). `-g` selects user-level installation; `-a codex` selects Codex. Replace it with `-a claude-code` for Claude Code, or omit the agent option to choose interactively. Install only the editions you use.
 
 ```bash
-# Install the international English edition
-npx skills add siberius/learning-methodologies
-
-# Or install globally across all your projects
-npx skills add siberius/learning-methodologies -g
-
-# Install the Czech edition (includes Czech RVP/ŠVP curriculum guidance)
-npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth
+npx skills add siberius/learning-methodologies --skill learning-methodologies --full-depth -g -a codex
 ```
 
-You can also test the skill on-the-fly without permanently installing it:
+Without `--agent`, `skills use` prints a prepared prompt. To launch a supported agent with this skill temporarily:
 
 ```bash
-npx skills use siberius/learning-methodologies
+npx skills use siberius/learning-methodologies --skill learning-methodologies --full-depth --agent codex
 ```
 
 ## Choose an edition
