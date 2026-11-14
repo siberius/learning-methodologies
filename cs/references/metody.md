@@ -27,7 +27,6 @@ U diferencovaných variant pojmenuj společný cíl a rozhodnutí, které musí 
 
 Volitelná rozšíření jako trvalé opakování či živá AI potřebují důvod a příslušné reference. U kurikulárních vazeb uchovej zdroj, verzi a zemi; rozliš oficiální požadavek, komponentu a odhadnutý předpoklad. Hrana pojmové mapy není automaticky ověřenou posloupností učení.
 
-
 ## Vycházej z pozorované potřeby
 
 | Pozorovaná překážka | Možný postup | Co ověřit |

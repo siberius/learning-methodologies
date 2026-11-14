@@ -27,7 +27,6 @@ En versiones diferenciadas identifica objetivo común y decisión que debe conse
 
 Extensiones como repaso persistente o IA requieren motivo y referencias correspondientes. Conserva fuente, versión y jurisdicción de vínculos curriculares; distingue estándar oficial, componente y prerrequisito inferido. Una conexión conceptual no es automáticamente una progresión validada.
 
-
 ## Elige a partir de una necesidad observada
 
 | Obstáculo observado | Intervención posible | Comprobación antes de adoptarla |

@@ -27,7 +27,6 @@ When a missing fact changes the design, ask, for example: “Is this for primary
 
 Explain who benefits from a proposed method here and why: “For these adult beginners, I recommend a worked example from their work, then less support as independent attempts improve.” Experienced children may instead benefit from an open challenge. An audience change reopens affected language, content, support, assessment and controls, not automatically the entire project.
 
-
 ## Offer at the point of need
 
 Take known audience, prior knowledge, goal, jurisdiction, devices, time and constraints from the project. Ask for a missing fact only if it changes the decision. The default is a guided conversation. The creator can delegate one choice or subsequent routine choices, then resume guidance later.

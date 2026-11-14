@@ -1,0 +1,29 @@
+# Dlaczego metodyki dydaktyczne są niezbędne w tworzeniu aplikacji wspieranych przez AI
+
+Przeczytaj ten dokument, wyjaśniając cel skilla lub decydując, w jaki sposób metoda dydaktyczna powinna zmieniać działanie aplikacji. Narzędzie to wspiera programistów i edukatorów wykorzystujących AI do projektowania i budowy aplikacji edukacyjnych. Oferuje również wytyczne dla aplikacji korzystających z AI w trakcie uczenia się (runtime), jeśli jest to uzasadnione. Metoda musi przejawiać się w działaniach ucznia, informacji zwrotnej i dowodach uczenia się. Pojedyncze zdanie w prompcie lub etykieta funkcji nie wystarczą.
+
+## Przekład decyzji dydaktycznej na obserwowalne zachowanie
+
+| Metoda lub perspektywa | Cel dydaktyczny | Decyzja projektowa w aplikacji | Dowód do weryfikacji |
+|---|---|---|---|
+| Pytania sokratejskie | Zbadanie założeń i toku rozumowania ucznia | Zadaj ukierunkowane pytanie, zaczekaj, odnieś się do faktycznej odpowiedzi; w razie potrzeby podaj wyjaśnienie | Uczeń potrafi uzasadnić lub skorygować twierdzenie, w tym poprawną alternatywę |
+| Technika Feynmana i samoobjaśnianie | Umożliwienie weryfikacji wyjaśnienia ucznia | Pozwól uczniowi wyjaśnić zagadnienie, porównaj z kryteriami, wskaż konkretną lukę i zaproponuj nowe zadanie | Poprawne zależności i zastosowanie w praktyce; sama płynność wypowiedzi nie wystarczy |
+| Przykłady z rozwiązaniem i rusztowanie poznawcze (scaffolding) | Pomoc początkującemu w rozpoczęciu pracy i stopniowe dochodzenie do samodzielności | Zapewnij krok z rozwiązaniem, zadanie do dokończenia i odpowiedni nowy problem; utrzymaj dostęp do pomocy na żądanie | Wyraźne odróżnienie wykonania z pomocą od późniejszej próby samodzielnej |
+| Praktyka przypominania i powtórki rozłożone w czasie | Ćwiczenie odtwarzania wiedzy i powracanie do niej w odpowiednich odstępach czasu | Zapytaj przed odsłonięciem odpowiedzi; zapewnij korygującą informację zwrotną i zaplanuj powtórki, w tym materiału opanowanego | Wynik przed odsłonięciem odpowiedzi, późniejsze utrzymanie w pamięci i transfer wiedzy |
+| Mapy pojęciowe | Wyraźne uwidocznienie relacji i powiązań pojęciowych | Stosuj nazwane relacje, akceptuj równoważne poprawne struktury i zapewnij dostępną alternatywę edycji | Znaczenie i uzasadnienie połączeń, a nie samo podobieństwo wizualne |
+| Dociekanie (inquiry) i symulacje | Porównanie przewidywań z faktami przy jawnych założeniach | Uwidocznij istotne zmienne, jednostki, ograniczenia i granice modelu; uwzględnij podsumowanie (debriefing) | Uczeń rewiduje wyjaśnienie na podstawie obserwacji lub jasno oznaczonych wyników modelu |
+| Ocena kształtująca i metapoznanie | Wyznaczenie użytecznego kolejnego kroku na podstawie dowodów | Pokaż konkretną informację zwrotną i pozwól uczniom porównać przewidywanie z wykonaniem | Możliwa do wdrożenia korekta i nowy dowód; same punkty i pewność siebie nie wystarczą |
+| Uczenie się kooperatywne i rówieśnicze | Wspieranie porównywania i wyjaśniania z zachowaniem odpowiedzialności indywidualnej | Przypisz wspólne zadanie z indywidualnym wkładem i sposobem rozstrzygania sporów | Rozumowanie każdego ucznia; jedno wspólne kliknięcie nie dowodzi zrozumienia przez grupę |
+| Samoregulacja we wspólnej przestrzeni poznawczej (FALR) | Utrzymanie aktywnej i krytycznej postawy ucznia podczas korzystania z AI lub wskazówek | Wprowadź pauzę poznawczą przed przyjęciem odpowiedzi; zapytaj, czego brakuje i co uczeń zrozumiał sam, a co wygenerował system; umożliw odrzucenie wygenerowanego wyniku | Odróżnienie własnego zrozumienia od wyniku systemu, zakończone samodzielnym krokiem ucznia |
+
+Taksonomia Blooma pomaga opisywać cele poznawcze i rodzaje wiedzy; nie wyznacza ona sztywnego poziomu trudności ani wymogu odblokowywania sześciu kolejnych etapów. Metoda jest właściwa tylko wtedy, gdy odpowiada docelowym uczniom, treści i zaobserwowanej przeszkodzie w uczeniu się. Żaden katalog nie nakłada obowiązku wdrażania wszystkich metod naraz.
+
+## Dlaczego ma to znaczenie, gdy AI pomaga tworzyć aplikację
+
+Sztuczna inteligencja potrafi błyskawicznie wygenerować interfejs, moduł sprawdzania odpowiedzi i komunikaty zwrotne. Elementy te wciąż jednak wymagają kontraktu dydaktycznego: co uczeń powinien zrobić, co stanowi dowód opanowania wiedzy, jaka pomoc była dostępna i jak z tego wynika kolejna decyzja edukacyjna. Wykorzystaj ten kontrakt, aby nakładać ograniczenia na generowany kod i weryfikowane treści. Na przykład praktyka przypominania modyfikuje moment odsłonięcia odpowiedzi, podczas gdy rusztowanie poznawcze wpływa na kontrolki pomocy i oznaczanie dowodów. Samo wymienienie nazwy metody bez implementacji tych zachowań nie realizuje celu projektowego.
+
+Rozdzielaj wykorzystanie AI na etapie tworzenia aplikacji od AI działającego w gotowym produkcie (runtime). Zweryfikowana zawartość statyczna i testy deterministyczne pozwalają wdrożyć wiele z tych zachowań w trybie offline. Jeśli runtime AI jest potrzebne do obsługi odpowiedzi otwartych lub dialogu, ściśle ogranicz jego źródła, kryteria i narzędzia, waliduj generowane dane i zapewnij ścieżkę obsługi błędów. Większa ilość wygenerowanego tekstu, bardziej rygorystyczna punktacja czy większy model nie przekładają się same z siebie na lepsze uczenie się.
+
+## Granice uzasadnienia dydaktycznego
+
+Niniejsze uzasadnienie wyjaśnia wybory projektowe; nie stanowi dowodu, że ten skill lub każda jego implementacja automatycznie poprawia wyniki nauczania. Poprawność merytoryczna, dostępność i wykonalność w klasie wymagają weryfikacji w realnym środowisku. Pomyślny test techniczny nie dowodzi uczenia się; konieczne są adekwatne dowody uczniowskie, a w przypadku wnioskowania przyczynowo-skutkowego — rzetelna ewaluacja. Wskazówki badawcze wymienione w referencjach metod wspierają poszczególne wybory, lecz nie certyfikują całego pakietu. Zachowaj weryfikację przez nauczyciela przy kluczowych decyzjach oceniania i dostosuj podstawę programową do rzeczywistych warunków edukacyjnych.

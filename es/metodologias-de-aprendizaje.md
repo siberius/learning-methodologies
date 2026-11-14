@@ -2,7 +2,7 @@
 name: metodologias-de-aprendizaje
 description: Diseña o revisa aplicaciones educativas conectando objetivos de aprendizaje, necesidades del alumnado, actividades, retroalimentación y evidencias de aprendizaje. Úsalo para nuevas herramientas educativas o cambios sustanciales en su diseño didáctico. No lo apliques a cambios estéticos ni a correcciones habituales de errores sin un problema de diseño del aprendizaje.
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
   language: "es"
   based_on: "learning-methodologies@1.4.0"
   license: "MIT"
@@ -153,7 +153,6 @@ Para la ficha elegida, indica público, conocimientos previos necesarios y adapt
 En versiones diferenciadas identifica objetivo común y decisión que debe conservar cada una. Varía idioma, representación, ritmo y ayuda sin resolver por el estudiante esa decisión. Conserva un contexto interesante para quienes reciben apoyo. Amplía con justificación, contraejemplos o transferencia, no solo más ítems. Explicita un cambio intencional del objetivo. Los grupos dependen de evidencia revisable, no etiquetas permanentes.
 
 Extensiones como repaso persistente o IA requieren motivo y referencias correspondientes. Conserva fuente, versión y jurisdicción de vínculos curriculares; distingue estándar oficial, componente y prerrequisito inferido. Una conexión conceptual no es automáticamente una progresión validada.
-
 
 ### Métodos: Elige a partir de una necesidad observada
 
@@ -653,7 +652,6 @@ Distingue quién aprende, quién maneja la aplicación y quién ve resultados. U
 Si falta un dato que cambia el diseño, pregunta, por ejemplo: «¿Es para niños de primaria, alumnado mayor o adultos principiantes? ¿Qué saben hacer ya en este tema?» Ajusta opciones al encargo, sin repetir todos los grupos ni información conocida. Aclara «estudiantes» cuando su ambigüedad afecte al resultado.
 
 Explica a quién ayuda la propuesta y por qué: «Para estos adultos principiantes recomiendo un ejemplo de su trabajo y retirar apoyo según los intentos autónomos». Niños experimentados pueden necesitar un reto abierto. Un cambio de público reabre idioma, contenido, apoyo, evaluación y controles afectados, no todo el proyecto automáticamente.
-
 
 ### Diálogo de diseño: Ofrece opciones cuando hacen falta
 

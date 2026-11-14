@@ -27,7 +27,6 @@ Si falta un dato que cambia el diseño, pregunta, por ejemplo: «¿Es para niño
 
 Explica a quién ayuda la propuesta y por qué: «Para estos adultos principiantes recomiendo un ejemplo de su trabajo y retirar apoyo según los intentos autónomos». Niños experimentados pueden necesitar un reto abierto. Un cambio de público reabre idioma, contenido, apoyo, evaluación y controles afectados, no todo el proyecto automáticamente.
 
-
 ## Ofrece opciones cuando hacen falta
 
 Recoge del proyecto alumnado, conocimientos previos, objetivo, país, dispositivos, tiempo y restricciones conocidos. Pregunta por datos ausentes solo si cambian la decisión. El modo inicial es el acompañamiento continuo. El creador puede delegar una elección o las decisiones habituales posteriores y recuperar después el acompañamiento.

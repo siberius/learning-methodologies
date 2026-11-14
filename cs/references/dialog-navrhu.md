@@ -27,7 +27,6 @@ Pokud údaj chybí a mění návrh, zeptej se například: „Pro koho je aktivi
 
 U nabídky metody řekni, komu a proč v tomto projektu pomůže. Například „Pro dospělé začátečníky doporučuji vysvětlený příklad z jejich práce; podporu pak ubereme podle samostatných pokusů.“ U zkušených dětí může být vhodnější otevřená výzva. Změna cílové skupiny znovu otevírá dotčený jazyk, obsah, oporu, hodnocení a ovládání, nikoli automaticky celý projekt.
 
-
 ## Nabídni možnosti v okamžiku potřeby
 
 Převezmi známé uživatele, vstupní znalosti, cíl, zemi, zařízení, čas a omezení. Ptej se na chybějící údaj, jen pokud mění rozhodnutí. Výchozí je průběžné vedení. Tvůrce může delegovat jednu volbu nebo další běžná rozhodnutí a později vedení obnovit.

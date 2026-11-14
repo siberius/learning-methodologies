@@ -19,7 +19,7 @@ A portable AI skill for designing and reviewing educational applications. It con
 
 MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 
-Current version: **1.4.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, learner-facing text guidance, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
+Current version: **1.5.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, learner-facing text guidance, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
 
 The skill offers a few relevant teaching options when a new consequential choice arises: a short explanation, a concrete example and a recommendation. It remembers your choices and connects them to implementation and verification. Say “choose routine decisions for me” to delegate, or ask to compare alternatives again. Small offline activities remain small. Method cards, cognitive interface guidance and optional adaptive practice support this workflow.
 
@@ -79,10 +79,14 @@ The agent should reuse this context, choose support that fits the task and ident
 |---|---|---|
 | English | [English](README.md) | [learning-methodologies.md](learning-methodologies.md) |
 | Czech | [Čeština](cs/README.md) | [vzdelavaci-metodiky.md](cs/vzdelavaci-metodiky.md) |
-| Russian | [Русский](ru/README.md) | [metodiki-obucheniya.md](ru/metodiki-obucheniya.md) |
+| German | [Deutsch](de/README.md) | [lernmethoden.md](de/lernmethoden.md) |
 | Spanish | [Español](es/README.md) | [metodologias-de-aprendizaje.md](es/metodologias-de-aprendizaje.md) |
+| French | [Français](fr/README.md) | [methodologies-apprentissage.md](fr/methodologies-apprentissage.md) |
+| Polish | [Polski](pl/README.md) | [metodyki-nauczania.md](pl/metodyki-nauczania.md) |
+| Russian | [Русский](ru/README.md) | [metodiki-obucheniya.md](ru/metodiki-obucheniya.md) |
+| Ukrainian | [Українська](uk/README.md) | [metodyky-navchannya.md](uk/metodyky-navchannya.md) |
 
-Russian and Spanish translate the international English foundation without assuming a particular country's curriculum. Czech adds conditional RVP/ŠVP guidance. Use one edition appropriate to the task. These are localized instructions, not a claim of live testing in all languages or model providers.
+All editions translate and localize the international foundation without assuming a particular country's curriculum, while the Czech edition adds conditional RVP/ŠVP guidance. Use one edition appropriate to the task. These are localized instructions, not a claim of live testing in all languages or model providers.
 
 ## Czech edition
 

@@ -2,11 +2,18 @@
 
 Un skill de IA portátil para diseñar y revisar aplicaciones educativas. Conecta objetivos de aprendizaje, actividad del alumnado, retroalimentación y evidencias, y ayuda a convertir esas decisiones en el comportamiento de la aplicación.
 
-Autor: Luděk Sušický. Licencia MIT. Esta edición española comparte la base metodológica internacional y no presupone un currículo nacional, IA durante el uso, cuentas ni un modelo concreto.
+## Author
 
-biolog, středoškolský a vysokoškolský učitel informatických předmětů
+**Luděk Sušický** — biologist, secondary-school and university teacher of computing subjects
 
-Versión actual: **1.4.0**. Las ediciones lingüísticas incluyen una ruta de trabajo breve, ejemplos de decisión, modos del tutor y aprendizaje reanudable, mapas conceptuales y reglas explícitas para elegir modelos y escalar. Las configuraciones con nombres de modelos son recomendaciones iniciales, no resultados de pruebas entre proveedores.
+- E-mail: [ludek.susicky@gmail.com](mailto:ludek.susicky@gmail.com)
+- X: [@ludeksusicky](https://x.com/ludeksusicky)
+- LinkedIn: [Luděk Sušický](https://www.linkedin.com/in/ludek-susicky/)
+- GitHub: [@siberius](https://github.com/siberius) — more educational projects and open-source applications
+
+Licencia MIT. Esta edición española comparte la base metodológica internacional y no presupone un currículo nacional, IA durante el uso, cuentas ni un modelo concreto.
+
+Versión actual: **1.5.0**. Las ediciones lingüísticas incluyen una ruta de trabajo breve, ejemplos de decisión, modos del tutor y aprendizaje reanudable, mapas conceptuales y reglas explícitas para elegir modelos y escalar. Las configuraciones con nombres de modelos son recomendaciones iniciales, no resultados de pruebas entre proveedores.
 
 El skill ofrece pocas opciones didácticas pertinentes ante una elección importante nueva: explicación breve, ejemplo concreto y recomendación. Recuerda tus elecciones y las conecta con implementación y comprobación. Puedes decir «elige por mí las decisiones habituales» para delegar o volver a pedir una comparación. Las actividades pequeñas sin conexión mantienen su alcance. Las fichas de métodos, la interfaz cognitiva y la práctica adaptativa opcional apoyan este proceso.
 
@@ -74,6 +81,5 @@ Usa el [protocolo de evaluación de ocho tareas](docs/MODEL-EVALUATION.md) para 
 Utiliza los métodos para traducir objetivos educativos en acciones del estudiante, reglas de retroalimentación y evidencias en la aplicación generada. La recuperación requiere un intento antes de revelar la respuesta; el andamiaje requiere ayuda accesible y distinguir desempeño con apoyo e independiente. La IA ayuda a implementar estas decisiones; el resultado necesita revisión disciplinar y didáctica. Se aplica a aplicaciones sin conexión y al uso justificado de IA durante el aprendizaje.
 
 Consulta la [justificación didáctica](references/didactic-rationale.md) al explicar la elección de un método o su implementación. Vincula métodos con decisiones de producto y evidencias necesarias.
-
 
 [English](../README.md) · [Čeština](../cs/README.md) · [Русский](../ru/README.md) · [Español](../es/README.md)

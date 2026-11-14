@@ -2,7 +2,7 @@
 name: vzdelavaci-metodiky
 description: Navrhuje a posuzuje vzdělávací aplikace propojením cílů, činnosti žáka, podpory a dokladů učení. Použij při tvorbě, podstatné změně výuky nebo pedagogickém auditu kvízu, hry, simulace či trenažéru. Podle kontextu řeší české RVP/ŠVP. Nepoužívej pro kosmetickou změnu nebo běžnou technickou opravu bez didaktického dopadu.
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
   language: "cs"
   based_on: "learning-methodologies@1.4.0"
   license: "MIT"
@@ -164,7 +164,6 @@ U vybrané karty výslovně uveď cílovou skupinu, potřebné vstupní znalosti
 U diferencovaných variant pojmenuj společný cíl a rozhodnutí, které musí zůstat v každé verzi. Měň jazyk, reprezentaci, tempo a podporu, aniž cílové rozhodnutí tiše vyřešíš. Podporovaným žákům zachovej zajímavý kontext. Rozšíření přidá zdůvodnění, protipříklad či přenos, nemusí jen další položky. Záměrnou změnu cíle označ. Skupiny vycházejí z revidovatelných důkazů, ne trvalých nálepek schopností.
 
 Volitelná rozšíření jako trvalé opakování či živá AI potřebují důvod a příslušné reference. U kurikulárních vazeb uchovej zdroj, verzi a zemi; rozliš oficiální požadavek, komponentu a odhadnutý předpoklad. Hrana pojmové mapy není automaticky ověřenou posloupností učení.
-
 
 ### Metody: Vycházej z pozorované potřeby
 
@@ -738,7 +737,6 @@ Rozliš, kdo se učí, kdo aplikaci obsluhuje a kdo vidí výsledky: učitel mů
 Pokud údaj chybí a mění návrh, zeptej se například: „Pro koho je aktivita určena: děti na prvním stupni, starší školáky, nebo dospělé začátečníky? Co už v tématu zvládají?“ Nabídku uprav podle zadání, nevypisuj pokaždé všechny skupiny a známé údaje se znovu neptej. Při nejasném slově „studenti“ nejprve ověř prostředí, pokud ovlivní výsledek.
 
 U nabídky metody řekni, komu a proč v tomto projektu pomůže. Například „Pro dospělé začátečníky doporučuji vysvětlený příklad z jejich práce; podporu pak ubereme podle samostatných pokusů.“ U zkušených dětí může být vhodnější otevřená výzva. Změna cílové skupiny znovu otevírá dotčený jazyk, obsah, oporu, hodnocení a ovládání, nikoli automaticky celý projekt.
-
 
 ### Dialog návrhu: Nabídni možnosti v okamžiku potřeby
 

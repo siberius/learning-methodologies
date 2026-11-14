@@ -2,7 +2,7 @@
 name: metodologias-de-aprendizaje
 description: Diseña o revisa aplicaciones educativas conectando objetivos de aprendizaje, necesidades del alumnado, actividades, retroalimentación y evidencias de aprendizaje. Úsalo para nuevas herramientas educativas o cambios sustanciales en su diseño didáctico. No lo apliques a cambios estéticos ni a correcciones habituales de errores sin un problema de diseño del aprendizaje.
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
   language: "es"
   based_on: "learning-methodologies@1.4.0"
   license: "MIT"

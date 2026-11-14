@@ -27,7 +27,6 @@ For differentiated versions, name the common learning goal and the decision ever
 
 Optional extensions such as persistent review or live AI need a concrete reason and their conditional references. Preserve source/version/jurisdiction for curriculum links; distinguish official standards, components and inferred prerequisites. A concept-map edge is not automatically a verified learning progression.
 
-
 ## Choose from an observed learning need
 
 | Observed obstacle | Candidate intervention | Check before adopting |

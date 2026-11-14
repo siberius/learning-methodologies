@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.5.0 (2026-11-14)
+
+- Expand into 8 comprehensive European language editions by adding:
+  - German (`de/`): `lernmethoden`
+  - French (`fr/`): `methodologies-apprentissage`
+  - Polish (`pl/`): `metodyki-nauczania`
+  - Ukrainian (`uk/`): `metodyky-navchannya`
+- Each new edition contains native `SKILL.md`, `LICENSE`, complete 12 conditional didactic references, `docs/` (`USAGE.md`, `TEACHERS.md`, `MODEL-EVALUATION.md`), `README.md` with Skills CLI installation instructions and canonical author block, and a verified standalone export (`<skill-id>.md`).
+- Extended `build_portable.py` and package verification to all 8 editions; all links, anchors, and standalone outputs verified.
+- Bumped package version across all editions to 1.5.0.
+
 ## 1.4.0 (2026-11-14)
 
 - Clarify age, educational role and topic experience in all editions. Add conditional audience profiles from preschool to adult and mixed groups, functional access needs, creator questions and audience-specific method adaptations.
@@ -45,7 +56,7 @@
 
 ## 1.1.0 (2026-11-04)
 
-*Merged entries originally under 2.0.0–2.3.0*
+Note: Merged entries originally under 2.0.0–2.3.0.
 
 - Added conditional tutor modes, explicit application state, minimal checkpoints and safe‑resume behaviour in both languages.
 - Added a short working route and conditional decision examples in both languages.

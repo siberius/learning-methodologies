@@ -4,7 +4,7 @@
 
 [![Vzdělávací metodiky](../docs/learning-methodologies.gif)](https://vibemaker.cz/clanek/vzdelavaci-metodiky-pro-vibekoding/)
 
-Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází z anglické verze 1.4.0 a doplňuje české školní prostředí.
+Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází ze společného základu verze 1.5.0 a doplňuje české školní prostředí.
 
 Skill při nové podstatné volbě nabídne několik relevantních výukových možností: krátké vysvětlení, konkrétní příklad a doporučení. Pamatuje si volby a propojí je s implementací a ověřením. Pokynem „běžná rozhodnutí vyber za mě“ můžeš volby delegovat nebo později znovu požádat o srovnání. Malá offline pomůcka zůstává malá. Postup podporují karty metod, návrh kognitivního rozhraní a volitelné adaptivní procvičování.
 
@@ -17,7 +17,7 @@ Skill při nové podstatné volbě nabídne několik relevantních výukových m
 - LinkedIn: [Luděk Sušický](https://www.linkedin.com/in/ludek-susicky/)
 - GitHub: [@siberius](https://github.com/siberius) — další vzdělávací projekty a otevřené aplikace
 
-Verze **1.4.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy, text pro žáky bez AI slopu a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
+Verze **1.5.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy, text pro žáky bez AI slopu a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
 
 ## Instalace a rychlé spuštění
 
@@ -70,7 +70,7 @@ Další postupy najdeš v [použití a instalaci](docs/POUZITI.md) a v [průvodc
 
 ## Další jazykové verze
 
-[English](../README.md) · [Русский](../ru/README.md) · [Español](../es/README.md). Ruština a španělština překládají mezinárodní základ; neprohlašují soulad s kurikulem konkrétní země. Podle úkolu načti jednu verzi.
+[English](../README.md) · [Deutsch](../de/README.md) · [Español](../es/README.md) · [Français](../fr/README.md) · [Polski](../pl/README.md) · [Русский](../ru/README.md) · [Українська](../uk/README.md). Všechny jazykové verze překládají mezinárodní didaktický základ; neprohlašují soulad s kurikulem konkrétní země. Podle úkolu načti jednu verzi.
 
 ## Licence a meze
 

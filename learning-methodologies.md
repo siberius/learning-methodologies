@@ -2,7 +2,7 @@
 name: learning-methodologies
 description: Design or review educational applications by connecting learning goals, learner needs, activities, feedback and evidence of learning. Use for new learning tools or substantive changes to their teaching design. Do not apply to cosmetic changes or ordinary bug fixes without a learning-design issue.
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"
@@ -165,7 +165,6 @@ For the selected card, state the target audience, necessary prior knowledge and 
 For differentiated versions, name the common learning goal and the decision every version must retain. Vary language, representation, pace and support without silently supplying that decision. Keep an engaging context for supported learners. Extend with justification, counterexamples or transfer rather than only more items. Explicitly identify an intentional goal change. Grouping follows revisable evidence, not permanent ability labels.
 
 Optional extensions such as persistent review or live AI need a concrete reason and their conditional references. Preserve source/version/jurisdiction for curriculum links; distinguish official standards, components and inferred prerequisites. A concept-map edge is not automatically a verified learning progression.
-
 
 ### Methods: Choose from an observed learning need
 
@@ -679,7 +678,6 @@ Distinguish who learns, who operates the application and who sees results. A tea
 When a missing fact changes the design, ask, for example: “Is this for primary-school children, older school learners or adult beginners? What can they already do in this topic?” Tailor the options; do not repeat every group or known information. Clarify an ambiguous “students” only when the setting affects the result.
 
 Explain who benefits from a proposed method here and why: “For these adult beginners, I recommend a worked example from their work, then less support as independent attempts improve.” Experienced children may instead benefit from an open challenge. An audience change reopens affected language, content, support, assessment and controls, not automatically the entire project.
-
 
 ### Design Dialogue: Offer at the point of need
 
