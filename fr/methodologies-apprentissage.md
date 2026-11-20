@@ -2,9 +2,9 @@
 name: methodologies-apprentissage
 description: Concevez ou examinez des applications éducatives en reliant objectifs d'apprentissage, besoins des apprenants, activités, rétroaction et preuves d'apprentissage. Utilisez ce skill pour les nouveaux outils pédagogiques ou les modifications substantielles de leur ingénierie didactique.
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
   language: "fr"
-  based_on: "learning-methodologies@1.5.0"
+  based_on: "learning-methodologies@1.6.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"

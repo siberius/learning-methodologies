@@ -19,7 +19,7 @@ A portable AI skill for designing and reviewing educational applications. It con
 
 MIT licensed. The English edition is independent of any national curriculum and does not require runtime AI, accounts or a particular model.
 
-Current version: **1.5.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, learner-facing text guidance, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
+Current version: **1.6.0**. All language editions include a short working route, decision examples, tutor modes and resumable learning, concept maps, learner-facing text guidance, and explicit rules for model choice and escalation. Named model configurations are starting recommendations, not cross-provider test results.
 
 The skill offers a few relevant teaching options when a new consequential choice arises: a short explanation, a concrete example and a recommendation. It remembers your choices and connects them to implementation and verification. Say “choose routine decisions for me” to delegate, or ask to compare alternatives again. Small offline activities remain small. Method cards, cognitive interface guidance and optional adaptive practice support this workflow.
 
@@ -45,14 +45,12 @@ Methods include Socratic learning, the Feynman technique, the Zone of Proximal D
 Install one language edition with the [Skills CLI](https://github.com/vercel-labs/skills). `-g` selects user-level installation; `-a codex` selects Codex. Replace it with `-a claude-code` for Claude Code, or omit the agent option to choose interactively. Install only the editions you use.
 
 ```bash
-npx skills add siberius/learning-methodologies --skill learning-methodologies --full-depth -g -a codex
+npx skills add siberius/learning-methodologies@v1.6.0 --skill learning-methodologies --full-depth -g -a codex
 ```
 
-Without `--agent`, `skills use` prints a prepared prompt. To launch a supported agent with this skill temporarily:
+The tag installs the content of that release; the default branch can be newer. The CLI records the resolved commit and a hash of the installed files in `skills-lock.json`, and `npx skills check` reports local changes.
 
-```bash
-npx skills use siberius/learning-methodologies --skill learning-methodologies --full-depth --agent codex
-```
+To try the skill inside one project, omit `-g` and remove it afterwards with `npx skills remove learning-methodologies`. Clients that read Markdown instructions directly can use the [standalone file](learning-methodologies.md) without an installer; the [usage guide](docs/USAGE.md) describes the manual bundle layout.
 
 ## Choose an edition
 

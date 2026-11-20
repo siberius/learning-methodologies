@@ -13,14 +13,12 @@ Skill při nové podstatné volbě nabídne několik relevantních výukových m
 Vyber jednu jazykovou variantu přes [Skills CLI](https://github.com/vercel-labs/skills). `-g` znamená instalaci pro uživatele a `-a codex` vybírá Codex. Pro Claude Code použij `-a claude-code`, případně volbu asistenta vynech a vyber ho interaktivně. Instaluj jen používané varianty.
 
 ```bash
-npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth -g -a codex
+npx skills add siberius/learning-methodologies@v1.6.0 --skill vzdelavaci-metodiky --full-depth -g -a codex
 ```
 
-Bez `--agent` příkaz `skills use` vypíše připravený prompt. Pro dočasné spuštění podporovaného asistenta se skillem:
+Tag udržuje instalaci na publikované verzi, výchozí větev může být novější. CLI zapíše do `skills-lock.json` commit a hash nainstalovaných souborů, takže `npx skills list` a `npx skills check` umí hlásit rozdíly na disku.
 
-```bash
-npx skills use siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth --agent codex
-```
+Pro jeden projekt vynech `-g` a kopii potom odstraň přes `npx skills remove vzdelavaci-metodiky`. CLI nabízí i režim dočasného spuštění, který stáhne skill při spuštění asistenta. Tento repozitář ho nedokumentuje: stav, který si čtenář může prohlédnout, je připnutá kopie na disku.
 
 ## Nativní balíček
 

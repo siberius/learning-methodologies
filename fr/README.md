@@ -17,7 +17,7 @@ Un skill d'IA portable pour concevoir, implémenter et examiner des applications
 
 Licence MIT. Cette édition française adapte la base méthodologique internationale et ne présuppose aucun programme national exclusif, aucune IA obligatoire en cours d'exécution, aucun compte utilisateur ni modèle propriétaire particulier.
 
-Version actuelle : **1.5.0**. Toutes les éditions linguistiques intègrent un parcours de travail synthétique, des exemples de décisions, les modes du tuteur et la reprise de session, les cartes conceptuelles, des directives de rédaction des textes pour apprenants et des règles explicites de sélection et d'escalade des modèles. Les configurations mentionnées sont des recommandations de départ documentées, non des bancs d'essai comparatifs exécutés.
+Version actuelle : **1.6.0**. Toutes les éditions linguistiques intègrent un parcours de travail synthétique, des exemples de décisions, les modes du tuteur et la reprise de session, les cartes conceptuelles, des directives de rédaction des textes pour apprenants et des règles explicites de sélection et d'escalade des modèles. Les configurations mentionnées sont des recommandations de départ documentées, non des bancs d'essai comparatifs exécutés.
 
 Le skill propose une sélection restreinte d'options didactiques pertinentes face à un arbitrage important : explication concise, exemple concret et recommandation motivée. Il mémorise vos choix et les articule avec le développement et les tests. Vous pouvez indiquer « tranche les choix de routine pour moi » pour déléguer, ou demander une comparaison approfondie. Les activités hors ligne légères conservent leur simplicité. Les fiches méthodes, les repères d'interface cognitive et la pratique adaptative optionnelle structurent ce flux.
 
@@ -39,14 +39,12 @@ Les méthodes couvrent notamment le questionnement socratique, la technique de F
 Installez l'édition française via le [CLI Skills](https://github.com/vercel-labs/skills). L'option `-g` installe pour l'utilisateur et `-a codex` sélectionne Codex. Utilisez `-a claude-code` pour Claude Code, ou omettez l'option pour un choix interactif. N'installez que les éditions dont vous avez l'usage.
 
 ```bash
-npx skills add siberius/learning-methodologies --skill methodologies-apprentissage --full-depth -g -a codex
+npx skills add siberius/learning-methodologies@v1.6.0 --skill methodologies-apprentissage --full-depth -g -a codex
 ```
 
-Sans le paramètre `--agent`, `skills use` génère une invite prête à l'emploi. Pour lancer temporairement un agent compatible avec ce skill :
+L'étiquette installe le contenu de cette version ; la branche par défaut peut être plus récente. Le CLI enregistre le commit résolu et une empreinte des fichiers installés dans `skills-lock.json`, et `npx skills check` signale les modifications locales.
 
-```bash
-npx skills use siberius/learning-methodologies --skill methodologies-apprentissage --full-depth --agent codex
-```
+Pour essayer le skill dans un seul projet, omettez `-g` puis supprimez la copie avec `npx skills remove methodologies-apprentissage`. Les clients qui lisent directement le Markdown peuvent utiliser le [fichier autonome](methodologies-apprentissage.md) sans installateur ; le [guide d'utilisation](docs/USAGE.md) décrit la disposition manuelle du paquet.
 
 ## Choisir un format
 

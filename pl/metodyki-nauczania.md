@@ -2,9 +2,9 @@
 name: metodyki-nauczania
 description: Projektuj lub oceniaj aplikacje edukacyjne, łącząc cele nauczania, potrzeby uczniów, aktywności, informację zwrotną i dowody uczenia się. Stosuj przy tworzeniu nowych narzędzi edukacyjnych lub istotnych zmianach w ich strukturze dydaktycznej.
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
   language: "pl"
-  based_on: "learning-methodologies@1.5.0"
+  based_on: "learning-methodologies@1.6.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"

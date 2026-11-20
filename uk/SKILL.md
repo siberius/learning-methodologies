@@ -2,9 +2,9 @@
 name: metodyky-navchannya
 description: Проєктуйте або аналізуйте освітні застосунки, поєднуючи навчальні цілі, потреби учнів, активності, зворотний зв'язок і докази результатів навчання. Використовуйте для нових освітніх інструментів або суттєвих змін їхньої дидактичної структури.
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
   language: "uk"
-  based_on: "learning-methodologies@1.5.0"
+  based_on: "learning-methodologies@1.6.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"

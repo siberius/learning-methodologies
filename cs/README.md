@@ -4,7 +4,7 @@
 
 [![Vzdělávací metodiky](../docs/learning-methodologies.gif)](https://vibemaker.cz/clanek/vzdelavaci-metodiky-pro-vibekoding/)
 
-Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází ze společného základu verze 1.5.0 a doplňuje české školní prostředí.
+Česká varianta skillu learning-methodologies pro návrh, tvorbu a posuzování vzdělávacích aplikací. Propojuje cíl, činnost žáka, podporu, hodnocení a doklady učení. Vychází ze společného základu verze 1.6.0 a doplňuje české školní prostředí.
 
 Skill při nové podstatné volbě nabídne několik relevantních výukových možností: krátké vysvětlení, konkrétní příklad a doporučení. Pamatuje si volby a propojí je s implementací a ověřením. Pokynem „běžná rozhodnutí vyber za mě“ můžeš volby delegovat nebo později znovu požádat o srovnání. Malá offline pomůcka zůstává malá. Postup podporují karty metod, návrh kognitivního rozhraní a volitelné adaptivní procvičování.
 
@@ -17,21 +17,19 @@ Skill při nové podstatné volbě nabídne několik relevantních výukových m
 - LinkedIn: [Luděk Sušický](https://www.linkedin.com/in/ludek-susicky/)
 - GitHub: [@siberius](https://github.com/siberius) — další vzdělávací projekty a otevřené aplikace
 
-Verze **1.5.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy, text pro žáky bez AI slopu a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
+Verze **1.6.0** zahrnuje stručný pracovní postup, příklady rozhodování, režimy tutora a návaznost učení, pojmové mapy, text pro žáky bez AI slopu a pravidla volby modelu i zvýšení uvažování. Konkrétní konfigurace jsou výchozí doporučení, nikoli výsledky srovnávacího testu.
 
 ## Instalace a rychlé spuštění
 
 Vyber jednu jazykovou variantu přes [Skills CLI](https://github.com/vercel-labs/skills). `-g` znamená instalaci pro uživatele a `-a codex` vybírá Codex. Pro Claude Code použij `-a claude-code`, případně volbu asistenta vynech a vyber ho interaktivně. Instaluj jen používané varianty.
 
 ```bash
-npx skills add siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth -g -a codex
+npx skills add siberius/learning-methodologies@v1.6.0 --skill vzdelavaci-metodiky --full-depth -g -a codex
 ```
 
-Bez `--agent` příkaz `skills use` vypíše připravený prompt. Pro dočasné spuštění podporovaného asistenta se skillem:
+Tag instaluje obsah daného vydání, výchozí větev může být novější. CLI zapíše do `skills-lock.json` commit a hash nainstalovaných souborů, takže `npx skills check` hlásí místní změny.
 
-```bash
-npx skills use siberius/learning-methodologies --skill vzdelavaci-metodiky --full-depth --agent codex
-```
+Pro vyzkoušení v jednom projektu vynech `-g` a potom instalaci odstraň přes `npx skills remove vzdelavaci-metodiky`. Klienti, kteří čtou Markdown přímo, mohou použít [samostatný soubor](vzdelavaci-metodiky.md) bez instalátoru; [návod k použití](docs/POUZITI.md) popisuje ruční rozložení balíčku.
 
 ## Zvol podobu
 

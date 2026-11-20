@@ -13,7 +13,7 @@ Un skill de IA portátil para diseñar y revisar aplicaciones educativas. Conect
 
 Licencia MIT. Esta edición española comparte la base metodológica internacional y no presupone un currículo nacional, IA durante el uso, cuentas ni un modelo concreto.
 
-Versión actual: **1.5.0**. Las ediciones lingüísticas incluyen una ruta de trabajo breve, ejemplos de decisión, modos del tutor y aprendizaje reanudable, mapas conceptuales y reglas explícitas para elegir modelos y escalar. Las configuraciones con nombres de modelos son recomendaciones iniciales, no resultados de pruebas entre proveedores.
+Versión actual: **1.6.0**. Las ediciones lingüísticas incluyen una ruta de trabajo breve, ejemplos de decisión, modos del tutor y aprendizaje reanudable, mapas conceptuales y reglas explícitas para elegir modelos y escalar. Las configuraciones con nombres de modelos son recomendaciones iniciales, no resultados de pruebas entre proveedores.
 
 El skill ofrece pocas opciones didácticas pertinentes ante una elección importante nueva: explicación breve, ejemplo concreto y recomendación. Recuerda tus elecciones y las conecta con implementación y comprobación. Puedes decir «elige por mí las decisiones habituales» para delegar o volver a pedir una comparación. Las actividades pequeñas sin conexión mantienen su alcance. Las fichas de métodos, la interfaz cognitiva y la práctica adaptativa opcional apoyan este proceso.
 
@@ -34,14 +34,12 @@ Los métodos incluyen aprendizaje socrático, técnica de Feynman, zona de desar
 Elige una edición con [Skills CLI](https://github.com/vercel-labs/skills). `-g` instala para el usuario y `-a codex` selecciona Codex. Usa `-a claude-code` para Claude Code u omite la opción para elegir interactivamente. Instala solo las ediciones que utilices.
 
 ```bash
-npx skills add siberius/learning-methodologies --skill metodologias-de-aprendizaje --full-depth -g -a codex
+npx skills add siberius/learning-methodologies@v1.6.0 --skill metodologias-de-aprendizaje --full-depth -g -a codex
 ```
 
-Sin `--agent`, `skills use` imprime un prompt preparado. Para iniciar temporalmente un agente compatible con el skill:
+La etiqueta instala el contenido de esa versión; la rama predeterminada puede ser más reciente. La CLI registra el commit resuelto y un hash de los archivos instalados en `skills-lock.json`, y `npx skills check` informa de cambios locales.
 
-```bash
-npx skills use siberius/learning-methodologies --skill metodologias-de-aprendizaje --full-depth --agent codex
-```
+Para probar el skill en un solo proyecto, omite `-g` y elimina la copia después con `npx skills remove metodologias-de-aprendizaje`. Los clientes que leen Markdown directamente pueden usar el [archivo autónomo](metodologias-de-aprendizaje.md) sin instalador; la [guía de uso](docs/USAGE.md) describe la disposición manual del paquete.
 
 ## Elige un formato
 

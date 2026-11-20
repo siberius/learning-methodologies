@@ -17,7 +17,7 @@ Polska edycja dzieli międzynarodową bazę metodologiczną skilla, nie narzucaj
 - LinkedIn: [Luděk Sušický](https://www.linkedin.com/in/ludek-susicky/)
 - GitHub: [@siberius](https://github.com/siberius) — więcej projektów edukacyjnych i otwartych aplikacji
 
-Licencja MIT. Wersja: **1.5.0**. Wszystkie wersje językowe zawierają zwięzłą ścieżkę pracy, przykłady decyzji projektowych, tryby tutora i ciągłość nauki, mapy pojęciowe, wytyczne tworzenia tekstów dla uczniów bez żargonu AI oraz jawne reguły doboru modelu i eskalacji rozumowania. Wskazane konfiguracje modeli są punktem wyjścia, a nie wynikiem formalnego benchmarku.
+Licencja MIT. Wersja: **1.6.0**. Wszystkie wersje językowe zawierają zwięzłą ścieżkę pracy, przykłady decyzji projektowych, tryby tutora i ciągłość nauki, mapy pojęciowe, wytyczne tworzenia tekstów dla uczniów bez żargonu AI oraz jawne reguły doboru modelu i eskalacji rozumowania. Wskazane konfiguracje modeli są punktem wyjścia, a nie wynikiem formalnego benchmarku.
 
 Skill oferuje kilka adekwatnych opcji dydaktycznych przy każdym nowym istotnym wyborze: krótkie wyjaśnienie, konkretny przykład i rekomendację. Pamięta wybory i łączy je z implementacją oraz testami. Poleceniem „wybierz rutynowe decyzje za mnie” możesz przekazać wybory agentowi lub w dowolnym momencie poprosić o ponowne zestawienie alternatyw. Niewielkie pomoce offline zachowują prosty charakter. Karty metod, wytyczne dotyczące interfejsu poznawczego i opcjonalna praktyka adaptacyjna wspierają ten proces.
 
@@ -39,14 +39,12 @@ Omawiane metody obejmują dialog sokratejski, technikę Feynmana, strefę najbli
 Zainstaluj wersję językową za pomocą narzędzia [Skills CLI](https://github.com/vercel-labs/skills). Flaga `-g` oznacza instalację dla użytkownika, a `-a codex` wybiera klienta Codex. Dla Claude Code użyj `-a claude-code` lub pomiń opcję agenta, aby wybrać go interaktywnie. Instaluj tylko te wersje, z których korzystasz.
 
 ```bash
-npx skills add siberius/learning-methodologies --skill metodyki-nauczania --full-depth -g -a codex
+npx skills add siberius/learning-methodologies@v1.6.0 --skill metodyki-nauczania --full-depth -g -a codex
 ```
 
-Bez flagi `--agent` polecenie `skills use` wyświetla przygotowany prompt. Aby uruchomić obsługiwanego agenta tymczasowo z tym skillem:
+Tag instaluje zawartość tego wydania; domyślna gałąź może być nowsza. CLI zapisuje w `skills-lock.json` rozwiązany commit i hash zainstalowanych plików, a `npx skills check` zgłasza zmiany lokalne.
 
-```bash
-npx skills use siberius/learning-methodologies --skill metodyki-nauczania --full-depth --agent codex
-```
+Aby wypróbować skill w jednym projekcie, pomiń `-g`, a potem usuń kopię przez `npx skills remove metodyki-nauczania`. Klienci czytający Markdown bezpośrednio mogą użyć [pliku autonomicznego](metodyki-nauczania.md) bez instalatora; [instrukcja użycia](docs/USAGE.md) opisuje ręczny układ pakietu.
 
 ## Wybór formatu
 

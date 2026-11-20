@@ -15,14 +15,12 @@ Face à un arbitrage didactique majeur, le skill propose une sélection restrein
 Installez l'édition française avec le [CLI Skills](https://github.com/vercel-labs/skills). L'option `-g` effectue une installation globale pour l'utilisateur et `-a codex` sélectionne Codex. Remplacez par `-a claude-code` pour Claude Code, ou omettez l'option pour un choix interactif. N'installez que les éditions linguistiques dont vous avez l'usage.
 
 ```bash
-npx skills add siberius/learning-methodologies --skill methodologies-apprentissage --full-depth -g -a codex
+npx skills add siberius/learning-methodologies@v1.6.0 --skill methodologies-apprentissage --full-depth -g -a codex
 ```
 
-Sans le paramètre `--agent`, la commande `skills use` affiche une invite préparée. Pour lancer temporairement un agent compatible avec ce skill :
+L'étiquette de version fixe l'installation sur une version publiée ; la branche par défaut peut être plus récente. Le CLI enregistre le commit résolu et une empreinte des fichiers installés dans `skills-lock.json`, de sorte que `npx skills list` et `npx skills check` peuvent signaler des écarts sur le disque.
 
-```bash
-npx skills use siberius/learning-methodologies --skill methodologies-apprentissage --full-depth --agent codex
-```
+Pour un seul projet, omettez `-g` puis supprimez la copie avec `npx skills remove methodologies-apprentissage`. Le CLI propose aussi un mode d'exécution temporaire qui télécharge le skill au lancement d'un agent. Ce dépôt ne le documente pas : l'état qu'un lecteur peut inspecter est la copie épinglée sur le disque.
 
 ## Paquet natif du skill
 

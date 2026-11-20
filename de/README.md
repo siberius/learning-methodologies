@@ -19,7 +19,7 @@ Ein portabler KI-Skill zur Konzeption, Implementierung und Begutachtung von Bild
 
 Unter MIT-Lizenz. Die deutsche Edition teilt das internationale methodische Fundament und setzt kein einzelnes nationales Schulcurriculum, keine Laufzeit-KI, keine Benutzerkonten und kein bestimmtes KI-Modell voraus.
 
-Aktuelle Version: **1.5.0**. Alle Sprachentwicklungen enthalten einen kompakten Arbeitsablauf, Entscheidungsbeispiele, Tutor-Modi und kontinuierliches Lernen, kognitive Benutzeroberflächen, evidenzbasierte Leitplanken für Lernspiele sowie explizite Regeln für Modellauswahl und Eskalationsstufen.
+Aktuelle Version: **1.6.0**. Alle Sprachentwicklungen enthalten einen kompakten Arbeitsablauf, Entscheidungsbeispiele, Tutor-Modi und kontinuierliches Lernen, kognitive Benutzeroberflächen, evidenzbasierte Leitplanken für Lernspiele sowie explizite Regeln für Modellauswahl und Eskalationsstufen.
 
 ## Was dieser Skill leistet
 
@@ -39,14 +39,12 @@ Unterstützte Methoden umfassen u. a. Sokratischen Dialog, Feynman-Methode, Zone
 Installiere die deutsche Edition mit der [Skills CLI](https://github.com/vercel-labs/skills). `-g` installiert global für den Benutzer; `-a codex` wählt Codex. Ersetze es durch `-a claude-code` für Claude Code oder wähle interaktiv:
 
 ```bash
-npx skills add siberius/learning-methodologies --skill lernmethoden --full-depth -g -a codex
+npx skills add siberius/learning-methodologies@v1.6.0 --skill lernmethoden --full-depth -g -a codex
 ```
 
-Um einen unterstützten Agenten temporär mit diesem Skill zu starten:
+Der Tag installiert den Inhalt dieser Veröffentlichung; der Standardbranch kann neuer sein. Die CLI trägt den aufgelösten Commit und einen Hash der installierten Dateien in `skills-lock.json` ein, und `npx skills check` meldet lokale Änderungen.
 
-```bash
-npx skills use siberius/learning-methodologies --skill lernmethoden --full-depth --agent codex
-```
+Zum Ausprobieren in einem Projekt lass `-g` weg und entferne die Kopie danach mit `npx skills remove lernmethoden`. Clients, die Markdown direkt lesen, können die [eigenständige Datei](lernmethoden.md) ohne Installer verwenden; die [Nutzungsanleitung](docs/USAGE.md) beschreibt die manuelle Paketablage.
 
 ## Formate wählen
 

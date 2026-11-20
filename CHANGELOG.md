@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.0 (2026-11-20)
+
+- Pin the documented installation to the release tag `v1.6.0` in all eight language editions and remove the CLI temporary-run command from the published guidance; the pinned copy on disk is the state a reader can inspect.
+- Add `SECURITY.md` covering content scope, runtime behaviour, verification routes and the current Snyk `W012` report.
+- Bump the package version across all eight editions to 1.6.0 and regenerate the standalone editions.
+
 ## 1.5.0 (2026-11-14)
 
 - Expand into 8 comprehensive European language editions by adding:

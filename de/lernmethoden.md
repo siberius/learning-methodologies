@@ -2,9 +2,9 @@
 name: lernmethoden
 description: Gestalte oder überprüfe Bildungsanwendungen durch die Verknüpfung von Lernzielen, Lernbedürfnissen, Aktivitäten, Feedback und Lernnachweisen. Verwende diesen Skill für neue Lernwerkzeuge oder wesentliche Änderungen ihres didaktischen Designs.
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
   language: "de"
-  based_on: "learning-methodologies@1.5.0"
+  based_on: "learning-methodologies@1.6.0"
   license: "MIT"
   repo: "https://github.com/siberius/learning-methodologies"
   author: "Luděk Sušický"

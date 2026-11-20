@@ -15,14 +15,12 @@
 Встановіть україномовну версію за допомогою [Skills CLI](https://github.com/vercel-labs/skills). Прапорець `-g` означає встановлення для поточного користувача глобально; `-a codex` обирає агент Codex. Замініть його на `-a claude-code` для Claude Code або пропустіть цей параметр, щоб обрати агент інтерактивно:
 
 ```bash
-npx skills add siberius/learning-methodologies --skill metodyky-navchannya --full-depth -g -a codex
+npx skills add siberius/learning-methodologies@v1.6.0 --skill metodyky-navchannya --full-depth -g -a codex
 ```
 
-Без параметра `--agent` команда `skills use` виводить підготовлений системний запит. Для тимчасового запуску підтримуваного агента зі скілом виконайте:
+Тег версії утримує встановлення на опублікованому випуску; гілка за замовчуванням може бути новішою. CLI записує в `skills-lock.json` розв'язаний коміт і хеш встановлених файлів, тому `npx skills list` і `npx skills check` можуть повідомляти про відмінності на диску.
 
-```bash
-npx skills use siberius/learning-methodologies --skill metodyky-navchannya --full-depth --agent codex
-```
+Для одного проєкту пропустіть `-g` і видаліть копію командою `npx skills remove metodyky-navchannya`. CLI також має режим тимчасового запуску, який завантажує скіл під час старту агента. Цей репозиторій його не документує: стан, який читач може переглянути, це закріплена копія на диску.
 
 ## Нативний пакет скіла
 
