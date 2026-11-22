@@ -1,0 +1,5 @@
+{
+  "intended_use": "Pětiminutové offline cvičení násobení pro jednoho žáka na tabletu bez sítě",
+  "implemented_schema": "CREATE TABLE users (id SERIAL PRIMARY KEY, email VARCHAR(255), password_hash VARCHAR(255));\nconst token = jwt.sign({ userId: user.id }, SECRET_KEY);",
+  "flaw": "Nafouknutí architektury o backend, autentizaci a perzistenci tam, kde bylo zadáno izolované offline cvičení."
+}

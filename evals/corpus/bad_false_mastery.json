@@ -1,0 +1,6 @@
+{
+  "item_id": "frac_04",
+  "prompt": "Vypočítej 2/3 ze 12",
+  "evaluation_rule": "if (solutionRevealed && userRetrySuccess) { item.isMastered = true; recordSuccess(item); }",
+  "flaw": "Po odhalení správného řešení je opakovaný klik započten jako zvládnutí bez ověření na nové úloze."
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>Tutor s ošetřeným timeoutem</title>
+</head>
+<body>
+  <div id="status" aria-live="polite">Připraveno</div>
+  <script>
+    async function requestAIExplanation(userQuery) {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 4000);
+      try {
+        const response = await fetch("/api/ai/explain", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: userQuery }),
+          signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+        return await response.json();
+      } catch (err) {
+        // Fallback: Zachová práci žáka a poskytne lokální nápovědu
+        console.warn("AI endpoint timeout nebo chyba sítě, aktivován lokální fallback.");
+        return { explanation: "AI nápověda je dočasně nedostupná. Zkuste si projít vzorový příklad v učebnici na str. 42.", fallback: true };
+      }
+    }
+  </script>
+</body>
+</html>

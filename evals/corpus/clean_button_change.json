@@ -1,0 +1,6 @@
+{
+  "component": "QuizNavigationButton",
+  "current_style": "background-color: var(--color-success, #22c55e);",
+  "requested_change": "background-color: var(--color-brand-blue, #2563eb);",
+  "pedagogy_state": "Valid, no changes required."
+}

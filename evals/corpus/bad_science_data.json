@@ -1,0 +1,6 @@
+{
+  "activity_name": "Simulace hnojení a růstu pšenice",
+  "claim": "Tato aplikace zobrazuje reálná naměřená data z polních pokusů.",
+  "data_model": "Math.random() * 5 + fertilizerLevel * 1.8",
+  "flaw": "Aplikace vydává vymyšlenou matematickou formuli za skutečná naměřená data."
+}

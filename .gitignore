@@ -1,2 +1,5 @@
 /testing/
 learning-methodologies-vsechny-md.txt
+__pycache__/
+*.pyc
+.DS_Store

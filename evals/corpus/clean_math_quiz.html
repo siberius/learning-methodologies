@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>Procvičování násobilky</title>
+</head>
+<body>
+  <main>
+    <h1>Násobení 6 až 9</h1>
+    <div id="question" aria-live="polite">Kolik je 7 × 8?</div>
+    <input type="text" id="ans" aria-label="Zadejte výsledek násobení" autocomplete="off">
+    <button id="submit" type="button">Zkontrolovat</button>
+    <div id="feedback" aria-live="assertive"></div>
+  </main>
+  <script>
+    function checkAnswer(val) {
+      const normalized = val.trim();
+      return normalized === "56";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+{
+  "description": "Testovací sada 24 dotazů pro měření přesnosti aktivace skillu learning-methodologies / vzdelavaci-metodiky (12 v záběru, 12 mimo záběr). Cíl: Přesnost >= 90 %.",
+  "evals": [
+    {
+      "id": "trig_01_fractions_practice",
+      "query": "Navrhni desetiminutové adaptivní procvičování zlomků pro dvanáctileté žáky.",
+      "should_trigger": true,
+      "domain": "math_fractions",
+      "reason": "Požadavek na didaktický návrh adaptivního procvičování."
+    },
+    {
+      "id": "trig_02_physics_simulation",
+      "query": "Vytvoř vzdělávací simulaci Ohmova zákona s předpovědí před zobrazením výsledku.",
+      "should_trigger": true,
+      "domain": "science_simulations",
+      "reason": "Požadavek na vědeckou simulaci s badatelským didaktickým prvkem."
+    },
+    {
+      "id": "trig_03_formative_feedback",
+      "query": "Jak nastavit formativní zpětnou vazbu, když žák v testu z fyziky tvrdí, že těžší tělesa padají vždy rychleji?",
+      "should_trigger": true,
+      "domain": "assessment_feedback",
+      "reason": "Požadavek na pedagogickou zpětnou vazbu k miskoncepci."
+    },
+    {
+      "id": "trig_04_tutor_escalation",
+      "query": "Navrhni stavový automat pro tutora: žák 2x chybuje a pak píše 'nerozumím, ukaž mi to'.",
+      "should_trigger": true,
+      "domain": "tutor_interaction",
+      "reason": "Eskalace podpory a stav tutora ve výuce."
+    },
+    {
+      "id": "trig_05_mastery_rule",
+      "query": "Jak správně definovat pravidlo samostatného zvládnutí (mastery) po zobrazení nápovědy?",
+      "should_trigger": true,
+      "domain": "mastery_learning",
+      "reason": "Pravidlo mastery learningu a prevence falešného zvládnutí."
+    },
+    {
+      "id": "trig_06_bloom_challenge",
+      "query": "Moji žáci už umí základy Pythonu, chci začít rovnou laděním chyb bez úvodního kvízu na definice.",
+      "should_trigger": true,
+      "domain": "didactic_progression",
+      "reason": "Nelineární aplikace kognitivních kategorií Bloomovy taxonomie."
+    },
+    {
+      "id": "trig_07_czech_rvp_alignment",
+      "query": "Zkontroluj, zda navržená aktivita pro 8. třídu odpovídá RVP ZV pro vzdělávací oblast Člověk a příroda.",
+      "should_trigger": true,
+      "domain": "curriculum_rvp",
+      "reason": "Posouzení souladu s českým kurikulem (RVP/ŠVP)."
+    },
+    {
+      "id": "trig_08_learning_game",
+      "query": "Navrhni výukovou hru na ekosystémy, aby mechanika odrážela reálné potravní vztahy a nešlo jen o body.",
+      "should_trigger": true,
+      "domain": "educational_games",
+      "reason": "Výukové hry a propojení mechanik s didaktickým cílem."
+    },
+    {
+      "id": "trig_09_offline_classroom",
+      "query": "Mám 25 žáků, 1 projektor, 15 minut a žádné žákovské účty. Navrhni společnou aktivitu na kritickou práci s grafy.",
+      "should_trigger": true,
+      "domain": "classroom_constraints",
+      "reason": "Výuka s reálnými hardwarovými a časovými mantinely."
+    },
+    {
+      "id": "trig_10_keyboard_accessibility",
+      "query": "Zajisti, aby tato přiřazovací aktivita na slovní zásobu šla plnohodnotně projít jen pomocí klávesnice.",
+      "should_trigger": true,
+      "domain": "cognitive_ux_accessibility",
+      "reason": "Přístupnost vzdělávacího rozhraní bez povinného drag-and-drop."
+    },
+    {
+      "id": "trig_11_runtime_ai_outage",
+      "query": "Jak ošetřit výukovou aplikaci, když externí LLM API vyprší timeout během školní hodiny?",
+      "should_trigger": true,
+      "domain": "runtime_ai_boundaries",
+      "reason": "Spolehlivost a offline fallback běhové AI ve výuce."
+    },
+    {
+      "id": "trig_12_unit_grading",
+      "query": "Jak vyhodnocovat odpověď při převodu 0,75 m na centimetry (vstupy: 75, 75 cm, 0,75 m, 75 m)?",
+      "should_trigger": true,
+      "domain": "answer_checking",
+      "reason": "Didaktická logika kontroly jednotek a ekvivalentních zápisů."
+    },
+    {
+      "id": "trig_13_out_button_css",
+      "query": "Změň barvu tohoto tlačítka v CSS z tyrkysové na tmavě modrou #003366.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Čistě kosmetická CSS úprava bez didaktického kontextu."
+    },
+    {
+      "id": "trig_14_out_backend_postgres",
+      "query": "Navrhni schéma tabulek v PostgreSQL pro ukládání firemních faktur a plateb.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Obecná databázová architektura mimo vzdělávání."
+    },
+    {
+      "id": "trig_15_out_nginx_proxy",
+      "query": "Nakonfiguruj nginx reverse proxy s SSL certifikátem Let's Encrypt pro naši doménu.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "DevOps a správa serveru."
+    },
+    {
+      "id": "trig_16_out_marketing_newsletter",
+      "query": "Napiš propagační e-mail nabízející slevu 20 % na letní dovolené v Itálii.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Komerční marketingový text."
+    },
+    {
+      "id": "trig_17_out_react_hook_bug",
+      "query": "Mám infinite loop v useEffect při načítání dat z REST API, oprav to.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Běžný programátorský bug v Reactu."
+    },
+    {
+      "id": "trig_18_out_bedtime_story",
+      "query": "Napiš pohádku na dobrou noc o malém medvídkovi, který ztratil polštářek.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Kreativní beletrie mimo didaktické aplikace."
+    },
+    {
+      "id": "trig_19_out_dockerfile",
+      "query": "Vytvoř multi-stage Dockerfile pro Go aplikaci s minimálním scratch obrazem.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Kontejnerizace a DevOps."
+    },
+    {
+      "id": "trig_20_out_linkedin_post",
+      "query": "Napiš chytlavý LinkedIn příspěvek o tom, jak jsem změnil zaměstnání.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Příspěvek na sociální sítě."
+    },
+    {
+      "id": "trig_21_out_git_merge",
+      "query": "Jak vyřešit git merge conflict v souboru package-lock.json?",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Běžná práce s verzovacím systémem Git."
+    },
+    {
+      "id": "trig_22_out_sql_optimization",
+      "query": "Optimalizuj tento pomalý SQL dotaz se třemi JOINy a indexy.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Výkonová optimalizace SQL databáze."
+    },
+    {
+      "id": "trig_23_out_terms_of_service",
+      "query": "Sestav návrh obchodních podmínek pro prodej triček přes internetový obchod.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Právní a obchodní dokumentace e-shopu."
+    },
+    {
+      "id": "trig_24_out_bash_backup",
+      "query": "Napiš bash skript, který každou půlnoc zazipuje složku /var/log a odešle ji na AWS S3.",
+      "should_trigger": false,
+      "domain": "none",
+      "reason": "Systémový administrační bash skript."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "code": "const BLOOM_LEVELS = ['remember', 'understand', 'apply', 'analyze', 'evaluate', 'create'];\nfunction canAccessChallenge(userLevel) { return userLevel >= 4; }",
+  "flaw": "Vynucuje sekvenční průchod všemi nižšími úrovněmi před vstupem do praktického ladění chyb."
+}

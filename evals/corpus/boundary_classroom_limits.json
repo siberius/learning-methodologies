@@ -1,0 +1,10 @@
+{
+  "context": "Běžná učebna ZŠ, 28 žáků, 1 promítací plátno, 12 minut",
+  "technical_constraints": [
+    "Žáci nemají vlastní zařízení",
+    "Žádné vytváření uživatelských účtů ani registrace",
+    "Možnost výpadku internetu",
+    "Učitel řídí tempo promítání z katedry"
+  ],
+  "didactic_design": "Společná diskuze v lavicích ve dvojicích, hlasování zvednutím ruky (kartičky A/B/C) a závěrečná minutová reflexe do sešitu."
+}

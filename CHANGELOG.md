@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.6.1 (2026-11-22)
+
+- Add a four-layer behavioral evaluation and benchmark suite:
+  - 24 activation trigger queries (`evals/trigger_evals.json`) measuring in-scope didactic intent vs. out-of-scope non-educational tasks (100% accuracy).
+  - Zero-dependency static didactic linter (`scripts/didactic_lint.py`) and unit tests (`tests/test_didactic_lint.py`) for sub-50ms artifact pre-checking (exposed API secrets, drag-and-drop keyboard accessibility, unhandled runtime AI timeouts, false mastery on retry, rigid Bloom progression, and naive string equality).
+  - Golden behavioral evaluation corpus of 15 scenarios across three baskets (`evals/evals.json` and `evals/corpus/`): Basket A (didactic flaws & anti-patterns), Basket B (clean true negatives preventing didactic over-engineering), and Basket C (operational, classroom, and security boundaries).
+  - Automated evaluation runner (`scripts/run_evals.py`) generating machine-readable benchmark reports in `evals/benchmark.json`.
+  - Comprehensive documentation in `docs/VALIDATION.md` and `docs/BENCHMARK.md`.
+
 ## 1.6.0 (2026-11-20)
 
 - Pin the documented installation to the release tag `v1.6.0` in all eight language editions and remove the CLI temporary-run command from the published guidance; the pinned copy on disk is the state a reader can inspect.

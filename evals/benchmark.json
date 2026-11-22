@@ -1,0 +1,179 @@
+{
+  "timestamp": "2026-11-22T16:13:47Z",
+  "version": "1.5.0",
+  "benchmark_name": "learning-methodologies-v1.5-evals",
+  "scenarios_evaluated": 15,
+  "metrics": {
+    "basket_a_recall": "100.0%",
+    "basket_b_false_positive_rate": "0.0%",
+    "basket_c_boundary_preservation": "100.0%",
+    "avg_latency_ms": 82.45
+  },
+  "basket_stats": {
+    "basket_a_didactic_flaws": {
+      "total": 6,
+      "detected": 6
+    },
+    "basket_b_true_negative_do_not_touch": {
+      "total": 5,
+      "false_positives": 0,
+      "clean_pass": 5
+    },
+    "basket_c_boundary_and_operational": {
+      "total": 4,
+      "preserved": 4
+    }
+  },
+  "detailed_results": [
+    {
+      "eval_id": "pos_01_false_mastery_retry",
+      "bucket": "basket_a_didactic_flaws",
+      "domain": "mastery_learning",
+      "exit_code": 1,
+      "hard_count": 1,
+      "soft_count": 0,
+      "duration_ms": 70.35,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "pos_02_infinite_socratic_loop",
+      "bucket": "basket_a_didactic_flaws",
+      "domain": "tutor_state",
+      "exit_code": 2,
+      "hard_count": 0,
+      "soft_count": 1,
+      "duration_ms": 76.32,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "pos_03_fabricated_science_data",
+      "bucket": "basket_a_didactic_flaws",
+      "domain": "simulations",
+      "exit_code": 2,
+      "hard_count": 0,
+      "soft_count": 1,
+      "duration_ms": 93.66,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "pos_04_rigid_bloom_progression",
+      "bucket": "basket_a_didactic_flaws",
+      "domain": "didactic_progression",
+      "exit_code": 1,
+      "hard_count": 1,
+      "soft_count": 0,
+      "duration_ms": 107.45,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "pos_05_reject_valid_alternative",
+      "bucket": "basket_a_didactic_flaws",
+      "domain": "assessment",
+      "exit_code": 1,
+      "hard_count": 1,
+      "soft_count": 0,
+      "duration_ms": 91.4,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "pos_06_unsolicited_backend_leak",
+      "bucket": "basket_a_didactic_flaws",
+      "domain": "architecture_boundaries",
+      "exit_code": 2,
+      "hard_count": 0,
+      "soft_count": 1,
+      "duration_ms": 83.93,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "neg_01_cosmetic_button_color",
+      "bucket": "basket_b_true_negative_do_not_touch",
+      "domain": "cognitive_ux",
+      "exit_code": 0,
+      "hard_count": 0,
+      "soft_count": 0,
+      "duration_ms": 88.74,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "neg_02_valid_direct_instruction",
+      "bucket": "basket_b_true_negative_do_not_touch",
+      "domain": "methods",
+      "exit_code": 0,
+      "hard_count": 0,
+      "soft_count": 0,
+      "duration_ms": 78.33,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "neg_03_clean_offline_quiz",
+      "bucket": "basket_b_true_negative_do_not_touch",
+      "domain": "adaptive_practice",
+      "exit_code": 0,
+      "hard_count": 0,
+      "soft_count": 0,
+      "duration_ms": 74.59,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "neg_04_established_curriculum_rvp",
+      "bucket": "basket_b_true_negative_do_not_touch",
+      "domain": "curriculum_rvp",
+      "exit_code": 0,
+      "hard_count": 0,
+      "soft_count": 0,
+      "duration_ms": 85.02,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "neg_05_verified_scientific_model",
+      "bucket": "basket_b_true_negative_do_not_touch",
+      "domain": "simulations",
+      "exit_code": 0,
+      "hard_count": 0,
+      "soft_count": 0,
+      "duration_ms": 79.97,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "edge_01_runtime_ai_timeout",
+      "bucket": "basket_c_boundary_and_operational",
+      "domain": "runtime_ai",
+      "exit_code": 0,
+      "hard_count": 0,
+      "soft_count": 0,
+      "duration_ms": 73.9,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "edge_02_prompt_injection_safety",
+      "bucket": "basket_c_boundary_and_operational",
+      "domain": "runtime_ai_security",
+      "exit_code": 0,
+      "hard_count": 0,
+      "soft_count": 0,
+      "duration_ms": 77.87,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "edge_03_classroom_projector_limits",
+      "bucket": "basket_c_boundary_and_operational",
+      "domain": "classroom_hardware",
+      "exit_code": 0,
+      "hard_count": 0,
+      "soft_count": 0,
+      "duration_ms": 76.14,
+      "status": "PASS"
+    },
+    {
+      "eval_id": "edge_04_keyboard_only_accessibility",
+      "bucket": "basket_c_boundary_and_operational",
+      "domain": "accessibility",
+      "exit_code": 0,
+      "hard_count": 0,
+      "soft_count": 0,
+      "duration_ms": 79.12,
+      "status": "PASS"
+    }
+  ]
+}

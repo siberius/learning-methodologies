@@ -1,0 +1,6 @@
+{
+  "question": "Vypočítej 15 % z 80",
+  "student_answer": "10 % je 8, 5 % je 4, celkem 12",
+  "checker_logic": "const isCorrect = (input.trim() === '0.15 * 80 = 12');",
+  "flaw": "Zamítá matematicky správný a didakticky hodnotný rozklad kvůli rigidnímu porovnání řetězce."
+}

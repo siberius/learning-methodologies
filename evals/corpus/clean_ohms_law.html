@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>Simulace Ohmova zákona</title>
+</head>
+<body>
+  <main>
+    <h1>Simulace Ohmova zákona (I = V / R)</h1>
+    <p>Předpoklad modelu: Ideální rezistor bez teplotní závislosti odporu.</p>
+    <label for="voltage">Napětí (V):</label>
+    <input type="number" id="voltage" value="6" min="1" max="24" tabindex="0">
+    <label for="resistance">Odpor (&Omega;):</label>
+    <input type="number" id="resistance" value="3" min="1" max="20" tabindex="0">
+    <button id="calc" type="button" tabindex="0">Spočítat proud</button>
+    <div id="result" aria-live="polite">Proud: 2.0 A</div>
+  </main>
+  <script>
+    function calculateCurrent(v, r) {
+      if (r <= 0) return 0;
+      return v / r;
+    }
+  </script>
+</body>
+</html>

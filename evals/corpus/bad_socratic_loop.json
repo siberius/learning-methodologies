@@ -1,0 +1,10 @@
+{
+  "dialogue_history": [
+    {"role": "tutor", "text": "Zkus se zamyslet, co znamená čitatel a jmenovatel?"},
+    {"role": "student", "text": "Nevím, pletu si to."},
+    {"role": "tutor", "text": "A co když si představíš pizzu rozkrojenou na 4 díly?"},
+    {"role": "student", "text": "Stále tomu nerozumím, prosím ukažte mi to na příkladu."},
+    {"role": "tutor", "text": "hint1: Opravdu nevíš? Zkus si představit koláč rozřezaný na půlky?"}
+  ],
+  "flaw": "Tutor ignoruje výslovnou prosbu žáka o ukázku a točí se v nekonečných návodných otázkách."
+}
